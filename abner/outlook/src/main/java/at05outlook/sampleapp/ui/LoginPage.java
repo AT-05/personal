@@ -1,0 +1,105 @@
+package at05outlook.sampleapp.ui;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPage extends BasedPageObject {
+
+    @FindBy(id = "i0116")
+    @CacheLookup
+    private WebElement user;
+
+    @FindBy(id = "i0118")
+    @CacheLookup
+    private WebElement pass;
+
+    @FindBy(id = "idSIButton9")
+    @CacheLookup
+    private WebElement btnCommon;
+
+    @FindBy(id = "idSIButton9")
+    @CacheLookup
+    private WebElement btnPass;
+
+    @FindBy(id = "idSIButton9")
+    @CacheLookup
+    private WebElement btnKeepSession;
+
+//    private WebElement btnKeepSession;
+
+
+    public LoginPage(){
+        super();
+        //PageFactory.initElements(driver, this);
+    }
+
+    @Override
+    public void waitPageIsLoaded() throws WebDriverException {
+
+    }
+
+//
+
+
+
+    public HomePage login(String userName, String pass) throws InterruptedException {
+
+        setUserName(userName);
+        clicLoginButton();
+        setUserPass(pass);
+        clicPasswordButton();
+        clicOpenButton();
+
+       return new HomePage();
+    }
+
+    private void setUserName(String name){
+        user.clear();
+        user.sendKeys(name);
+    }
+
+    private void setUserPass(String pas){
+        pass.clear();
+        pass.sendKeys(pas);
+    }
+
+    private void clicPasswordButton()  {
+        //TOdo find element
+        /*wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("idA_PWD_ForgotPassword")));
+        btnCommon =driver.getDriver().findElement(By.id("idSIButton9"));
+        btnCommon.click();
+        */
+
+        //btnPass.click();
+        btnCommon =webDriver.findElement(By.xpath("//div[4]/div/div/div[2]/input"));
+        btnCommon.click();
+    }
+
+
+    private void clicOpenButton()  {
+        btnCommon =webDriver.findElement(By.xpath("//div[2]/input"));
+        btnCommon.click();
+        //btnKeepSession.click();
+    }
+
+    private void clicLoginButton()  {
+        //TOdo find element
+        btnCommon.click();
+    }
+
+
+
+    public boolean isLoadPage() {
+       try {
+            webDriver.findElement(By.id("idSIButton9"));
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+
+    }
+}
