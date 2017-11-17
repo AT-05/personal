@@ -1,0 +1,10 @@
+{
+  	"Environments": [
+		{
+			"id": "Test1",
+			"url":"https://courses.ultimateqa.com",
+			"user name":"oscar@oscar.com",
+			"user password":"password123"
+		}
+	]
+}
