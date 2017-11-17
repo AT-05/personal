@@ -1,0 +1,40 @@
+package at05ui.steps;
+
+
+import static org.testng.Assert.assertTrue;
+
+import at05ui.sampleapp.ui.LoginPage;
+import at05ui.sampleapp.ui.MyAccountPage;
+import at05ui.sampleapp.ui.PageTransporter;
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LoginUserStep {
+
+  LoginPage loginPage;
+  MyAccountPage myAccountPage;
+
+  @Given("^I navigate to login page$")
+  public void navigateToCreateAccount() {
+    loginPage = PageTransporter.getInstance().navigateToLoginPage();
+
+  }
+  @When("^I fill the field email \"([^\"]*)\" and password \"([^\"]*)\"$")
+  public void fillFieldPersonalInformation(String email, String password)
+  {
+    myAccountPage = loginPage.insertUser(email, password);
+  }
+
+  @Then("^should be displayed My Account page$")
+  public void createANewAccount()   {
+    assertTrue(myAccountPage.IAmMyAccount());
+  }
+
+  @And("^should be closed the page$")
+  public void shouldBeClosedThePage()  {
+    myAccountPage.clickSingOut();
+  }
+}

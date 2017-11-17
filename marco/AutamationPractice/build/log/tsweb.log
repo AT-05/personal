@@ -1,0 +1,2608 @@
+2017-11-16 15:16:38 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 15:16:38 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 15:16:38 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:16:47 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:16:47 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 15:16:48 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 15:23:57 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 15:23:57 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 15:23:57 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:24:07 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:24:07 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 15:24:07 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 15:27:49 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 15:27:49 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 15:27:49 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:27:57 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:27:57 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 15:27:57 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 15:28:56 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 15:28:56 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 15:28:56 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:29:03 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:29:03 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 15:29:03 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 15:30:26 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 15:30:26 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 15:30:26 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:30:32 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:30:32 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 15:30:32 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 15:30:43 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 15:30:43 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 15:30:43 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:30:49 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:30:49 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 15:30:49 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 15:35:12 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 15:35:12 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 15:35:12 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:35:19 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 15:35:19 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 15:35:19 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 16:41:43 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 16:41:43 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 16:41:43 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 16:41:49 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 16:41:49 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 16:41:49 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 16:42:16 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 16:42:16 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 16:42:16 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 16:42:22 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 16:42:22 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 16:42:23 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 16:42:48 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 16:42:48 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 16:42:48 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 16:42:54 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 16:42:54 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 16:42:54 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 16:56:10 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 16:56:10 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 16:56:10 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 16:56:17 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 16:56:17 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 16:56:17 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:02:14 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:02:14 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:02:14 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:02:20 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:02:20 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:02:20 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:07:47 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:07:47 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:07:47 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:07:53 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:07:53 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:07:53 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:08:07 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:08:07 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:08:07 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:08:13 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:08:13 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:08:13 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:21:15 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:21:15 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:21:15 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:21:22 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:21:22 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:21:22 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:24:55 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:24:55 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:24:55 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:25:02 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:25:02 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:25:02 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:27:38 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:27:38 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:27:38 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:27:45 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:27:45 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:27:45 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:30:59 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:31:00 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:31:00 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:31:09 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:31:09 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:31:09 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:31:45 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:31:45 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:31:46 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:31:52 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:31:52 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:31:52 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:33:19 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:33:19 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:33:19 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:33:25 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:33:25 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:33:25 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:34:42 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:34:42 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:34:42 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:34:48 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:34:48 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:34:48 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:47:44 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:47:44 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:47:44 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:47:50 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:47:50 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:47:50 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:48:36 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:48:36 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:48:36 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:48:42 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:48:42 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:48:42 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:51:21 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:51:21 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:51:21 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:51:28 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:51:28 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:51:28 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:51:54 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:51:54 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:51:54 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:52:00 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:52:00 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:52:01 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:53:21 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:53:21 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:53:21 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:53:27 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:53:27 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:53:27 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 17:58:12 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 17:58:12 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 17:58:12 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:58:18 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 17:58:18 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 17:58:18 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 18:03:00 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 18:03:00 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 18:03:00 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 18:03:07 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 18:03:07 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 18:03:07 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 18:07:04 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 18:07:04 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 18:07:04 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 18:07:10 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 18:07:10 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 18:07:10 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 18:16:42 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 18:16:42 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 18:16:42 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 18:16:49 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 18:16:49 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 18:16:49 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 18:16:56 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 18:16:56 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 18:16:57 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 18:48:45 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 18:48:45 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 18:48:45 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 18:49:11 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 18:49:11 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 18:49:11 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 18:49:17 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 18:49:17 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:06:56 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:07:45 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:07:45 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:07:45 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:07:54 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:07:54 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:07:54 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:16:40 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:16:40 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:16:40 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:16:47 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:16:47 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:16:47 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:17:56 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:17:56 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:17:56 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:18:02 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:18:02 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:18:02 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:38:57 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:38:57 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:38:57 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:39:08 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:39:08 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:39:08 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:39:12 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:39:12 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:39:12 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:39:19 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:39:19 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:39:19 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:44:35 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:44:35 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:44:35 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:44:42 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:44:42 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:44:42 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:53:13 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:53:13 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:53:13 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:53:21 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:53:21 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:53:21 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:54:44 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:54:44 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:54:44 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:54:51 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:54:51 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:54:51 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:56:48 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:56:48 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:56:48 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:56:55 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:56:55 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:56:55 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:57:21 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:57:21 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:57:21 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:57:29 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:57:29 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:57:29 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:57:56 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:57:56 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:57:56 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:58:03 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:58:03 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:58:03 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:58:31 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:58:31 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:58:31 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:58:38 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:58:38 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:58:38 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 19:58:47 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 19:58:48 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 19:58:48 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:58:53 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 19:58:53 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 19:58:53 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-16 20:00:09 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-16 20:00:09 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-16 20:00:09 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 20:00:16 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-16 20:00:16 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-16 20:00:16 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 08:55:59 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 08:55:59 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 08:55:59 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 08:56:48 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 08:56:48 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 08:56:48 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 08:56:54 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 08:56:54 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 08:56:54 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 08:57:01 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 08:57:01 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 08:58:45 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 08:58:45 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 08:58:45 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 08:58:53 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 08:58:53 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 08:58:54 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 09:07:36 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 09:07:36 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 09:07:36 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:07:43 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:07:43 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:07:43 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 09:07:55 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:07:55 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:08:14 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 09:08:14 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 09:08:14 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:08:20 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:08:20 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:08:20 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 09:08:29 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:08:29 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:08:54 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 09:08:54 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 09:08:54 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:09:00 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:09:00 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:09:01 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 09:09:15 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:09:15 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:10:05 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 09:10:05 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 09:10:05 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:10:12 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:10:12 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:10:12 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 09:10:23 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:10:23 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:14:05 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 09:14:05 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 09:14:05 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:14:11 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:14:11 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:14:12 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 09:14:21 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:14:21 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:15:15 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 09:15:15 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 09:15:15 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:15:22 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:15:22 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:15:22 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 09:15:32 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:15:32 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:59:17 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 09:59:17 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 09:59:17 ERROR JsonReader:39 - ParseException when reading the configuration file 
+Unexpected character (/) at position 221.
+	at org.json.simple.parser.Yylex.yylex(Yylex.java:610)
+	at org.json.simple.parser.JSONParser.nextToken(JSONParser.java:269)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:118)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:92)
+	at at05ui.core.utils.JsonReader.parseJSON(JsonReader.java:35)
+	at at05ui.core.utils.JsonReader.<init>(JsonReader.java:25)
+	at at05ui.sampleapp.config.SampleAppEnvsConfig.initialize(SampleAppEnvsConfig.java:40)
+	at at05ui.sampleapp.SampleAppAutomation.<init>(SampleAppAutomation.java:27)
+	at at05ui.sampleapp.SampleAppAutomation.getInstance(SampleAppAutomation.java:32)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:59:17 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.utils.JsonReader.getJSONObjectFromArrayById(JsonReader.java:73)
+	at at05ui.core.utils.JsonReader.getKeyValue(JsonReader.java:95)
+	at at05ui.sampleapp.config.SampleAppEnvsConfig.initialize(SampleAppEnvsConfig.java:41)
+	at at05ui.sampleapp.SampleAppAutomation.<init>(SampleAppAutomation.java:27)
+	at at05ui.sampleapp.SampleAppAutomation.getInstance(SampleAppAutomation.java:32)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:59:17 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:59:23 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 09:59:23 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 09:59:23 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 09:59:23 ERROR JsonReader:39 - ParseException when reading the configuration file 
+Unexpected character (/) at position 221.
+	at org.json.simple.parser.Yylex.yylex(Yylex.java:610)
+	at org.json.simple.parser.JSONParser.nextToken(JSONParser.java:269)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:118)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:92)
+	at at05ui.core.utils.JsonReader.parseJSON(JsonReader.java:35)
+	at at05ui.core.utils.JsonReader.<init>(JsonReader.java:25)
+	at at05ui.sampleapp.config.SampleAppEnvsConfig.initialize(SampleAppEnvsConfig.java:40)
+	at at05ui.sampleapp.SampleAppAutomation.<init>(SampleAppAutomation.java:27)
+	at at05ui.sampleapp.SampleAppAutomation.getInstance(SampleAppAutomation.java:32)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:59:23 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.utils.JsonReader.getJSONObjectFromArrayById(JsonReader.java:73)
+	at at05ui.core.utils.JsonReader.getKeyValue(JsonReader.java:95)
+	at at05ui.sampleapp.config.SampleAppEnvsConfig.initialize(SampleAppEnvsConfig.java:41)
+	at at05ui.sampleapp.SampleAppAutomation.<init>(SampleAppAutomation.java:27)
+	at at05ui.sampleapp.SampleAppAutomation.getInstance(SampleAppAutomation.java:32)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:59:52 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 09:59:52 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 09:59:52 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:59:58 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 09:59:58 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 09:59:58 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 10:00:04 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:00:04 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:00:13 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 10:00:13 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 10:00:13 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:00:19 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:00:19 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:00:19 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 10:00:28 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:00:28 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:01:44 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 10:01:44 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 10:01:44 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:01:50 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:01:50 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:01:50 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 10:04:45 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 10:04:45 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 10:04:45 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:04:52 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:04:52 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:04:52 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 10:05:10 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:05:10 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:05:19 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:05:19 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:12:29 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 10:12:29 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 10:12:30 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:12:36 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:12:36 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:12:36 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 10:14:47 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 10:14:47 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 10:14:47 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:14:54 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:14:54 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:14:54 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 10:39:50 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 10:39:51 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 10:39:51 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:39:57 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:39:57 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:39:57 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 10:40:18 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 10:40:18 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 10:40:18 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:40:25 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:40:25 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:40:25 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 10:43:02 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 10:43:02 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 10:43:02 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:43:08 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:43:08 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:43:08 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 10:44:33 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 10:44:33 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 10:44:33 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:44:40 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:44:40 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:44:40 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 10:46:40 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 10:46:40 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 10:46:40 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:46:48 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 10:46:48 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 10:46:49 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 11:05:34 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 11:05:34 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 11:05:34 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 11:05:44 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 11:05:44 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 11:05:45 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 11:08:30 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 11:08:30 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 11:08:30 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 11:08:37 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 11:08:37 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 11:08:37 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 14:16:44 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:16:44 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:16:44 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:17:00 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:17:00 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 14:17:02 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 14:23:06 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:23:06 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:23:06 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:23:13 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:23:13 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 14:23:13 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 14:30:58 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:30:58 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:30:58 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:31:05 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:31:05 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 14:31:05 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 14:36:54 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:36:54 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:36:54 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:37:05 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:37:05 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:37:05 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:37:23 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:37:23 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:37:23 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:37:29 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:37:29 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 14:37:30 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 14:39:50 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:39:50 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:39:50 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:40:15 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:40:15 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:40:15 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:40:21 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:40:21 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 14:40:21 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 14:46:47 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:46:47 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:46:47 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:46:53 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:46:53 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 14:46:53 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 14:48:17 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:48:17 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:48:17 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:48:24 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:48:24 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 14:48:24 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 14:50:46 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:50:46 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:50:46 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:50:52 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:50:52 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 14:50:52 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 14:53:16 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:53:16 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:53:16 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:53:23 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:53:23 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 14:53:23 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 14:53:45 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:53:45 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:53:45 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:53:53 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:53:53 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 14:53:53 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 14:56:22 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 14:56:22 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 14:56:22 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:56:30 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 14:56:30 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 14:56:30 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 17:59:55 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 17:59:55 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 17:59:55 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 18:00:07 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 18:00:07 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 18:00:08 INFO  PageTransporter:28 - Initialize the page transporter
+2017-11-17 18:02:19 INFO  WebDriverConfig:36 - Read the driver configuration settings
+2017-11-17 18:02:19 INFO  SampleAppEnvsConfig:38 - -----Read the credentials-----
+2017-11-17 18:02:19 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 18:02:26 INFO  WebDriverManager:37 - Initializing web driver
+2017-11-17 18:02:26 ERROR RunCukesTest:23 - Exception in before execution
+java.lang.NullPointerException
+	at at05ui.core.selenium.webdrivers.DriverFactory.getDriver(DriverFactory.java:22)
+	at at05ui.core.selenium.WebDriverManager.initialize(WebDriverManager.java:38)
+	at at05ui.sampleapp.SampleAppAutomation.startUp(SampleAppAutomation.java:38)
+	at at05ui.runner.RunCukesTest.beforeExecution(RunCukesTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2017-11-17 18:02:27 INFO  PageTransporter:28 - Initialize the page transporter

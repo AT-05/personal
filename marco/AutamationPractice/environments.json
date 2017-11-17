@@ -1,0 +1,25 @@
+{
+  	"Environments": [
+		{
+			"id": "createNewAccount",
+			"url":"http://automationpractice.com/index.php?controller=authentication&back=my-account",
+			"user name":"marco",
+			"user password":"mendez"
+		},
+      {
+        "id": "indexPage",
+        "url":"http://automationpractice.com/index.php",
+        "user name":"marco",
+        "user password":"mendez"
+      }
+		,
+			{
+				"id": "editPersonalInfo",
+				"url":"http://automationpractice.com",
+				"user name":"marco",
+				"user password":"mendez"
+			}
+	]
+
+
+}
