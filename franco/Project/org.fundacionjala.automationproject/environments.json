@@ -1,10 +1,10 @@
 {
   "Environments": [
     {
-      "id": "Login",
-      "url": "http://www.phptravels.net/login",
-      "username": "as",
-      "userpassword": "dfsa"
+      "id": "Env1",
+      "url": "http://newtours.demoaut.com/",
+      "username": "",
+      "userpassword": ""
     }
   ]
 }

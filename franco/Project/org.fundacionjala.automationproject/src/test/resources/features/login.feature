@@ -4,10 +4,10 @@ Feature: Login
 
   @SmokeTest @Logout
   Scenario Outline: Login in to the application
-    Given I navigate to Login page
+    Given I navigate to Main Page
     When I login as "<Email_user>" with password "<Password>"
-    Then I should login successfully as "hi, johny smith"
+    Then I should login successfully
 
-  Examples:
-  | Email_user            | Password           |
-  | user@phptravels.com   | demouser           |
+    Examples:
+      | Email_user | Password  |
+      | faldunate  | password1 |
