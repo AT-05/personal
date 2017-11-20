@@ -8,6 +8,7 @@ import at05ui.sampleapp.ui.IndexPage;
 import at05ui.sampleapp.ui.LoginPage;
 import at05ui.sampleapp.ui.MyAccountPage;
 import at05ui.sampleapp.ui.PageTransporter;
+import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -25,7 +26,7 @@ public class EditPersonalInfo {
   public void iNavigateToLoginPageAndSingInWithEmailAndPassword(String email, String pass) {
     indexPage = PageTransporter.getInstance().navigateToIndexPage();
     loginPage = indexPage.clickSingIn();
-    myAccountPage = loginPage.insertUser(email, pass);
+    myAccountPage = loginPage.setLogin(email, pass);
 
   }
 
@@ -43,10 +44,14 @@ public class EditPersonalInfo {
     identifyPage = editPersonalInfoPage.clickSave();
   }
 
-  @Then("^should be displayedIdentify page$")
+  @Then("^should be displayed Identify page$")
   public void shouldBeDisplayedMyAccountPageWithMyInformationChange() {
     assertTrue(identifyPage.IAmInIdentifyPage());
   }
 
+  @After(value = "@EditInfo", order = 999)
+  public void logout (){
+    identifyPage.clickSingOut();
+  }
 
 }

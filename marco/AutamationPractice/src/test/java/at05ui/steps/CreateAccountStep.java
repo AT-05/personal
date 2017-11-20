@@ -6,6 +6,7 @@ import at05ui.sampleapp.ui.AuthenticationPage;
 import at05ui.sampleapp.ui.CreateAccountPage;
 import at05ui.sampleapp.ui.MyAccountPage;
 import at05ui.sampleapp.ui.PageTransporter;
+import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,11 +14,11 @@ import cucumber.api.java.en.When;
 
 public class CreateAccountStep {
 
-  AuthenticationPage authenticationPage;
-  CreateAccountPage createAccountPage;
-  MyAccountPage myAccountPage;
+  private AuthenticationPage authenticationPage;
+  private CreateAccountPage createAccountPage;
+  private MyAccountPage myAccountPage;
 
-  @Given("^I navigate to MainPage and push new email\"([^\"]*)\"$")
+  @Given("^I navigate to MainPage and put new email\"([^\"]*)\"$")
   public void iNavigateToMainPageAndPushNewEmail(String email) {
     authenticationPage = PageTransporter.getInstance().navigateToMainPage();
     createAccountPage = authenticationPage.setNewAccount(email);
@@ -25,7 +26,7 @@ public class CreateAccountStep {
 
   @When("^I create a new Account with the following personal information \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\" and also \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
   public void iCreateANewAccountWithTheFollowingInformationAnd(String firstName, String lastName,
-      String email, String password, int day, int month, String year) throws Throwable {
+      String email, String password, int day, int month, String year)  {
     createAccountPage
         .setYourPersonalInformation(firstName, lastName, email, password, day, month, year);
   }
@@ -43,8 +44,12 @@ public class CreateAccountStep {
   @Then("^should be displayed Home page$")
   public void shouldBeHomePageDisplayed() {
     assertTrue(myAccountPage.IAmMyAccount());
-    myAccountPage.clickSingOut();
 
+  }
+
+  @After(value = "@CreateAccount", order = 999)
+  public void logout() {
+    myAccountPage.clickLogOut();
   }
 
 

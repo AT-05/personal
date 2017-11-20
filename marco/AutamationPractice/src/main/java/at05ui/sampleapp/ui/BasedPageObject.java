@@ -6,27 +6,42 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+/**
+ * Class Abstract BasedPageObject.
+ */
 public abstract class BasedPageObject {
 
   public WebDriver webDriver;
 
   public WebDriverWait wait;
 
+  /**
+   * Constructor of the class BasePageObject.
+   */
   public BasedPageObject() {
     webDriver = WebDriverManager.getInstance().getWebDriver();
     wait = WebDriverManager.getInstance().getWait();
-    PageFactory.initElements(webDriver,this);
+    PageFactory.initElements(webDriver, this);
   }
 
+  /**
+   * Method abstract.
+   *
+   * @throws WebDriverException exception.
+   */
   public abstract void waitPageIsLoaded() throws WebDriverException;
 
-  public  void quit()
-  {
+  /**
+   * Quit WebDriver.
+   */
+  public void quit() {
     webDriver.quit();
   }
 
-  public  void close()
-  {
+  /**
+   * Method close WebDriver.
+   */
+  public void close() {
     webDriver.close();
   }
 }

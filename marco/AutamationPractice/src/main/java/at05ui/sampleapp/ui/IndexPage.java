@@ -7,8 +7,13 @@ import org.openqa.selenium.support.FindBy;
 public class IndexPage extends BasedPageObject {
 
   @FindBy(className = "login")
-  WebElement singIn;
+  private WebElement singIn;
 
+  /**
+   * Event click Sing In.
+   *
+   * @return LoginPage.
+   */
   public LoginPage clickSingIn() {
     singIn.click();
     return new LoginPage();

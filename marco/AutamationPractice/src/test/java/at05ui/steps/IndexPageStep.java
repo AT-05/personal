@@ -20,12 +20,12 @@ public class IndexPageStep {
   }
 
   @When("^I press the option Sign In$")
-  public void iPressTheOptionSignIn() throws Throwable {
+  public void iPressTheOptionSignIn()  {
     loginPag = indexPage.clickSingIn();
   }
 
   @Then("^should be displayed Login page$")
-  public void shouldBeDisplayedLoginPage() throws Throwable {
+  public void shouldBeDisplayedLoginPage() {
     assertTrue(loginPag.IsAmInLoginPage());
 
   }

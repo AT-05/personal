@@ -6,6 +6,9 @@ import at05ui.sampleapp.config.SampleAppEnvsConfig;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
+/**
+ * Class PageTransporter.
+ */
 public class PageTransporter {
 
   private Logger log = Logger.getLogger(getClass());

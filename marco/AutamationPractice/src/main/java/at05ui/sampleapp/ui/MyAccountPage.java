@@ -4,18 +4,29 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+/**
+ * Class MyAccountPage.
+ */
 public class MyAccountPage extends BasedPageObject {
 
   @FindBy(className = "logout")
-  WebElement singOut;
+  private WebElement logOut;
 
   @FindBy(linkText = "My personal info")
-  WebElement editPersonalInfo;
+  private WebElement editPersonalInfo;
 
-  public void clickSingOut() {
-    singOut.click();
+  /**
+   * Event click LogOut.
+   */
+  public void clickLogOut() {
+    logOut.click();
   }
 
+  /**
+   * Check if I am in MyAccountPage.
+   *
+   * @return boolean.
+   */
   public boolean IAmMyAccount() {
     //this a small trap
     return webDriver.getTitle().equalsIgnoreCase("My account - My Store");
@@ -28,6 +39,11 @@ public class MyAccountPage extends BasedPageObject {
 
   }
 
+  /**
+   * Event click EditPersonalInfo.
+   *
+   * @return new EditPersonalInfoPage.
+   */
   public EditPersonalInfoPage clickEditPersonalInfo() {
     editPersonalInfo.click();
     return new EditPersonalInfoPage();
