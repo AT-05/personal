@@ -11,7 +11,6 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-
 /**
  * Util used to read the configurations from the json file
  * Created by Silvia Valencia on 3/23/2015.
@@ -54,7 +53,7 @@ public class JsonReader {
   }
 
   /**
-   * <p>This method returns the JSONObject key</p>
+   * <p>This method returns the JSONObject key.</p>
    *
    * @param key is the key of the JSON value.
    * @return the JSONObject value requested.
@@ -92,15 +91,14 @@ public class JsonReader {
    * <p>This method returns the JsonObject which key and value
    * matche the given parameters from a jsonArray.</p>
    *
-   * @param objectName
-   * @param idKey
-   * @param idValue
-   * @return
+   * @param objectName is the Object name.
+   * @param idKey is the id key.
+   * @param idValue is the id value.
+   * @return a JSONObject object type.
    */
   private JSONObject getJsonObjectFromArrayById(String objectName, String idKey, String idValue) {
     JSONObject jsonObject = null;
     JSONArray arr = (JSONArray) this.jsonObject.get(objectName);
-    System.out.println(arr);
     for (Object anArr : arr) {
       jsonObject = (JSONObject) anArr;
       if (jsonObject.get(idKey).equals(idValue)) {
@@ -114,9 +112,9 @@ public class JsonReader {
    * <p>This method returns a JSONObject from the main json
    * and then gets a value given the key.</p>
    *
-   * @param objectName
-   * @param key
-   * @return
+   * @param objectName is the Object name.
+   * @param key is a key.
+   * @return the key value.
    */
   public String getKeyValue(String objectName, String key) {
     JSONObject jsonObject = getJsonObject(objectName);
@@ -124,13 +122,13 @@ public class JsonReader {
   }
 
   /**
-   * Gets the jsonObject from the jsonArray and then gets a value given the key
+   * <p>Gets the jsonObject from the jsonArray and then gets a value given the key.</p>
    *
-   * @param objectName
-   * @param idKey
-   * @param idValue
-   * @param key
-   * @return
+   * @param objectName is the Object name.
+   * @param idKey is the id key.
+   * @param idValue is the id value.
+   * @param key is a key.
+   * @return the key value.
    */
   public String getKeyValue(String objectName, String idKey, String idValue, String key) {
     JSONObject jsonObject = getJsonObjectFromArrayById(objectName, idKey, idValue);
@@ -138,13 +136,15 @@ public class JsonReader {
   }
 
   /**
-   * Gets the jsonObject from the jsonArray and then gets a jsonObject value and then gets a value given the key
+   * <p>Gets the jsonObject from the jsonArray
+   * and then gets a jsonObject value and then gets a value given the key.</p>
    *
-   * @param objectName
-   * @param idKey
-   * @param idValue
-   * @param key
-   * @return
+   * @param objectName is the Object name.
+   * @param idKey is the id key.
+   * @param idValue is the id value.
+   * @param objectKey is the Object key.
+   * @param key is a key.
+   * @return the key value.
    */
   public String getKeyValue(String objectName, String idKey, String idValue, String objectKey, String key) {
     JSONObject jsonObject = getJsonObjectFromArrayById(objectName, idKey, idValue);
@@ -153,13 +153,14 @@ public class JsonReader {
   }
 
   /**
-   * Gets a hashMap which key is the user type and value is a hashMap that contains the values for Name, Password
+   * <p>Gets a hashMap which key is the user type and value
+   * is a hashMap that contains the values for Name, Password.</p>
    *
-   * @param objectName
-   * @param idKey
-   * @param idValue
-   * @param key
-   * @return
+   * @param objectName is the Object name.
+   * @param idKey is the id key.
+   * @param idValue is the id value.
+   * @param key is a key.
+   * @return a map of Objects.
    */
   public HashMap<String, Object> getArrayKeyValues(String objectName, String idKey, String idValue, String key) {
     JSONObject jsonObject = getJsonObjectFromArrayById(objectName, idKey, idValue);

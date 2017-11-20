@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
- * Created by Administrator on 11/15/2017.
+ * Created by Franco Aldunate on 11/15/2017.
  */
 public class Chrome implements IWebDriver {
   /**

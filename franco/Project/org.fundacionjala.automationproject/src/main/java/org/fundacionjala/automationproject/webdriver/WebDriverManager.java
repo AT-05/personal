@@ -35,26 +35,18 @@ public class WebDriverManager {
 
   /**
    * <p>This method initializes webDriver specific instance.</p>
+   *
+   * @param webDriverConfig is a WebDriverConfig object type.
    */
   public void initWebDriver(final WebDriverConfig webDriverConfig) {
     webDriver = WebDriverFactory.getWebDriver(webDriverConfig);
-    initConfiguration();
-  }
-
-  /**
-   * <p>This method initializes implicit and explicit web driver opening timeout.</p>
-   */
-  public void configureTimeOuts() {
-    webDriver.manage().timeouts().implicitlyWait(webDriverConfig.getImplicitWaitTime(), TimeUnit.SECONDS);
-    webDriverWait = new WebDriverWait(webDriver, webDriverConfig.getExplicitWaitTime(), webDriverConfig.getWaitSleepTime());
-  }
-
-  /**
-   * <p>This method initializes web driver configuration.</p>
-   */
-  public void initConfiguration() {
     webDriver.manage().window().maximize();
-    configureTimeOuts();
+    webDriver.manage()
+      .timeouts()
+      .implicitlyWait(webDriverConfig.getImplicitWaitTime(), TimeUnit.SECONDS);
+    webDriverWait = new WebDriverWait(webDriver,
+      webDriverConfig.getExplicitWaitTime(),
+      webDriverConfig.getWaitSleepTime());
   }
 
   /**

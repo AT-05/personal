@@ -2,8 +2,11 @@ package org.fundacionjala.automationproject.config;
 
 import org.fundacionjala.automationproject.utils.JsonReader;
 
+/**
+ * Created by Franco Aldunate on 11/14/2017.
+ */
 public class EnvironmentConfig {
-  private static final String ENV_ID = "Test";
+  private static final String ENV_ID = "Env1";
   private static final String ENVIRONMENTS = "Environments";
   private static final String ID = "id";
   private static final String URL = "url";
@@ -18,6 +21,11 @@ public class EnvironmentConfig {
 
   private static EnvironmentConfig instance;
 
+  /**
+   * <p>This method returns the instance of the class.</p>
+   *
+   * @return a unique instance of this class.
+   */
   public static EnvironmentConfig getInstance() {
     if (instance == null) {
       instance = new EnvironmentConfig();
@@ -25,6 +33,11 @@ public class EnvironmentConfig {
     return instance;
   }
 
+  /**
+   * <p>This method initializes Environment Configuration.</p>
+   *
+   * @param sampleAppEnvsConfigFileName is a Configuration File.
+   */
   public void initEnvironmentConfiguration(String sampleAppEnvsConfigFileName) {
     environmentReader = new JsonReader(sampleAppEnvsConfigFileName);
     url = environmentReader.getKeyValue(ENVIRONMENTS, ID, ENV_ID, URL);
@@ -32,14 +45,29 @@ public class EnvironmentConfig {
     userPassword = environmentReader.getKeyValue(ENVIRONMENTS, ID, ENV_ID, USER_PASSWORD);
   }
 
+  /**
+   * <p>This method gets the base url.</p>
+   *
+   * @return an url direction.
+   */
   public String getBaseUrl() {
     return url;
   }
 
+  /**
+   * <p>This method gets the user name.</p>
+   *
+   * @return a user name.
+   */
   public String getUserName() {
     return userName;
   }
 
+  /**
+   * <p>This method gets the user password.</p>
+   *
+   * @return a user password.
+   */
   public String getUserPassword() {
     return userPassword;
   }

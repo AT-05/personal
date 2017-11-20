@@ -5,30 +5,30 @@ import java.util.Map;
 import org.openqa.selenium.WebDriver;
 
 /**
- * Created by Administrator on 11/15/2017.
+ * Created by Franco Aldunate on 11/15/2017.
  */
 public final class WebDriverFactory {
   private static final String FIREFOX = "firefox";
   private static final String CHROME = "chrome";
 
-  private static Map<String, IWebDriver> webDriverMap;
-
   /**
-   * <p>This method initializes web driver map.</p>
+   * <p>Constructor of the class.</p>
    */
-  public static void initialize() {
-    webDriverMap = new HashMap<>();
-    webDriverMap.put(FIREFOX, new Firefox());
-    webDriverMap.put(CHROME, new Chrome());
+  protected WebDriverFactory() {
+
   }
 
   /**
    * <p>This method returns a WebDriver browser.</p>
    *
-   * @return a IWebDriver object type.
+   * @param webDriverConfig is a WebDriverConfig object type.
+   * @return a WebDriver object type.
    */
   public static WebDriver getWebDriver(final WebDriverConfig webDriverConfig) {
-    initialize();
+    Map<String, IWebDriver> webDriverMap = new HashMap<>();
+    webDriverMap.put(FIREFOX, new Firefox());
+    webDriverMap.put(CHROME, new Chrome());
+    System.out.println(webDriverConfig.getBrowser());
     return webDriverMap.get(webDriverConfig.getBrowser().toLowerCase()).getInstance();
   }
 }

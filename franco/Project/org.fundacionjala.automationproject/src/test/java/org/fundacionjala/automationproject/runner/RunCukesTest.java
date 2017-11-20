@@ -6,11 +6,14 @@ import org.fundacionjala.automationproject.automation.Automation;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+/**
+ * Created by Franco Aldunate on 11/15/2017.
+ */
 public class RunCukesTest extends AbstractTestNGCucumberTests {
   private static Logger log = Logger.getLogger("RunCukesTest");
 
   /**
-   * Starts the execution
+   * <p>This method starts the execution of the test suite.</p>
    */
   @BeforeTest
   public void beforeExecution() {
@@ -24,7 +27,7 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
   }
 
   /**
-   * Closes the execution
+   * <p>This method closes the execution of the test suite.</p>
    */
   @AfterTest
   public void afterExecution() {

@@ -21,8 +21,10 @@ public class WebDriverConfig {
 
   private static WebDriverConfig instance;
 
+  /**
+   * <p>Constructor of the class.</p>
+   */
   protected WebDriverConfig() {
-
   }
 
   /**

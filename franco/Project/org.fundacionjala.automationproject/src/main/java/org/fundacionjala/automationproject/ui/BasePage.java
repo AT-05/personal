@@ -1,8 +1,10 @@
 package org.fundacionjala.automationproject.ui;
 
+import java.util.List;
 import org.fundacionjala.automationproject.webdriver.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -10,8 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * Created by Franco Aldunate on 11/14/2017.
  */
 public abstract class BasePage {
-  protected final WebDriver driver;
-  protected final WebDriverWait wait;
+  protected WebDriver driver;
+  protected WebDriverWait wait;
 
   /**
    * <p>This constructor initializes driver and wait and web elements.</p>
@@ -37,4 +39,31 @@ public abstract class BasePage {
    * @throws WebDriverException when pages doesn't load correctly.
    */
   public abstract void waitUntilPageObjectIsLoaded() throws WebDriverException;
+
+  /**
+   * <p>This method performs selection of element of a list.</p>
+   *
+   * @param webElements is a lis of WebElement elements.
+   * @param keyWord is the value to compare element attribute with.
+   */
+  protected void selectElementInList(List<WebElement> webElements, String keyWord) {
+    for (WebElement element : webElements) {
+      String value = element.getAttribute("value");
+      if (value.contains(keyWord)) {
+        element.click();
+        break;
+      }
+    }
+  }
+
+  /**
+   * <p>This method performs selection of element of a list.</p>
+   *
+   * @param webElements is a lis of WebElement elements.
+   * @param index is the integer value to compare element attribute with.
+   */
+  protected void selectElementInList(List<WebElement> webElements, int index) {
+    WebElement element = webElements.get(index);
+    element.click();
+  }
 }

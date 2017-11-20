@@ -8,35 +8,83 @@ import org.openqa.selenium.support.FindBy;
  * Created by Franco Aldunate on 11/14/2017.
  */
 public class MainPage extends BasePage {
-  @FindBy(xpath = "//*[@id=\"li_myaccount\"]/a")
-  private WebElement myAccountOption;
+  @FindBy(name = "userName")
+  private WebElement userName;
 
-  @FindBy (xpath = "//*[@id=\"li_myaccount\"]/ul/li[2]/a")
-  private WebElement loginOption;
+  @FindBy(name = "password")
+  private WebElement password;
+
+  @FindBy(name = "login")
+  private WebElement logInButton;
+
+  private String usernameInput;
+  private String passwordInput;
 
   /**
-   * <p>This constructor initializes driver and wait and web elements.</p>
+   * <p>This constructor receives login field values.</p>
    */
   public MainPage() {
     super();
   }
 
   /**
-   * <p>This method runs the automated test of the web pages section.</p>
+   * <p>This method sets user name value.</p>
    *
-   * @return a LoginPage object.
+   * @param userNameInput is the value of the user name.
    */
-  public LoginPage goToLogin() {
-    myAccountOption.click();
-    try {
-      Thread.sleep(3000);
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    }
-    loginOption.click();
-    return new LoginPage();
+  public void setUserName(String userNameInput) {
+    this.usernameInput = userNameInput;
   }
 
+  /**
+   * <p>This method sets password value.</p>
+   *
+   * @param passwordInput is the value of the user password.
+   */
+  public void setPassword(String passwordInput) {
+    this.passwordInput = passwordInput;
+  }
+
+  /**
+   * <p>This method fills user name field.</p>
+   */
+  public void fillUserName() {
+    userName.sendKeys(usernameInput);
+  }
+
+  /**
+   * <p>This method fills user name field.</p>
+   */
+  public void fillPassword() {
+    password.sendKeys(passwordInput);
+  }
+
+  /**
+   * <p>This method clears form fields.</p>
+   */
+  private void clearFields() {
+    userName.clear();
+    password.clear();
+  }
+
+  /**
+   * <p>This method runs the automated test for login.</p>
+   *
+   * @return a HomePage object.
+   */
+  public HomePage login() {
+    clearFields();
+    fillUserName();
+    fillPassword();
+    logInButton.click();
+    return new HomePage();
+  }
+
+  /**
+   * <p>This method checks for correct loading of pages.</p>
+   *
+   * @throws WebDriverException when pages doesn't load correctly.
+   */
   @Override
   public void waitUntilPageObjectIsLoaded() throws WebDriverException {
 
