@@ -1,4 +1,4 @@
-package sampleapp.ui;
+package courses.sampleapp.ui;
 
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;

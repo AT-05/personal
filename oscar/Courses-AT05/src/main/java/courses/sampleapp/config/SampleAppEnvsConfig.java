@@ -1,6 +1,6 @@
-package sampleapp.config;
+package courses.sampleapp.config;
 
-import core.utils.JsonReader;
+import courses.core.utils.JsonReader;
 import org.apache.log4j.Logger;
 
 public class SampleAppEnvsConfig {

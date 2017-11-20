@@ -1,7 +1,6 @@
-package sampleapp.ui;
+package courses.sampleapp.ui;
 
-import core.selenium.WebDriverManager;
-import core.selenium.webdrivers.ChromeWebDriver;
+import courses.core.selenium.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.PageFactory;

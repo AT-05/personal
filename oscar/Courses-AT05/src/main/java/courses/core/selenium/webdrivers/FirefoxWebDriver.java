@@ -1,4 +1,4 @@
-package core.selenium.webdrivers;
+package courses.core.selenium.webdrivers;
 
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import java.util.concurrent.TimeUnit;

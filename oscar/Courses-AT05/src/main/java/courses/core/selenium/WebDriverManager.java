@@ -1,6 +1,6 @@
-package core.selenium;
+package courses.core.selenium;
 
-import core.selenium.webdrivers.DriverFactory;
+import courses.core.selenium.webdrivers.DriverFactory;
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class WebDriverManager {
 
   private Logger log = Logger.getLogger(getClass());
-  private WebDriverConfig webDriverConfig = WebDriverConfig.getInstance();
+  private courses.core.selenium.WebDriverConfig webDriverConfig = WebDriverConfig.getInstance();
   private WebDriver webDriver;
   private WebDriverWait webDriverWait;
 
@@ -21,6 +21,7 @@ public class WebDriverManager {
 
   protected WebDriverManager() {
     initialize(webDriverConfig);
+    log.info("WebDriverManager constructor");
   }
 
   public static WebDriverManager getInstance() {

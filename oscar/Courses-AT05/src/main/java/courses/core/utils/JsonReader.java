@@ -1,4 +1,4 @@
-package core.utils;
+package courses.core.utils;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

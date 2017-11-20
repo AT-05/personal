@@ -1,9 +1,9 @@
-package sampleapp.ui;
+package courses.sampleapp.ui;
 
-import core.selenium.WebDriverManager;
+import courses.core.selenium.WebDriverManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import sampleapp.config.SampleAppEnvsConfig;
+import courses.sampleapp.config.SampleAppEnvsConfig;
 
 public class PageTransporter {
 

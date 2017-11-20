@@ -1,6 +1,6 @@
-package core.selenium.webdrivers;
+package courses.core.selenium.webdrivers;
 
-import core.selenium.WebDriverConfig;
+import courses.core.selenium.WebDriverConfig;
 import java.util.HashMap;
 import java.util.Map;
 import org.openqa.selenium.WebDriver;

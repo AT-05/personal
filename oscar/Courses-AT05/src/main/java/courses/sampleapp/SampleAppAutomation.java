@@ -1,11 +1,11 @@
-package sampleapp;
+package courses.sampleapp;
 
-import core.selenium.WebDriverConfig;
-import core.selenium.WebDriverManager;
+import courses.core.selenium.WebDriverConfig;
+import courses.core.selenium.WebDriverManager;
 import java.io.File;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import sampleapp.config.SampleAppEnvsConfig;
+import courses.sampleapp.config.SampleAppEnvsConfig;
 
 
 public class SampleAppAutomation {
@@ -35,8 +35,7 @@ public class SampleAppAutomation {
   }
 
   public void startUp() throws Exception {
-    //WebDriverManager.getInstance().initialize(webDriverConfig);
-//        PageTransporter.getInstance().navigateToMainPage();
+    WebDriverManager.getInstance().initialize(webDriverConfig);
   }
 
   public void shutDown() throws Exception {

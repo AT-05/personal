@@ -1,6 +1,6 @@
-package core.selenium;
+package courses.core.selenium;
 
-import core.utils.JsonReader;
+import courses.core.utils.JsonReader;
 import java.io.File;
 import org.apache.log4j.Logger;
 
@@ -25,8 +25,10 @@ public class WebDriverConfig {
 
   private static final String webDriverConfigFilename =
       System.getProperty("user.dir") + File.separator + "driverConfig.json";
+
   protected WebDriverConfig() {
     initialize(webDriverConfigFilename);
+    log.info("WebDriverConfig constructor");
   }
 
   public static WebDriverConfig getInstance() {

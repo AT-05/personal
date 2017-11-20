@@ -1,4 +1,4 @@
-package sampleapp.ui;
+package courses.sampleapp.ui;
 
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
@@ -17,6 +17,9 @@ public class HomePage extends BasePageObject {
 
   @FindBy(linkText = "My Dashboard")
   WebElement title;
+
+  @FindBy(linkText = "Sign Out")
+  WebElement signout;
 
   /**
    * Constructor.
@@ -39,6 +42,14 @@ public class HomePage extends BasePageObject {
       return true;
     }
     return false;
+  }
+
+  /**
+   * Logout of the account.
+   */
+  public void logout(){
+    nameProfile.click();
+    signout.click();
   }
 
   @Override
