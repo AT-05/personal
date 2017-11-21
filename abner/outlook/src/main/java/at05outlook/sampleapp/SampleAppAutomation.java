@@ -36,7 +36,7 @@ public class SampleAppAutomation {
     }
 
     public void startUp() throws Exception {
-       // WebDriverManager.getInstance().initialize(webDriverConfig);
+        //WebDriverManager.getInstance().initialize(webDriverConfig);
        // PageTransporter.getInstance().navigateToLoginPage();
     }
 
