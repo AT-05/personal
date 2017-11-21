@@ -19,19 +19,28 @@ public class LoginUserStep {
   NextPage nextPage;
 
   @Given("^google mail page opened$")
-  public void navigateToCreateAccount() {
+  public void navigateToLoginAccount() {
     loginPage = PageTransporter.getInstance().navigateToLoginPage();
 
   }
+
   @When("^I fill the field email \"([^\"]*)\" and password \"([^\"]*)\"$")
-  public void fillFieldIdentifier(String email, String password) throws InterruptedException {
-    nextPage = loginPage. loginIdentifier(email);
-    inboxPage =nextPage.nextPassword(SampleAppEnvsConfig.getInstance().getUserPassword());
+  public void loginWithIdentifier(String email, String password) throws InterruptedException {
+    nextPage = loginPage.loginIdentifier(email);
+    inboxPage = nextPage.nextPassword(SampleAppEnvsConfig.getInstance().getUserPassword());
 
   }
 
   @Then("^should be displayed My Inbox page$")
   public void inboxAccount() throws Throwable {
     assertTrue(inboxPage.isInboxPage());
+  }
+
+  @Given("^I am logged to google mail$")
+  public void iAmLoggedToGoogleMail() throws Throwable {
+    if (!PageTransporter.getInstance().isOnInbox()) {      //if the user is logged
+      navigateToLoginAccount();
+      loginWithIdentifier(SampleAppEnvsConfig.getInstance().getUserName(), SampleAppEnvsConfig.getInstance().getUserPassword());
+    }
   }
 }
