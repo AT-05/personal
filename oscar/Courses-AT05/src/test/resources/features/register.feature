@@ -9,10 +9,11 @@ Feature: Register
     Then the Home page should be displayed
 
 
-  @Logout
+  @Logout @Course
   Scenario: User registered should be able to subscribe a free COURSE
     Given I navigate to Login page
-    And I login with email and password valid
+    And I navigate to Register page
+    And I register with first name, last name, email and password
     When I select a free COURSE
     And enroll for free in the COURSE
     Then the COURSE subscribe should be displayed in My Dashboard

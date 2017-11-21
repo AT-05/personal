@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
  */
 public class DashboardPage extends BasePageObject {
 
-  @FindBy(linkText = "Selenium WebDriver - Working with Elements")
+  @FindBy(css = "h4.course-card__title")
   WebElement nameCourse;
 
   public String getNameCourse(){

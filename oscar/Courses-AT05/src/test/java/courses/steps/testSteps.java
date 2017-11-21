@@ -68,7 +68,6 @@ public class testSteps {
   @When("^I register with first name, last name, email and password$")
   public void iRegisterWithFirstNameLastNameEmailAndPassword() throws Throwable {
     user = new User();
-    user.show();
     homePage = registerPage.registerUser(user.getFirstName(), user.getLastName(), user.getEmail(), user.getPassword());
   }
 
@@ -83,8 +82,6 @@ public class testSteps {
 
   @And("^I login with email and password valid$")
   public void iLoginWithEmailAndPasswordValid() {
-    user.show();
-    System.out.println("==========================");
     homePage = loginPage.enterCredentials(user.getEmail(), user.getPassword());
   }
 
