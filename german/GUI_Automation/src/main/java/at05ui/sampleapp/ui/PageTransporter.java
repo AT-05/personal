@@ -40,6 +40,9 @@ public class PageTransporter {
   public Boolean isOnWeb() {
     return (webDriver.getCurrentUrl().contains(baseURL));
   }
+  public Boolean isOnInbox() {
+    return (webDriver.getCurrentUrl().contains("inbox"));
+  }
 
   public LoginPage navigateToLoginPage() {
     goToURL(baseURL);
