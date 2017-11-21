@@ -55,18 +55,18 @@ public class EnvironmentConfig {
   }
 
   /**
-   * <p>This method gets the user name.</p>
+   * <p>This method returns the user name of the current environment.</p>
    *
-   * @return a user name.
+   * @return user name.
    */
   public String getUserName() {
     return userName;
   }
 
   /**
-   * <p>This method gets the user password.</p>
+   * <p>This method returns the user password of the current environment.</p>
    *
-   * @return a user password.
+   * @return user password.
    */
   public String getUserPassword() {
     return userPassword;

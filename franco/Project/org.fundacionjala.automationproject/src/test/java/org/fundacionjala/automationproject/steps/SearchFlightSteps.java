@@ -3,7 +3,9 @@ package org.fundacionjala.automationproject.steps;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.fundacionjala.automationproject.config.EnvironmentConfig;
 import org.fundacionjala.automationproject.ui.HomePage;
+import org.fundacionjala.automationproject.ui.MainPage;
 import org.fundacionjala.automationproject.ui.PageTransporter;
 import org.fundacionjala.automationproject.ui.ReservationPage;
 import static org.junit.Assert.assertTrue;
@@ -13,6 +15,7 @@ import static org.junit.Assert.assertTrue;
  */
 public class SearchFlightSteps {
   private PageTransporter pageTransporter;
+  private MainPage mainPage;
   private HomePage homePage;
   private ReservationPage reservationPage;
 
@@ -24,13 +27,27 @@ public class SearchFlightSteps {
   }
 
   /**
+   * <p>This method logs in to a setup user account.</p>
+   */
+  @And("^I log in to the application$")
+  public void iLogInToTheApplication() {
+    mainPage = pageTransporter.navigateToMainPage();
+
+    final String userName = EnvironmentConfig.getInstance().getUserName();
+    mainPage.setUserName(userName);
+
+    final String password = EnvironmentConfig.getInstance().getUserPassword();
+    mainPage.setPassword(password);
+    homePage = mainPage.login();
+  }
+
+  /**
    * <p>This method selects type of flight.</p>
    *
    * @param flight is the given type of flight.
    */
   @When("^I select the type of flight as \"([^\"]*)\"$")
   public void iSelectTheTypeOfFlightAs(String flight) {
-    homePage = pageTransporter.getHomePage();
     homePage.setFlightType(flight);
   }
 
@@ -58,7 +75,7 @@ public class SearchFlightSteps {
    * <p>This method selects departure date.</p>
    *
    * @param dMonth is the given departure month.
-   * @param dDay is the given departure day.
+   * @param dDay   is the given departure day.
    */
   @And("^I select as departure date \"([^\"]*)\", \"([^\"]*)\"$")
   public void iSelectAsDepartureDate(String dMonth, String dDay) {
@@ -79,7 +96,7 @@ public class SearchFlightSteps {
    * <p>This method selects return date.</p>
    *
    * @param rMonth is the given return month.
-   * @param rDay is the given return day.
+   * @param rDay   is the given return day.
    */
   @And("^I select as return date \"([^\"]*)\", \"([^\"]*)\"$")
   public void iSelectAsReturnDate(String rMonth, String rDay) {
@@ -110,7 +127,7 @@ public class SearchFlightSteps {
   /**
    * <p>This method checks flight search results correctness.</p>
    *
-   * @param origin is the given flight origin searched.
+   * @param origin      is the given flight origin searched.
    * @param destination is the given flight destination searched.
    */
   @Then("^I should have a result list of \"([^\"]*)\" to \"([^\"]*)\" flights$")

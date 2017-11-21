@@ -49,13 +49,47 @@ public class PurchasePage extends BasePage {
   @FindBy(name = "billCountry")
   private WebElement billingCountry;
 
-  @FindBy(xpath = "/html/body/div/table/tbody/tr/td[2]"
-    + "/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]"
-    + "/td/form/table/tbody/tr[13]/td[2]/input")
+  @FindBy(xpath = "/html/body/div/table/tbody/tr/td[2]/table/tbody"
+    + "/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[14]/td[2]/input")
   private WebElement deliveryAddressOption;
+
+  @FindBy(name = "delAddress1")
+  private WebElement deliveryAddress;
+
+  @FindBy(name = "delCity")
+  private WebElement deliveryCity;
+
+  @FindBy(name = "delState")
+  private WebElement deliveryState;
+
+  @FindBy(name = "delZip")
+  private WebElement deliveryPostalCode;
+
+  @FindBy(name = "delCountry")
+  private WebElement deliveryCountry;
 
   @FindBy(name = "buyFlights")
   private WebElement buyFlightOption;
+
+  /**
+   * <p>This method clears form fields.</p>
+   */
+  public void clearFields() {
+    passengerName.clear();
+    passengerLastName.clear();
+    creditCardNumber.clear();
+    ccFirstName.clear();
+    ccMiddletName.clear();
+    ccLastName.clear();
+    billingAddress.clear();
+    billingCity.clear();
+    billingState.clear();
+    billingPostalCode.clear();
+    deliveryAddress.clear();
+    deliveryCity.clear();
+    deliveryState.clear();
+    deliveryPostalCode.clear();
+  }
 
   /**
    * <p>This method fills the passenger's information.</p>
@@ -112,9 +146,23 @@ public class PurchasePage extends BasePage {
 
   /**
    * <p>This method sets the delivery address information.</p>
+   *
+   * @param dAddress is the delivery address.
+   * @param dCity is the delivery address city.
+   * @param dState is the delivery address state.
+   * @param dPostalCode is the delivery address zip.
+   * @param dCountry is the delivery address country.
+   *
    */
-  public void setDeliveryAddressInfo() {
-    deliveryAddressOption.sendKeys(Keys.SPACE);
+  public void setDeliveryAddressInfo(String dAddress, String dCity, String dState, String dPostalCode, String dCountry) {
+    //deliveryAddressOption.sendKeys(Keys.SPACE);
+    deliveryAddress.sendKeys(dAddress);
+    deliveryCity.sendKeys(dCity);
+    deliveryState.sendKeys(dState);
+    deliveryPostalCode.sendKeys(dPostalCode);
+    deliveryCountry.click();
+    Select country = new Select(deliveryCountry);
+    country.selectByVisibleText(dCountry);
   }
 
   /**

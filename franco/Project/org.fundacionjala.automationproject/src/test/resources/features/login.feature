@@ -9,5 +9,6 @@ Feature: Login
     Then I should login successfully
 
     Examples:
-      | Email_user | Password  |
-      | faldunate  | password1 |
+      | Email_user  | Password  |
+      | faldunate   | password1 |
+      | davidpotter | password2 |

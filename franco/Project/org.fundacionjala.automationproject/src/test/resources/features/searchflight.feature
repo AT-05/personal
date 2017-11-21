@@ -4,7 +4,7 @@ Feature: SearchFlight
 
   Background:
     Given I navigate to Main Page
-    And I login as "faldunate" with password "password1"
+    And I log in to the application
 
   @SmokeTest
   Scenario Outline: Search a flight

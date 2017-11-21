@@ -4,15 +4,8 @@ Feature: FlightReservation
 
   Background:
     Given I navigate to Main Page
-    And I login as "faldunate" with password "password1"
-    And I select the type of flight as "oneway"
-    And I choose flight for "1" passengers
-    And I choose as origin location "London"
-    And I select as departure date "December", "14"
-    And I select destination as "New York"
-    And I select as return date "February", "10"
-    And I choose "Business" as service class
-    And I select airline "Blue Skies Airlines"
+    And I log in to the application
+    And I search a flight as "oneway", "1" passenger, from "London", on "December" "14", to "New York" on "February", "10" in "Business" class and "Blue Skies Airlines"
 
   @SmokeTest
   Scenario Outline: Purchase a flight ticket
