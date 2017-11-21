@@ -15,7 +15,7 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
     /**
      * Starts the execution
      */
-    @Before
+    @BeforeTest
     public void beforeExecution() {
         try {
             //ToDo Review if this is executed only once
