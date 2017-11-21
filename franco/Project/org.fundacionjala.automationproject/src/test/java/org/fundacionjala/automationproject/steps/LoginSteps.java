@@ -67,6 +67,6 @@ public class LoginSteps {
    */
   @After(value = "@Login", order = 999)
   public void afterLoginScenario() {
-    //homePage.logOut();
+    homePage.logOut();
   }
 }
