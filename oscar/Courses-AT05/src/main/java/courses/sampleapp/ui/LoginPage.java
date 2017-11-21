@@ -18,7 +18,7 @@ public class LoginPage extends BasePageObject {
   @FindBy(id = "btn-signin")
   WebElement btnSignIn;
 
-  @FindBy(linkText =  "Create a new account")
+  @FindBy(linkText = "Create a new account")
   WebElement createUser;
 
   /**
@@ -78,9 +78,10 @@ public class LoginPage extends BasePageObject {
 
   /**
    * Enter to register page.
+   *
    * @return RegisterPage.
    */
-  public RegisterPage goToRegisterPage(){
+  public RegisterPage goToRegisterPage() {
     createUser.click();
     return new RegisterPage();
   }

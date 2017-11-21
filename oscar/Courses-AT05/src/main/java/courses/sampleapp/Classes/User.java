@@ -57,4 +57,8 @@ public class User {
   public String getPassword() {
     return password;
   }
+
+  public void show(){
+    System.out.println(String.format("Email: %s\nPassword: %s", email, password));
+  }
 }

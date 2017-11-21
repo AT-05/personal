@@ -21,6 +21,9 @@ public class HomePage extends BasePageObject {
   @FindBy(linkText = "Sign Out")
   WebElement signout;
 
+  @FindBy(xpath = "(//a[contains(text(),'View Course')])[3]")
+  WebElement btnSelenium;
+
   /**
    * Constructor.
    */
@@ -47,9 +50,19 @@ public class HomePage extends BasePageObject {
   /**
    * Logout of the account.
    */
-  public void logout(){
+  public void logout() {
     nameProfile.click();
     signout.click();
+  }
+
+  /**
+   * Select Selenium course.
+   *
+   * @return SeleniumPage.
+   */
+  public SeleniumPage clickSeleniumCourse() {
+    btnSelenium.click();
+    return new SeleniumPage();
   }
 
   @Override

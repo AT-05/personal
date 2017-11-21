@@ -8,10 +8,11 @@ Feature: Register
     When I register with first name, last name, email and password
     Then the Home page should be displayed
 
-#    Examples:
-#      | First_name    | Last_name     | Email_user       | Password     |
-#      | oscar         | oz            | oscar1@oscar.com | password123  |
 
-  Scenario: User registered be able to subscribe a free COURSE
+  @Logout
+  Scenario: User registered should be able to subscribe a free COURSE
     Given I navigate to Login page
-    When I login with email and password valid
+    And I login with email and password valid
+    When I select a free COURSE
+    And enroll for free in the COURSE
+    Then the COURSE subscribe should be displayed in My Dashboard
