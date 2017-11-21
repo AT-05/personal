@@ -78,4 +78,9 @@ public class LoginPage extends BasedPageObject {
   public boolean IsAmInLoginPage() {
     return webDriver.getTitle().equalsIgnoreCase("Login - My Store");
   }
+
+
+  public AuthenticationPage goToAuthenticationPage() {
+    return new AuthenticationPage();
+  }
 }

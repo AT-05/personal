@@ -40,6 +40,7 @@ public class SampleAppEnvsConfig {
         envReader = new JsonReader(sampleAppEnvsConfigFileName);
         url = envReader.getKeyValue(ENVIRONMENTS, ID, ENV_ID, URL);
         userName = envReader.getKeyValue(ENVIRONMENTS, ID, ENV_ID, USER_NAME);
+        System.out.println(userName+"*******************************************************************");
         userPassword = envReader.getKeyValue(ENVIRONMENTS, ID, ENV_ID, USER_PASSWORD);
     }
 

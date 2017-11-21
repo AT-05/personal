@@ -2,8 +2,9 @@
 Feature: editPersonalInfo
 
   Scenario Outline: this scenario update the information personal of an account
-    Given I navigate to login page and Sing In  with email "<Email_user>" and password "<oldPass>"
-    When I do click in Edit Personal Info
+    Given I navigate to login page
+    And I logIn with email "<Email_user>" and password "<oldPass>"
+    When I go to  Edit Personal Info
     And I edit my information with"<firstName>","<lastName>","<oldPass>","<pass>","<confirmation>","<Day>","<Month>","<year>"
     Then should be displayed Identify page
 

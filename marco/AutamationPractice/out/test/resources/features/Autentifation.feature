@@ -5,8 +5,7 @@ Feature: authentication
     When I put the new email
       | newEmail | pedro.pablo5@gmail.com |
     Then should be displayed create page
-
-
     Examples:
-      | pas | oasas |
-      | asa | as    |
+      | asdas   | asdads   |
+      | asdaxxs | asdxxads |
+

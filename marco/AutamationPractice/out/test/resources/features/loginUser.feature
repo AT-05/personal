@@ -8,7 +8,6 @@ Feature: loginUser
 
     Examples:
       | Email_user                           | Password           |
-      | marco.mendez15935@fundacion-jala.org | holamundo123456789 |
       | pedro.pablo@gmail.com                | holamundo123       |
       | pedro.pablo13@gmail.com              | holamundo123       |
       | pablo.escobar13@gmail.com            | holamundo123       |

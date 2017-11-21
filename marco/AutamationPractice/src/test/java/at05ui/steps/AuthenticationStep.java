@@ -25,7 +25,7 @@ public class AuthenticationStep {
 
   }
 
-  
+
   @When("^I put the new email$")
   public void iPutTheNewEmail(DataTable table) {
     List<List<String>> data = table.raw();

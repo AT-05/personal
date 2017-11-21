@@ -20,6 +20,7 @@ public class LoginUserStep {
   public void navigateToCreateAccount() {
     loginPage = PageTransporter.getInstance().navigateToLoginPage();
 
+
   }
 
   @When("^I fill the field email \"([^\"]*)\" and password \"([^\"]*)\"$")
@@ -37,5 +38,6 @@ public class LoginUserStep {
   public void logout() {
     myAccountPage.clickLogOut();
   }
+
 
 }

@@ -1,7 +1,7 @@
 package at05ui.runner;
 
 
-import at05ui.sampleapp.SampleAppAutomation;
+import at05ui.sampleapp.AutomationPracticeApp;
 import cucumber.api.java.Before;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.apache.log4j.Logger;
@@ -18,7 +18,7 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
     public void beforeExecution() {
         try {
             //ToDo Review if this is executed only once
-            SampleAppAutomation.getInstance().startUp();
+            AutomationPracticeApp.getInstance().startUp();
         } catch (Exception ex) {
             log.error("Exception in before execution", ex);
         }
@@ -31,7 +31,7 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
     @AfterTest
     public void afterExecution() {
         try {
-            SampleAppAutomation.getInstance().shutDown();
+            AutomationPracticeApp.getInstance().shutDown();
         } catch (Exception ex) {
             log.error("Exception in after execution", ex);
         }

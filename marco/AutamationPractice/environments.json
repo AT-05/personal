@@ -2,9 +2,9 @@
   "Environments": [
     {
       "id": "loginUser",
-      "url": "http://automationpractice.com/index.php?controller=my-account",
-      "user name": "marco",
-      "user password": "mendez"
+      "url": "http://automationpractice.com/index.php?controller=authentication&back=my-account",
+      "user name": "pedro.pablo@gmail.com ",
+      "user password": "holamundo123"
     }
   ]
 }

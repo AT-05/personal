@@ -15,6 +15,9 @@ public class MyAccountPage extends BasedPageObject {
   @FindBy(linkText = "My personal info")
   private WebElement editPersonalInfo;
 
+  @FindBy(linkText = "My addresses")
+  private WebElement myAddress;
+
   /**
    * Event click LogOut.
    */
@@ -47,5 +50,10 @@ public class MyAccountPage extends BasedPageObject {
   public EditPersonalInfoPage clickEditPersonalInfo() {
     editPersonalInfo.click();
     return new EditPersonalInfoPage();
+  }
+
+  public MyAddressPage goToMyAddress() {
+    myAddress.click();
+    return new MyAddressPage();
   }
 }

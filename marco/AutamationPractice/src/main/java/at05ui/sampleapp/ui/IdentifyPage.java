@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
  */
 public class IdentifyPage extends BasedPageObject {
 
-  @FindBy(className = "logOut")
+  @FindBy(className = "logout")
   private WebElement logOut;
 
   /**
