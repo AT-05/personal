@@ -10,7 +10,3 @@ Feature: Test
     Examples:
       | User Name                       | Subject       | Body    |
       | abner.mamani@fundacion-jala.org | Automation2    | Hello   |
-
-
-
-

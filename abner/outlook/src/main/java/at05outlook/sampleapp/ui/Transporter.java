@@ -7,9 +7,6 @@ import org.openqa.selenium.WebDriver;
 
 public class Transporter {
     static Transporter instance=null;
-   // private WebDriver myDriver;
-    //private String baseURL;//= SampleAppEnvsConfig.getInstance().getUrl();/*"https://outlook.office.com/";*/
-    //private String baseURL= "https://outlook.office.com/";
     private String baseURL = SampleAppEnvsConfig.getInstance().getUrl();
     private WebDriver webDriver = WebDriverManager.getInstance().getWebDriver();
 

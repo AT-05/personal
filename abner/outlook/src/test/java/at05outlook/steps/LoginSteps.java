@@ -18,55 +18,47 @@ public class LoginSteps {
 
 
 
-    public LoginSteps() throws Exception {
-        transporter=Transporter.getInstance();
+
+    public LoginSteps(HomePage homePage) throws Exception {
+        transporter = Transporter.getInstance();
+        this.homePage=homePage;
+
     }
 
 
     @Given("^I navigate to Login page$")
     public void navigateToLoginPage() {
-        loginPage = transporter.navigateToLoginPage();
+            loginPage = transporter.navigateToLoginPage();
     }
 
     @When("^I enter correct credentials, as user \"(.*?)\" and password \"(.*?)\"$")
     public void navigateToHomePage(String name, String password) throws InterruptedException {
-        homePage=loginPage.login(name, password);
+        homePage = loginPage.login(name, password);
     }
 
     @Then("^The inbox mail is open$")
-    public void inboxMailIsOpen(){
+    public void inboxMailIsOpen() throws Exception {
         assertTrue(homePage.isLoadPage(), "User displayed in Web");
+
     }
 
 
     @When("^I register whit my account$")
     public void registerWhitMyAccount() throws InterruptedException {
-        homePage=loginPage.login(SampleAppEnvsConfig.getInstance().getUserName(), SampleAppEnvsConfig.getInstance().getUserPassword());
-        //homePage=loginPage.login("https://outlook.office.com/", "Cream.com");
-    }
-
-    @When("^I go to send the new email$")
-    public void preparToSendEmail() throws InterruptedException {
-        homePage.goToSedEmail();
-        //homePage=loginPage.login("https://outlook.office.com/", "Cream.com");
-    }
-
-
-    @When("^I send an email to \"(.*?)\" whit the subject of \"(.*?)\" and body \"(.*?)\"$")
-    public void sendTheEmailTo(String email, String subject, String body) throws InterruptedException {
-        homePage.sendEmailTo(email, subject, body);
+        if (!(loginPage == null)) {
+            homePage = loginPage.login(SampleAppEnvsConfig.getInstance().getUserName(), SampleAppEnvsConfig.getInstance().getUserPassword());
+        }
     }
 
 
     @After(value = "@LogOut", order = 999)
-    public void afterLoginScenario() throws Exception {
+    public void afterLoginScenario()  {
         System.out.println("****************LogOut***********************");
-        logOutHomePage();
+        try {
+            homePage.logOut();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
-
-    private void logOutHomePage() throws Exception {
-        homePage.logOut();
-    }
-
 
 }

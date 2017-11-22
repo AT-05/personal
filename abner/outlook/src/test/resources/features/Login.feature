@@ -9,3 +9,4 @@ Feature: Email
     Examples:
       | User Name                       | Password     |
       | abner.mamani@fundacion-jala.org | Cream.com    |
+      | abner.mamani@fundacion-jala.org | Cream.com    |

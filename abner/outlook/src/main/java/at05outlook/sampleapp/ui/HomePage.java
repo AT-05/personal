@@ -23,7 +23,7 @@ public class HomePage extends BasedPageObject {
     @CacheLookup
     private WebElement subjectTxt;
 
-    @FindBy(className = "allowTextSelection _mcp_32")
+    @FindBy(xpath = "//div[starts-with(@class, 'allowTextSelection')  and starts-with(@role, 'textbox' ) ]")
     @CacheLookup
     private WebElement bodyText;
 
@@ -32,11 +32,11 @@ public class HomePage extends BasedPageObject {
     private WebElement idUserBtn;
 
 
-    @FindBy(id = "_ariaId_279")
+    @FindBy(id = "O365_SubLink_ShellSignout")
     private WebElement logOutBtn;
 
 
-    private WebElement receivedEmail;
+
 
 
     @FindBy(xpath = "//div[5]/div/div[2]/div/button")
@@ -80,23 +80,12 @@ public class HomePage extends BasedPageObject {
 
     }
 
-    public void logOut() throws Exception {
-        //SampleAppAutomation.getInstance().shutDown();
-    }
-
-    public void logOut2() {
-        System.out.println("***************************Buscando el boton");
-        //wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy( By.id("O365_MeFlexPane_ButtonID")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated( By.id("O365_MeFlexPane_ButtonID")));
-        System.out.println("Boton encontrado ");
-        idUserBtn.findElement(By.id("O365_MeFlexPane_ButtonID"));
-        //idUserBtn.findElement(By.xpath("//div[13]/div/div/button"));
+    public void logOut() {
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.id("O365_Lync_ButtonID")));
         idUserBtn.click();
-        System.out.println("----------------------Cerrando "+idUserBtn.getText());
-
-        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("toolbox-close")));
-        logOutBtn.findElement(By.id("toolbox-close"));
         logOutBtn.click();
 
     }
+
+
 }
