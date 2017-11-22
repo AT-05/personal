@@ -1,16 +1,17 @@
 package at05ui.steps;
 
 
-import static org.testng.Assert.assertTrue;
-
 import at05ui.sampleapp.config.SampleAppEnvsConfig;
 import at05ui.sampleapp.ui.InboxPage;
 import at05ui.sampleapp.ui.LoginPage;
 import at05ui.sampleapp.ui.NextPage;
 import at05ui.sampleapp.ui.PageTransporter;
+import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
+import static org.testng.Assert.assertTrue;
 
 public class LoginUserStep {
 
@@ -42,5 +43,17 @@ public class LoginUserStep {
       navigateToLoginAccount();
       loginWithIdentifier(SampleAppEnvsConfig.getInstance().getUserName(), SampleAppEnvsConfig.getInstance().getUserPassword());
     }
+  }
+
+  @After(value = "@Logout", order = 999)
+  public void afterLoginScenario() throws InterruptedException {
+    //log.info("After hook @Logout");
+    logOut();
+  }
+
+  public void logOut() throws InterruptedException {
+    inboxPage.logout();
+    Thread.sleep(3000);
+
   }
 }

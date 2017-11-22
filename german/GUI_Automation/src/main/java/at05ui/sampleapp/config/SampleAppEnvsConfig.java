@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 public class SampleAppEnvsConfig {
     private Logger log = Logger.getLogger(getClass());
 
-    private static final String ENV_ID = "featureExample";
+    private static final String ENV_ID = System.getProperty("envId");
 
     private static final String ENVIRONMENTS = "Environments";
     private static final String ID = "id";

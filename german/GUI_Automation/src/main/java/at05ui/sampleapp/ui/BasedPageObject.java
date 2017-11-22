@@ -15,7 +15,7 @@ public abstract class BasedPageObject {
   public BasedPageObject() {
     webDriver = WebDriverManager.getInstance().getWebDriver();
     wait = WebDriverManager.getInstance().getWait();
-    PageFactory.initElements(webDriver,this);
+    PageFactory.initElements(webDriver, this);
   }
 
   public abstract void waitPageIsLoaded() throws WebDriverException;

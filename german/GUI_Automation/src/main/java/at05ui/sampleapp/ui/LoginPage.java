@@ -4,37 +4,35 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.concurrent.TimeUnit;
-
 public class LoginPage extends BasedPageObject {
 
-  @FindBy(id="identifierId")
+  @FindBy(id = "identifierId")
   WebElement email;
 
-  @FindBy(id="Passwd")
+  @FindBy(id = "Passwd")
   WebElement password;
 
-  @FindBy(id="passwordNext")
+  @FindBy(id = "passwordNext")
   WebElement btnSignIn;
 
-  @FindBy(xpath="//span[@class='RveJvd snByac']")
+  @FindBy(xpath = "//span[@class='RveJvd snByac']")
   WebElement btnNext;
 
   public LoginPage() {
     super();
   }
 
-  private void setEmail(String email){
+  private void setEmail(String email) {
     this.email.clear();
     this.email.sendKeys(email);
-   // btnNext.click();
+    // btnNext.click();
   }
 
-  private void clickNextBtn(){
+  private void clickNextBtn() {
     btnNext.click();
   }
 
-  public NextPage loginIdentifier(String email){
+  public NextPage loginIdentifier(String email) {
     setEmail(email);
     clickNextBtn();
     return new NextPage();
