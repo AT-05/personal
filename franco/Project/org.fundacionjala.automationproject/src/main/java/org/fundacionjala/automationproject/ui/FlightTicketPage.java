@@ -37,6 +37,5 @@ public class FlightTicketPage extends BasePage {
   public boolean verifyBillInfo(String totalPriceInput) {
     final String totalPriceValue = totalPrice.getText();
     return totalPriceValue.equals(totalPriceInput);
-    //return billedTo.getText().equals(arg0);
   }
 }

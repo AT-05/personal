@@ -14,7 +14,7 @@ import static org.junit.Assert.assertTrue;
  * Created by Franco Aldunate on 11/15/2017.
  */
 public class FlightReservationSteps {
-  private PageTransporter pageTransporter;
+  private final PageTransporter pageTransporter;
   private HomePage homePage;
   private ReservationPage reservationPage;
   private PurchasePage purchasePage;

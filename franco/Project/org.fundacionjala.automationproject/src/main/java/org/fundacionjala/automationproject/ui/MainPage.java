@@ -83,6 +83,11 @@ public class MainPage extends BasePage {
     return new HomePage();
   }
 
+  /**
+   * <p>This method sends to user registration page.</p>
+   *
+   * @return a UserRegistrationPage object type.
+   */
   public UserRegistrationPage goToRegistrationPage() {
     registerUserLink.click();
     return new UserRegistrationPage();

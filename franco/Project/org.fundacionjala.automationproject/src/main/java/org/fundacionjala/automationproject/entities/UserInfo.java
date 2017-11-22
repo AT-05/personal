@@ -41,6 +41,8 @@ public class UserInfo {
 
   /**
    * <p>This method sets the user info map.</p>
+   *
+   * @param userInfoMap is a map.
    */
   public void setUserInfo(Map<String, String> userInfoMap) {
     userInfo = userInfoMap;

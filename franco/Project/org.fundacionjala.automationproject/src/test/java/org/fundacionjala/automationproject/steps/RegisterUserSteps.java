@@ -1,6 +1,6 @@
 package org.fundacionjala.automationproject.steps;
 
-import org.fundacionjala.automationproject.entities.*;
+import org.fundacionjala.automationproject.entities.UserInfo;
 import static org.junit.Assert.assertTrue;
 
 import cucumber.api.DataTable;
@@ -24,31 +24,43 @@ public class RegisterUserSteps {
   private final UserInfo userInfo;
 
   /**
-   * <p>This constructor gets page transporter instance.</p>
+   * <p>This constructor gets page transporter instance
+   * and receives an entity class.</p>
+   *
+   * @param userInfo is an entity class.
    */
   public RegisterUserSteps(UserInfo userInfo) {
     pageTransporter = PageTransporter.getInstance();
     this.userInfo = userInfo;
   }
 
+  /**
+   * <p>This method navigates to main page
+   * and sends to registration page.</p>
+   */
   @Given("^I navigate to Registration Page$")
   public void iNavigateToRegistrationPage() {
     mainPage = pageTransporter.getMainPage();
     userRegistrationPage = mainPage.goToRegistrationPage();
   }
 
+  /**
+   * <p>This method navigates to main page.</p>
+   *
+   * @param userInfoTable is a DataTable object type.
+   */
   @When("^I fill user info with$")
   public void iFillUserInfoWith(DataTable userInfoTable) {
     Map<String, String> userInfoMap = userInfoTable.asMap(String.class, String.class);
-    userRegistrationPage.fillUserContactInfoForm(userInfoMap);
-    userRegistrationPage.fillUserMailingInfoForm(userInfoMap);
-    userRegistrationPage.fillUserInfoForm(userInfoMap);
     userInfo.setUserInfo(userInfoMap);
+    userConfirmationPage = userRegistrationPage.registerUser(userInfo.getUserInfo());
   }
 
+  /**
+   * <p>This method checks for user confirmation message compliance.</p>
+   */
   @Then("^I should see a user registered confirmation message$")
   public void iShouldSeeAUserRegisteredConfirmationMessage() {
-    userConfirmationPage = userRegistrationPage.registerUser();
     assertTrue(userConfirmationPage.confirmationMessageIsDisplayed(userInfo));
   }
 }

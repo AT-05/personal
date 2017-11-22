@@ -13,7 +13,7 @@ public class AddressInfo {
   public static final String ZIP = "zip";
   public static final String COUNTRY = "country";
 
-  private Map<String, String> addressInfo;
+  private final Map<String, String> addressInfo;
 
   /**
    * <p>This constructor initializes the map.</p>

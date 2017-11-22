@@ -19,6 +19,13 @@ public class BillingAddressSteps {
   private final PurchasePage purchasePage;
   private final AddressInfo addressInfo;
 
+  /**
+   * <p>This constructor gets page transporter instance
+   * and receives an entity and page type classes.</p>
+   *
+   * @param addressInfo is an entity class.
+   * @param purchasePage is a page type class.
+   */
   public BillingAddressSteps(AddressInfo addressInfo, PurchasePage purchasePage) {
     this.addressInfo = addressInfo;
     this.purchasePage = purchasePage;
@@ -50,6 +57,9 @@ public class BillingAddressSteps {
     addressInfo.addField(COUNTRY, aCountry);
   }
 
+  /**
+   * <p>This method checks if the delivery address form is filled.</p>
+   */
   @Then("^I should see the billing address form filled$")
   public void iShouldSeeTheBillingAddressFormFilled() {
     assertTrue(purchasePage.billingAddressFormIsFilled());

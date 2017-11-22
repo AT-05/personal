@@ -1,7 +1,6 @@
 package org.fundacionjala.automationproject.automation;
 
 import java.io.File;
-import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.fundacionjala.automationproject.config.EnvironmentConfig;
 import org.fundacionjala.automationproject.webdriver.WebDriverConfig;
@@ -11,9 +10,8 @@ import org.fundacionjala.automationproject.webdriver.WebDriverManager;
  * Created by Franco Aldunate on 11/14/2017.
  */
 public final class Automation {
-  private final Logger log = Logger.getLogger(getClass());
-  private WebDriverConfig webDriverConfig;
-  private EnvironmentConfig environmentConfig;
+  private final WebDriverConfig webDriverConfig;
+  private final EnvironmentConfig environmentConfig;
 
   private static final String WEB_DRIVER_CONFIG_FILENAME
     = System.getProperty("user.dir") + File.separator + "driverConfig.json";

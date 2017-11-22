@@ -18,5 +18,5 @@ Feature: FlightReservation
     Then I should have a flight confirmation document with total price "<Total-price>"
 
     Examples:
-      | Departure-flight | Return-flight | FName  | LName    | Meal        | Card-type | Credit-Card      | COFName | COMName  | COLName | Address | City      | State | P-code | Country       | Total-price |
-      | 1                | 1             | Franco | Aldunate | Low Calorie | Visa      | 4539021054099252 | Raul    | Aldunate | Cordero | Street1 | San Diego | CA    | 22434  | UNITED STATES | $588 USD    |
+      | Departure-flight | Return-flight | FName  | LName    | Meal        | Card-type | Credit-Card      | COFName | COMName  | COLName | Total-price |
+      | 1                | 1             | Franco | Aldunate | Low Calorie | Visa      | 4539021054099252 | Raul    | Aldunate | Cordero | $588 USD    |

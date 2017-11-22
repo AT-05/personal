@@ -176,7 +176,11 @@ public class PurchasePage extends BasePage {
    * @param dPostalCode is the delivery address zip.
    * @param dCountry    is the delivery address country.
    */
-  public void setDeliveryAddressInfo(String dAddress, String dCity, String dState, String dPostalCode, String dCountry) {
+  public void setDeliveryAddressInfo(String dAddress,
+                                     String dCity,
+                                     String dState,
+                                     String dPostalCode,
+                                     String dCountry) {
     deliveryAddress.sendKeys(dAddress);
     deliveryCity.sendKeys(dCity);
     deliveryState.sendKeys(dState);
