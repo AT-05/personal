@@ -18,31 +18,20 @@ public class hooks {
   }
 
 
-  @After(value = "@AddNewAddress", order = 999)
-  public void addNewAddressLogout() {
-    System.out.println("*****************hello **************");
-    myAddressPage.clickLogOut();
-    System.out.println("*****************world **************");
-  }
-
-  @After(value = "@Login", order = 999)
-  public void loginPageLogout() {
-    myAccountPage.clickLogOut();
-  }
-
-  @After(value = "@CreateAccount", order = 999)
-  public void createAccountPageLogout() {
-    myAccountPage.clickLogOut();
-  }
-
-  @After(value = "@DeleteAddress", order = 999)
-  public void deleteAddressLogout() {
+  @After(value = "@DeleteAddress", order = 998)
+  public void loOutFromMyAddressPage() {
     myAddressPage.clickLogOut();
   }
 
+  @After(value =  ("@Login,@CreateAccount"), order = 999)
+  public void loOutFromMyAccountPage() {
+    myAccountPage.clickLogOut();
+  }
 
   @After(value = "@EditInfo", order = 999)
-  public void editInfoLogout() {
+  public void loOutFromIdentifyPage() {
     identifyPage.clickSingOut();
   }
+
+
 }

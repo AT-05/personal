@@ -6,6 +6,7 @@ import static org.testng.Assert.assertTrue;
 import at05ui.sampleapp.ui.LoginPage;
 import at05ui.sampleapp.ui.MyAccountPage;
 import at05ui.sampleapp.ui.PageTransporter;
+import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -17,6 +18,7 @@ public class LoginUserStep {
 
   private LoginPage loginPage;
   private MyAccountPage myAccountPage;
+
 
   @Given("^I navigate to login page$")
   public void navigateToCreateAccount() {

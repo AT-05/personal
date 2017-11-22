@@ -61,4 +61,8 @@ public class MyAccountPage extends BasedPageObject {
     myAddress.click();
     return new MyAddressPage();
   }
+
+  public MyOrderPage goToMyOrderPage() {
+    return new MyOrderPage();
+  }
 }
