@@ -1,6 +1,6 @@
-@Login
-Feature: loginUser
 
+Feature: loginUser
+  @Login
   Scenario Outline: this scenario verify the  users login
     Given I navigate to login page
     When I fill the field email "<Email_user>" and password "<Password>"

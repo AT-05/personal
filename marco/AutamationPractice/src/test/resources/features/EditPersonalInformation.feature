@@ -1,6 +1,6 @@
-@EditInfo
-Feature: editPersonalInfo
 
+Feature: editPersonalInfo
+  @EditInfo
   Scenario Outline: this scenario update the information personal of an account
     Given I navigate to login page
     And I logIn with email "<Email_user>" and password "<oldPass>"

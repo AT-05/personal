@@ -6,14 +6,15 @@ import at05ui.sampleapp.ui.EditPersonalInfoPage;
 import at05ui.sampleapp.ui.IdentifyPage;
 import at05ui.sampleapp.ui.LoginPage;
 import at05ui.sampleapp.ui.MyAccountPage;
-import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+/**
+ * Class step EditPersonalInfo.
+ */
 public class EditPersonalInfo {
 
-  //private IndexPage indexPage;
   private LoginPage loginPage;
   private MyAccountPage myAccountPage;
   private EditPersonalInfoPage editPersonalInfoPage;
@@ -38,18 +39,14 @@ public class EditPersonalInfo {
   @And("^I edit my information with\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
   public void iEditMyInformationWith(String firstName, String lastName, String oldPass, String pass,
       String confirmation, int dia, int month, String year) {
-    editPersonalInfoPage.setNewInfo(firstName, lastName, oldPass, pass, confirmation, dia, month, year);
+    editPersonalInfoPage
+        .setNewInfo(firstName, lastName, oldPass, pass, confirmation, dia, month, year);
     identifyPage = editPersonalInfoPage.clickSave();
   }
 
   @Then("^should be displayed Identify page$")
   public void shouldBeDisplayedMyAccountPageWithMyInformationChange() {
     assertTrue(identifyPage.IAmInIdentifyPage());
-  }
-
-  @After(value = "@EditInfo", order = 999)
-  public void logout() {
-    identifyPage.clickSingOut();
   }
 
 

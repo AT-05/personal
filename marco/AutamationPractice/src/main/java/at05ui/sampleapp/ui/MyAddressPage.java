@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+/**
+ * Class My Address Page.
+ */
 public class MyAddressPage extends BasedPageObject {
 
   @FindBy(xpath = "//div[@id='center_column']/div/a/span")
@@ -17,8 +20,13 @@ public class MyAddressPage extends BasedPageObject {
   @FindBy(className = "logout")
   private WebElement logOut;
 
-  private boolean deleteAddress = false;
+  private boolean deleteAddress;
 
+  /**
+   * This method return AddNewAddress.
+   *
+   * @return new AddNewAddress.
+   */
   public AddNewAddressPage goToAddNewAddress() {
     btnAddNewAddress.click();
     return new AddNewAddressPage();
@@ -29,22 +37,28 @@ public class MyAddressPage extends BasedPageObject {
 
   }
 
-  public boolean IAmMyAccount() {
+  /**
+   * Check if you are in MyAccountPage
+   *
+   * @return boolean.
+   */
+  public boolean IAmMyAccountPage() {
     return webDriver.getTitle().trim().equalsIgnoreCase("Addresses - My Store");
   }
 
+  /**
+   * EventClick delete an address.
+   */
   public void deleteAnAddress() {
     delete.click();
-    try {
-      Thread.sleep(5000);
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    }
     checkAlert();
 
   }
 
-  public void checkAlert() {
+  /**
+   * Check if is present the Alert.
+   */
+  private void checkAlert() {
     try {
       wait.until(ExpectedConditions.alertIsPresent());
       Alert alert = webDriver.switchTo().alert();
@@ -55,11 +69,16 @@ public class MyAddressPage extends BasedPageObject {
     }
   }
 
+  /**
+   * Check if an deleted.
+   */
   public boolean deleteAddress() {
     return deleteAddress;
   }
 
-
+  /**
+   * Event click for logOut.
+   */
   public void clickLogOut() {
     logOut.click();
   }

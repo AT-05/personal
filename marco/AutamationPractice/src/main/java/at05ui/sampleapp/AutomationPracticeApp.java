@@ -37,7 +37,6 @@ public class AutomationPracticeApp {
 
   public void startUp() throws Exception {
     WebDriverManager.getInstance().initialize(webDriverConfig);
-//        PageTransporter.getInstance().navigateToLoginPage();
   }
 
   public void shutDown() throws Exception {

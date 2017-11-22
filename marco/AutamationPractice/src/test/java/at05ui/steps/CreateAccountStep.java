@@ -6,11 +6,13 @@ import at05ui.sampleapp.ui.AuthenticationPage;
 import at05ui.sampleapp.ui.CreateAccountPage;
 import at05ui.sampleapp.ui.LoginPage;
 import at05ui.sampleapp.ui.MyAccountPage;
-import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+/**
+ * Class step createAccount.
+ */
 public class CreateAccountStep {
 
   private AuthenticationPage authenticationPage;
@@ -19,6 +21,11 @@ public class CreateAccountStep {
 
   private LoginPage loginPage;
 
+  /**
+   * Constructor loginPage.
+   *
+   * @param loginPage class login.
+   */
   public CreateAccountStep(LoginPage loginPage) {
     this.loginPage = loginPage;
   }
@@ -40,7 +47,10 @@ public class CreateAccountStep {
   @And("^also with the following address information \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\" and also \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
   public void alsoWithTheFollowingAddressInformationAndAlso(String firsNameAddress,
       String lastNameAddress, String company, String address, String city, int state,
-      String postalCode, String country, String phone) { createAccountPage.setYourAddress(firsNameAddress, lastNameAddress, company, address, city, state, postalCode, country, phone);
+      String postalCode, String country, String phone) {
+    createAccountPage
+        .setYourAddress(firsNameAddress, lastNameAddress, company, address, city, state, postalCode,
+            country, phone);
     myAccountPage = createAccountPage.clickRegister();
   }
 
@@ -48,11 +58,6 @@ public class CreateAccountStep {
   public void shouldBeHomePageDisplayed() {
     assertTrue(myAccountPage.IAmMyAccount());
 
-  }
-
-  @After(value = "@CreateAccount", order = 999)
-  public void logout() {
-    myAccountPage.clickLogOut();
   }
 
 

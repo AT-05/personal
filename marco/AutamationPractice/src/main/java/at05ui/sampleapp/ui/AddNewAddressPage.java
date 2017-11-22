@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+/**
+ * Class AddNewAddressPage.
+ */
 public class AddNewAddressPage extends BasedPageObject {
 
 
@@ -23,7 +26,6 @@ public class AddNewAddressPage extends BasedPageObject {
 
   @FindBy(id = "city")
   private WebElement city;
-
 
   private Select state;
 
@@ -44,11 +46,21 @@ public class AddNewAddressPage extends BasedPageObject {
   @FindBy(id = "submitAddress")
   private WebElement btnSave;
 
+  /**
+   * Event click for Save date.
+   *
+   * @return new MyAddressPage.
+   */
   public MyAddressPage clickBtnSave() {
     btnSave.click();
     return new MyAddressPage();
   }
 
+  /**
+   * Set the field Alias.
+   *
+   * @param alias string.
+   */
   private void setAlias(String alias) {
     this.alias.clear();
     this.alias.sendKeys(alias);
@@ -151,8 +163,23 @@ public class AddNewAddressPage extends BasedPageObject {
     this.firsNameAddress.sendKeys(firsNameAddress);
   }
 
+  /**
+   * Set the info for new Address.
+   *
+   * @param firstName firsName.
+   * @param lastName lastName.
+   * @param company company.
+   * @param address address.
+   * @param city city.
+   * @param state state.
+   * @param postal postal code.
+   * @param country country.
+   * @param phoneHome string phone home.
+   * @param phoneMobile string phone mobile.
+   * @param alias string alias.
+   */
   public void setNewAddress(String firstName, String lastName, String company, String address,
-      String city, int state, String postale, String country, String phoneHome, String phoneMobile,
+      String city, int state, String postal, String country, String phoneHome, String phoneMobile,
       String alias) {
     setFirsNameAddress(firstName);
     setLastNameAddress(lastName);
@@ -160,7 +187,7 @@ public class AddNewAddressPage extends BasedPageObject {
     setAddress(address);
     setCity(city);
     setState(state);
-    setPostalCode(postale);
+    setPostalCode(postal);
     setCountry(country);
     setPhoneHome(phoneHome);
     setPhoneMobile(phoneMobile);

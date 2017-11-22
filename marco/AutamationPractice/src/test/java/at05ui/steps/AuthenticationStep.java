@@ -11,6 +11,9 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import java.util.List;
 
+/**
+ * Step Authentication.
+ */
 public class AuthenticationStep {
 
   private AuthenticationPage authenticationPage;
@@ -34,9 +37,7 @@ public class AuthenticationStep {
 
   @Then("^should be displayed create page$")
   public void shouldBeCreatePageDisplayed() {
-
     assertTrue(createAccountPage.IAmCreateAccountPage());
-
 
   }
 

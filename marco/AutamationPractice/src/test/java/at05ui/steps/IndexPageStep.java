@@ -9,6 +9,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+/**
+ * Class Step IndexPage.
+ */
 public class IndexPageStep {
 
   private IndexPage indexPage;
@@ -20,7 +23,7 @@ public class IndexPageStep {
   }
 
   @When("^I press the option Sign In$")
-  public void iPressTheOptionSignIn()  {
+  public void iPressTheOptionSignIn() {
     loginPag = indexPage.clickSingIn();
   }
 

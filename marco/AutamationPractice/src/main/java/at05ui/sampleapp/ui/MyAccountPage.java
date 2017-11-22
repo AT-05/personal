@@ -52,6 +52,11 @@ public class MyAccountPage extends BasedPageObject {
     return new EditPersonalInfoPage();
   }
 
+  /**
+   * This method goes to My address page.
+   *
+   * @return New MAddressPage.
+   */
   public MyAddressPage goToMyAddress() {
     myAddress.click();
     return new MyAddressPage();

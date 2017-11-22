@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="at05ui.runner.RunCukesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-11-22T14:05:24" hostname="at05w1" time="26.676">
+<testsuite name="at05ui.runner.RunCukesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-11-22T15:04:44" hostname="at05w1" time="26.155">
   <properties/>
-  <testcase name="feature[0](AddNewAddress)" classname="at05ui.runner.RunCukesTest" time="26.676"/>
-  <system-out><![CDATA[@AddNewAddress
-Feature: AddNewAddress
+  <testcase name="feature[0](AddNewAddress)" classname="at05ui.runner.RunCukesTest" time="26.155"/>
+  <system-out><![CDATA[Feature: AddNewAddress
 
-  Scenario Outline: Add a new Address to your Address list.         ?[90m# features/AddNewAddress.feature:4?[0m
+  @AddNewAddress
+  Scenario Outline: Add a new Address to your Address list.         ?[90m# features/AddNewAddress.feature:3?[0m
     ?[36mGiven ?[0m?[36mI navigate to login page?[0m
     ?[36mAnd ?[0m?[36mI logIn with email "<Email_user>" and password "<Password>"?[0m
     ?[36mWhen ?[0m?[36mI go to Add new Address page?[0m
@@ -91,9 +91,11 @@ java.lang.NullPointerException
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.lang.Thread.run(Thread.java:748)
 Initialize the page transporter
+*****************hello **************
+*****************world **************
 
   @AddNewAddress
-  Scenario Outline: Add a new Address to your Address list.                      ?[90m# features/AddNewAddress.feature:26?[0m
+  Scenario Outline: Add a new Address to your Address list.                      ?[90m# features/AddNewAddress.feature:25?[0m
     ?[32mGiven ?[0m?[32mI navigate to login page?[0m                                               ?[90m# LoginUserStep.navigateToCreateAccount()?[0m
     ?[32mAnd ?[0m?[32mI logIn with email "?[0m?[32m?[1mpedro.pablo17@gmail.com?[0m?[32m" and password "?[0m?[32m?[1mholamundo123?[0m?[32m"?[0m ?[90m# EditPersonalInfo.iRegisterWithEmailAndPassword(String,String)?[0m
     ?[32mWhen ?[0m?[32mI go to Add new Address page?[0m                                            ?[90m# AddNewAddressStep.iGoToAddNewAddress()?[0m
@@ -103,9 +105,9 @@ Initialize the page transporter
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 40742
+Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 11046
 Only local connections are allowed.
-Nov 22, 2017 10:05:28 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 22, 2017 11:04:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ]]></system-err>
 </testsuite>

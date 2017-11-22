@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+/**
+ * Class index Page.
+ */
 public class IndexPage extends BasedPageObject {
 
   @FindBy(className = "login")

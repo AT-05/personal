@@ -27,12 +27,9 @@ public class EditPersonalInfoPage extends BasedPageObject {
   @FindBy(id = "passwd")
   private WebElement password;
 
-
   private Select dropdownDay;
 
-
   private Select dropdownMonth;
-
 
   private Select dropdownYear;
 

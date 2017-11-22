@@ -1,6 +1,5 @@
-@AddNewAddress
 Feature: AddNewAddress
-
+  @AddNewAddress
   Scenario Outline: Add a new Address to your Address list.
     Given I navigate to login page
     And  I logIn with email "<Email_user>" and password "<Password>"
@@ -16,10 +15,9 @@ Feature: AddNewAddress
       | country     | 21               |
       | phoneHome   | 77884632         |
       | phoneMobile | 72282814         |
-      | alias       | My office3       |
+      | alias       | My office7       |
 
     Then should be displayed My Address page
-
 
     Examples:
       | Email_user              | Password     |

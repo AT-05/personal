@@ -1,7 +1,6 @@
-@CreateAccount
+
 Feature: createNewAccount
-
-
+  @CreateAccount
   Scenario Outline: A scenario
     Given I navigate to login page
     And I authenticate new email"<email>"
