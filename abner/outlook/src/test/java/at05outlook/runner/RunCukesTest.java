@@ -8,7 +8,9 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-
+/**
+ * Management the run test
+ */
 public class RunCukesTest extends AbstractTestNGCucumberTests {
     private static Logger log = Logger.getLogger("RunCukesTest");
 

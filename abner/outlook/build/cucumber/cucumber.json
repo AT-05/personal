@@ -1,0 +1,403 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#"
+      },
+      {
+        "line": 2,
+        "value": "#This feature is still in process, it is not finished"
+      },
+      {
+        "line": 3,
+        "value": "#"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
+        "line": 16,
+        "name": "Delete an email",
+        "description": "",
+        "id": "test;delete-an-email;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 15876781800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterLoginScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12152092100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I navigate to Login page",
+            "match": {
+              "location": "LoginSteps.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9571176600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I register whit my account",
+            "match": {
+              "location": "LoginSteps.registerWhitMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64198523000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I delete an email whit the subject of \"Automation2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Automation2",
+                  "offset": 39
+                }
+              ],
+              "location": "SendEmailSteps.deleteAnEmailWhitTheSubjectOf(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2148300,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat at05outlook.steps.SendEmailSteps.verifyThatTheMailHasDelete(SendEmailSteps.java:50)\r\n\tat ✽.Then verify that the mail has delete(features/DeleteAnEmail.feature:12)\r\n",
+              "status": "pending"
+            },
+            "line": 12,
+            "name": "verify that the mail has delete",
+            "match": {
+              "location": "SendEmailSteps.verifyThatTheMailHasDelete()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@LogOut"
+          }
+        ]
+      }
+    ],
+    "name": "Test",
+    "description": "",
+    "id": "test",
+    "keyword": "Feature",
+    "uri": "features/DeleteAnEmail.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 11,
+        "name": "The user must register with their credentials",
+        "description": "",
+        "id": "email;the-user-must-register-with-their-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 19379449900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterLoginScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4213581500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Login page",
+            "match": {
+              "location": "LoginSteps.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4526629200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter correct credentials, as user \"abner.mamani@fundacion-jala.org\" and password \"Cream.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abner.mamani@fundacion-jala.org",
+                  "offset": 38
+                },
+                {
+                  "val": "Cream.com",
+                  "offset": 85
+                }
+              ],
+              "location": "LoginSteps.navigateToHomePage(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1118261600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The inbox mail is open",
+            "match": {
+              "location": "LoginSteps.inboxMailIsOpen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@LogOut"
+          },
+          {
+            "line": 1,
+            "name": "@Email"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "The user must register with their credentials",
+        "description": "",
+        "id": "email;the-user-must-register-with-their-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 22077810000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterLoginScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3249629600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to Login page",
+            "match": {
+              "location": "LoginSteps.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14795350500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter correct credentials, as user \"abner.mamani@fundacion-jala.org\" and password \"Cream.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abner.mamani@fundacion-jala.org",
+                  "offset": 38
+                },
+                {
+                  "val": "Cream.com",
+                  "offset": 85
+                }
+              ],
+              "location": "LoginSteps.navigateToHomePage(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47147800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The inbox mail is open",
+            "match": {
+              "location": "LoginSteps.inboxMailIsOpen()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@LogOut"
+          },
+          {
+            "line": 1,
+            "name": "@Email"
+          }
+        ]
+      }
+    ],
+    "name": "Email",
+    "description": "",
+    "id": "email",
+    "keyword": "Feature",
+    "uri": "features/Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Email"
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Send an email with the registered user account",
+        "description": "",
+        "id": "test-send-an-email;send-an-email-with-the-registered-user-account;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 8765008600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterLoginScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 673042800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I navigate to Login page",
+            "match": {
+              "location": "LoginSteps.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30046891100,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"i0116\"}\n  (Session info: chrome\u003d62.0.3202.94)\n  (Driver info: chromedriver\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform\u003dWindows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.7.1\u0027, revision: \u00278a0099a\u0027, time: \u00272017-11-06T21:01:39.354Z\u0027\nSystem info: host: \u0027AT05ABMA01\u0027, ip: \u002710.28.108.200\u0027, os.name: \u0027Windows Server 2012 R2\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\\Users\\ADMINI~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 62.0.3202.94, webStorageEnabled: true}\nSession ID: 0b63ed9c8007c4c03c0250fd4db99a54\n*** Element info: {Using\u003did, value\u003di0116}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:218)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy24.clear(Unknown Source)\r\n\tat at05outlook.sampleapp.ui.LoginPage.setUserName(LoginPage.java:58)\r\n\tat at05outlook.sampleapp.ui.LoginPage.login(LoginPage.java:48)\r\n\tat at05outlook.steps.LoginSteps.registerWhitMyAccount(LoginSteps.java:51)\r\n\tat ✽.When I register whit my account(features/SendEmail.feature:5)\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "I register whit my account",
+            "match": {
+              "location": "LoginSteps.registerWhitMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I go to send the new email",
+            "match": {
+              "location": "SendEmailSteps.preparToSendEmail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I send an email to \"abner.mamani@fundacion-jala.org\" whit the subject of \"Automation2\" and body \"Hello\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abner.mamani@fundacion-jala.org",
+                  "offset": 20
+                },
+                {
+                  "val": "Automation2",
+                  "offset": 74
+                },
+                {
+                  "val": "Hello",
+                  "offset": 97
+                }
+              ],
+              "location": "SendEmailSteps.sendTheEmailTo(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "verify that the mail has arrived",
+            "match": {
+              "location": "SendEmailSteps.verifyThatTheMailHasArrived()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@LogOut"
+          }
+        ]
+      }
+    ],
+    "name": "Test send an email",
+    "description": "",
+    "id": "test-send-an-email",
+    "keyword": "Feature",
+    "uri": "features/SendEmail.feature"
+  }
+]

@@ -11,18 +11,21 @@ import cucumber.api.java.en.When;
 
 import static org.testng.Assert.assertTrue;
 
+/**
+ * Steps to management a login to email
+ */
 public class LoginSteps {
     private Transporter transporter;
     private LoginPage loginPage;
     private HomePage homePage;
 
-
-
-
+    /**
+     * The constructor of objects with dependency injection.
+     * @param homePage is Page element.
+     */
     public LoginSteps(HomePage homePage) throws Exception {
         transporter = Transporter.getInstance();
         this.homePage=homePage;
-
     }
 
 
@@ -39,7 +42,6 @@ public class LoginSteps {
     @Then("^The inbox mail is open$")
     public void inboxMailIsOpen() throws Exception {
         assertTrue(homePage.isLoadPage(), "User displayed in Web");
-
     }
 
 
@@ -50,15 +52,5 @@ public class LoginSteps {
         }
     }
 
-
-    @After(value = "@LogOut", order = 999)
-    public void afterLoginScenario()  {
-        System.out.println("****************LogOut***********************");
-        try {
-            homePage.logOut();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
 }

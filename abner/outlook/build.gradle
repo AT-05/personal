@@ -37,6 +37,7 @@ tasks.withType(Test) {
 
     // Define the custom properties to run the regression
     systemProperty "browserName", browserName
+    systemProperty "envid", envid
 }
 
 task executeFeatures(type: Test) {
