@@ -12,7 +12,12 @@ public class DashboardPage extends BasePageObject {
   @FindBy(css = "h4.course-card__title")
   WebElement nameCourse;
 
-  public String getNameCourse(){
+  /**
+   * This method get the name of the course.
+   *
+   * @return as a string.
+   */
+  public String getNameCourse() {
     return nameCourse.getText();
   }
 

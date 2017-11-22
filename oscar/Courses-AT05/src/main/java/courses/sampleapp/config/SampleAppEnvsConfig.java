@@ -2,12 +2,14 @@ package courses.sampleapp.config;
 
 import courses.core.utils.JsonReader;
 import org.apache.log4j.Logger;
+import org.bridj.ann.Optional;
 
 public class SampleAppEnvsConfig {
 
   private Logger log = Logger.getLogger(getClass());
 
-  private static final String ENV_ID = "Test1";
+  //private static final String ENV_ID = "Test1";
+  private static final String ENV_ID = System.getProperty("env_id");
 
   private static final String ENVIRONMENTS = "Environments";
   private static final String ID = "id";
@@ -24,7 +26,6 @@ public class SampleAppEnvsConfig {
   private static SampleAppEnvsConfig instance;
 
   protected SampleAppEnvsConfig() {
-
   }
 
   public static SampleAppEnvsConfig getInstance() {

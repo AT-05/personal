@@ -63,6 +63,7 @@ tasks.withType(Test) {
 
     // Define the custom properties to run the regression
     systemProperty "browserName", browserName
+    systemProperty "env_id", env_id
 }
 
 task executeFeatures(type: Test) {
@@ -77,3 +78,7 @@ task executeFeatures(type: Test) {
                            cucumberOptions]
     }
 }
+
+
+
+

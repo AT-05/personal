@@ -12,7 +12,12 @@ public class SeleniumCourse extends BasePageObject {
   @FindBy(linkText = "Dashboard")
   WebElement btnDashboard;
 
-  public DashboardPage goToDashboard(){
+  /**
+   * Go to dashboard page.
+   *
+   * @return DashboardPage.
+   */
+  public DashboardPage goToDashboard() {
     btnDashboard.click();
     return new DashboardPage();
   }

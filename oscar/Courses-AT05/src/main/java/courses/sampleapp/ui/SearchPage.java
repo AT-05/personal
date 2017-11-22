@@ -17,6 +17,11 @@ public class SearchPage extends BasePageObject {
   public void waitUntilPageObjectIsLoaded() throws WebDriverException {
   }
 
+  /**
+   * This method return the name of the course.
+   *
+   * @return as a string.
+   */
   public String getNameCourse() {
     return nameCourse.getText();
   }

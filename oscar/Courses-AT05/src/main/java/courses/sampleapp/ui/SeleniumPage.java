@@ -12,7 +12,12 @@ public class SeleniumPage extends BasePageObject {
   @FindBy(linkText = "Enroll for free")
   WebElement btnEnrroll;
 
-  public SeleniumCourse enrrollSeleniumCourse(){
+  /**
+   * This method made a click in the enroll button.
+   *
+   * @return SeleniumCourse.
+   */
+  public SeleniumCourse enrollSeleniumCourse() {
     btnEnrroll.click();
     return new SeleniumCourse();
   }

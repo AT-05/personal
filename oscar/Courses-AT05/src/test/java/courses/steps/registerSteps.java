@@ -54,7 +54,7 @@ public class registerSteps {
 
   @And("^enroll for free in the COURSE$")
   public void enrollForFreeInTheCOURSE() {
-    seleniumCourse = seleniumPage.enrrollSeleniumCourse();
+    seleniumCourse = seleniumPage.enrollSeleniumCourse();
   }
 
   @Then("^the COURSE subscribe should be displayed in My Dashboard$")

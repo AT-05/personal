@@ -17,6 +17,12 @@ public class AllCoursesPage extends BasePageObject {
   public void waitUntilPageObjectIsLoaded() throws WebDriverException {
   }
 
+  /**
+   * This method write name of a course in the field for search.
+   *
+   * @param nameCourse as a string.
+   * @return SearchPage.
+   */
   public SearchPage searchCourse(String nameCourse) {
     searchTextBox.sendKeys(nameCourse);
     searchTextBox.sendKeys(Keys.ENTER);

@@ -1,10 +1,22 @@
 {
-  	"Environments": [
-		{
-			"id": "Test1",
-			"url":"https://courses.ultimateqa.com",
-			"user name":"",
-			"user password":""
-		}
-	]
+  "Environments": [
+    {
+      "id": "Test1",
+      "url": "https://courses.ultimateqa.com",
+      "user name": "",
+      "user password": ""
+    },
+    {
+      "id": "Test2",
+      "url": "https://courses.uuuuultimateqa.com",
+      "user name": "",
+      "user password": ""
+    },
+    {
+      "id": "Test3",
+      "url": "https://google.com",
+      "user name": "",
+      "user password": ""
+    }
+  ]
 }

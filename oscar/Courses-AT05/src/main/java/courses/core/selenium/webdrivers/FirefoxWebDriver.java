@@ -26,19 +26,13 @@ public class FirefoxWebDriver implements IWebDriver {
   public static FirefoxWebDriver getInstance() {
     if (instance == null) {
       instance = new FirefoxWebDriver();
-      FirefoxDriverManager.getInstance().version("").setup();
-      //System.setProperty("webdriver.firefox.marionette","pathToGeckodriver");
-      //System.setProperty("webdriver.gecko.driver","pathToGeckodriver");
-
-      ProfilesIni allProfiles = new ProfilesIni();
+/*      ProfilesIni allProfiles = new ProfilesIni();
       FirefoxProfile profile = allProfiles.getProfile("default");
       DesiredCapabilities capabilities = DesiredCapabilities.firefox();
       capabilities.setCapability("marionette", false);
       capabilities.setCapability(FirefoxDriver.PROFILE, profile);
-      driver = new FirefoxDriver(capabilities);
-      //driver = new FirefoxDriver();
-      //wait = new WebDriverWait(driver, driverConfig.getExplicitWaitTime(), driverConfig.getWaitSleepTime());
-      wait = new WebDriverWait(driver, 10);
+      driver = new FirefoxDriver();
+      wait = new WebDriverWait(driver, 10);*/
     }
     return instance;
   }
@@ -52,8 +46,8 @@ public class FirefoxWebDriver implements IWebDriver {
   public WebDriver initDriver() {
     FirefoxDriverManager.getInstance().setup();
     driver = new FirefoxDriver();
-    driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-    wait = new WebDriverWait(driver, 30, 500);
+//    driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+//    wait = new WebDriverWait(driver, 30, 500);
     return driver;
   }
 

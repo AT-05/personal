@@ -10,6 +10,11 @@ public class Hooks {
 
   private HomePage homePage;
 
+  /**
+   * Constructor.
+   *
+   * @param homePage as a HomePage.
+   */
   public Hooks(HomePage homePage) {
     this.homePage = homePage;
   }
@@ -22,5 +27,4 @@ public class Hooks {
     System.out.println("\nAfter hook @Logout");
     homePage.logout();
   }
-
 }
