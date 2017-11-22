@@ -6,6 +6,7 @@ import org.fundacionjala.automationproject.utils.JsonReader;
  * Created by Franco Aldunate on 11/14/2017.
  */
 public class EnvironmentConfig {
+  //private static final String ENV_ID = System.getProperty("currentEnvironment");
   private static final String ENV_ID = "Env1";
   private static final String ENVIRONMENTS = "Environments";
   private static final String ID = "id";

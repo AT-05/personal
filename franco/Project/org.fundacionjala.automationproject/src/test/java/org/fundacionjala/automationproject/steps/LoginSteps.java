@@ -14,7 +14,7 @@ import static org.junit.Assert.assertTrue;
  * Created by Franco Aldunate on 11/15/2017.
  */
 public class LoginSteps {
-  private PageTransporter pageTransporter;
+  private final PageTransporter pageTransporter;
   private MainPage mainPage;
   private HomePage homePage;
   private Automation automation;

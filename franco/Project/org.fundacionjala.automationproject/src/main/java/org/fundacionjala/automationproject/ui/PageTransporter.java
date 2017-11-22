@@ -80,6 +80,16 @@ public class PageTransporter {
   }
 
   /**
+   * <p>This method sends to Main Page.</p>
+   *
+   * @return a MainPage object type.
+   */
+  public MainPage getMainPage() {
+    goToURL(getCurrentURL());
+    return new MainPage();
+  }
+
+  /**
    * <p>This method sends to Home Page.</p>
    *
    * @return a HomePage object type.
@@ -97,5 +107,15 @@ public class PageTransporter {
   public ReservationPage getReservationPage() {
     goToURL(getCurrentURL());
     return new ReservationPage();
+  }
+
+  /**
+   * <p>This method sends to Purchase Page.</p>
+   *
+   * @return a PurchasePage object type.
+   */
+  public PurchasePage getPurchasePage() {
+    goToURL(getCurrentURL());
+    return new PurchasePage();
   }
 }

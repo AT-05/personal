@@ -1,6 +1,5 @@
 package org.fundacionjala.automationproject.ui;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -49,10 +48,6 @@ public class PurchasePage extends BasePage {
   @FindBy(name = "billCountry")
   private WebElement billingCountry;
 
-  @FindBy(xpath = "/html/body/div/table/tbody/tr/td[2]/table/tbody"
-    + "/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[14]/td[2]/input")
-  private WebElement deliveryAddressOption;
-
   @FindBy(name = "delAddress1")
   private WebElement deliveryAddress;
 
@@ -72,30 +67,22 @@ public class PurchasePage extends BasePage {
   private WebElement buyFlightOption;
 
   /**
-   * <p>This method clears form fields.</p>
+   * <p>This method clears passengers form fields.</p>
    */
-  public void clearFields() {
+  public void clearPassengersFormFields() {
     passengerName.clear();
     passengerLastName.clear();
     creditCardNumber.clear();
     ccFirstName.clear();
     ccMiddletName.clear();
     ccLastName.clear();
-    billingAddress.clear();
-    billingCity.clear();
-    billingState.clear();
-    billingPostalCode.clear();
-    deliveryAddress.clear();
-    deliveryCity.clear();
-    deliveryState.clear();
-    deliveryPostalCode.clear();
   }
 
   /**
    * <p>This method fills the passenger's information.</p>
    *
-   * @param name is the passenger name.
-   * @param lastName is the passenger last name.
+   * @param name      is the passenger name.
+   * @param lastName  is the passenger last name.
    * @param mealInput is the passenger meal preference.
    */
   public void setPassengerInfo(String name, String lastName, String mealInput) {
@@ -109,11 +96,11 @@ public class PurchasePage extends BasePage {
   /**
    * <p>This method fills the credit card information.</p>
    *
-   * @param cardType is the credit card type.
+   * @param cardType   is the credit card type.
    * @param cardNumber is the credit card number.
-   * @param fName is the credit card owner name.
-   * @param mName is the credit card owner middle name.
-   * @param lName is the credit card owner last name.
+   * @param fName      is the credit card owner name.
+   * @param mName      is the credit card owner middle name.
+   * @param lName      is the credit card owner last name.
    */
   public void setCreditCardInfo(String cardType, String cardNumber, String fName, String mName, String lName) {
     creditCardType.click();
@@ -126,13 +113,23 @@ public class PurchasePage extends BasePage {
   }
 
   /**
+   * <p>This method clears billing address form fields.</p>
+   */
+  public void clearBillingAddressFormFields() {
+    billingAddress.clear();
+    billingCity.clear();
+    billingState.clear();
+    billingPostalCode.clear();
+  }
+
+  /**
    * <p>This method fills the billing address information.</p>
    *
-   * @param bAddress is the billing address.
-   * @param bCity is the billing address city.
-   * @param bState is the billing address state.
+   * @param bAddress    is the billing address.
+   * @param bCity       is the billing address city.
+   * @param bState      is the billing address state.
    * @param bPostalCode is the billing address zip.
-   * @param bCountry is the billing address country.
+   * @param bCountry    is the billing address country.
    */
   public void setBillingAddressInfo(String bAddress, String bCity, String bState, String bPostalCode, String bCountry) {
     billingAddress.sendKeys(bAddress);
@@ -145,17 +142,41 @@ public class PurchasePage extends BasePage {
   }
 
   /**
+   * <p>This method checks if billing address form is not empty.</p>
+   *
+   * @return whether the form is empty or not.
+   */
+  public boolean billingAddressFormIsFilled() {
+    boolean result = false;
+    if (!billingAddress.getText().equals("")
+      && !billingCity.getText().equals("")
+      && !billingState.getText().equals("")
+      && !billingPostalCode.getText().equals("")) {
+      result = true;
+    }
+    return result;
+  }
+
+  /**
+   * <p>This method clears delivery address form fields.</p>
+   */
+  public void clearDeliveryAddressFormFields() {
+    deliveryAddress.clear();
+    deliveryCity.clear();
+    deliveryState.clear();
+    deliveryPostalCode.clear();
+  }
+
+  /**
    * <p>This method sets the delivery address information.</p>
    *
-   * @param dAddress is the delivery address.
-   * @param dCity is the delivery address city.
-   * @param dState is the delivery address state.
+   * @param dAddress    is the delivery address.
+   * @param dCity       is the delivery address city.
+   * @param dState      is the delivery address state.
    * @param dPostalCode is the delivery address zip.
-   * @param dCountry is the delivery address country.
-   *
+   * @param dCountry    is the delivery address country.
    */
   public void setDeliveryAddressInfo(String dAddress, String dCity, String dState, String dPostalCode, String dCountry) {
-    //deliveryAddressOption.sendKeys(Keys.SPACE);
     deliveryAddress.sendKeys(dAddress);
     deliveryCity.sendKeys(dCity);
     deliveryState.sendKeys(dState);
@@ -163,6 +184,22 @@ public class PurchasePage extends BasePage {
     deliveryCountry.click();
     Select country = new Select(deliveryCountry);
     country.selectByVisibleText(dCountry);
+  }
+
+  /**
+   * <p>This method checks if delivery address form is not empty.</p>
+   *
+   * @return whether the form is empty or not.
+   */
+  public boolean deliveryAddressFormIsFilled() {
+    boolean result = false;
+    if (!deliveryAddress.getText().equals("")
+      && !deliveryCity.getText().equals("")
+      && !deliveryState.getText().equals("")
+      && !deliveryPostalCode.getText().equals("")) {
+      result = true;
+    }
+    return result;
   }
 
   /**

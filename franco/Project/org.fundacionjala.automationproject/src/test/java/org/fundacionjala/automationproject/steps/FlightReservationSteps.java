@@ -1,11 +1,8 @@
 package org.fundacionjala.automationproject.steps;
 
-import static org.fundacionjala.automationproject.entities.AddressInfo.*;
-
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.fundacionjala.automationproject.entities.AddressInfo;
 import org.fundacionjala.automationproject.ui.FlightTicketPage;
 import org.fundacionjala.automationproject.ui.HomePage;
 import org.fundacionjala.automationproject.ui.PageTransporter;
@@ -23,13 +20,10 @@ public class FlightReservationSteps {
   private PurchasePage purchasePage;
   private FlightTicketPage flightTicketPage;
 
-  AddressInfo addressInfo;
-
   /**
    * <p>This constructor gets page transporter instance.</p>
    */
-  public FlightReservationSteps(AddressInfo addressInfo) {
-    this.addressInfo = addressInfo;
+  public FlightReservationSteps() {
     pageTransporter = PageTransporter.getInstance();
   }
 
@@ -104,7 +98,7 @@ public class FlightReservationSteps {
   @And("^I fill the passengers' information with name \"([^\"]*)\", last name \"([^\"]*)\", and meal \"([^\"]*)\"$")
   public void iFillThePassengersInformationWithNameLastNameAndMeal(String name, String lName, String meal) {
     purchasePage = reservationPage.reserveFlight();
-    purchasePage.clearFields();
+    purchasePage.clearPassengersFormFields();
     purchasePage.setPassengerInfo(name, lName, meal);
   }
 
@@ -129,53 +123,13 @@ public class FlightReservationSteps {
   }
 
   /**
-   * <p>This method fills the billing address information.</p>
-   *
-   * @param address  is the given billing address.
-   * @param aCity    is the given billing address city.
-   * @param aState   is the given billing address state.
-   * @param aZip     is the given billing address postal code.
-   * @param aCountry is the given billing address country.
-   */
-  @And("^I fill billing address info with address \"([^\"]*)\", "
-    + "city \"([^\"]*)\", state \"([^\"]*)\", postal code \"([^\"]*)\""
-    + " and country \"([^\"]*)\"$")
-  public void iFillBillingAddressInfoWithAddressCityStatePostalCodeAndCountry(String address,
-                                                                              String aCity,
-                                                                              String aState,
-                                                                              String aZip,
-                                                                              String aCountry) {
-    purchasePage.setBillingAddressInfo(address, aCity, aState, aZip, aCountry);
-    addressInfo.addField(ADDRESS, address);
-    addressInfo.addField(CITY, aCity);
-    addressInfo.addField(STATE, aState);
-    addressInfo.addField(ZIP, aZip);
-    addressInfo.addField(COUNTRY, aCountry);
-  }
-
-  /**
-   * <p>This method fills the delivery address information.</p>
-   */
-  @And("^I fill delivery address with same info as billing address$")
-  public void iFillDeliveryAddressWithSameInfoAsBillingAddress() {
-    //purchasePage.setDeliveryAddressInfo();
-    purchasePage.setDeliveryAddressInfo(
-      addressInfo.getAddressInfo().get(ADDRESS),
-      addressInfo.getAddressInfo().get(CITY),
-      addressInfo.getAddressInfo().get(STATE),
-      addressInfo.getAddressInfo().get(ZIP),
-      addressInfo.getAddressInfo().get(COUNTRY));
-
-    flightTicketPage = purchasePage.buyFlight();
-  }
-
-  /**
    * <p>This method checks billing information total price.</p>
    *
    * @param totalPrice is the purchase total price.
    */
   @Then("^I should have a flight confirmation document with total price \"([^\"]*)\"$")
   public void iShouldHaveAFlightConfirmationDocumentWithTotalPrice(String totalPrice) {
+    flightTicketPage = purchasePage.buyFlight();
     assertTrue(flightTicketPage.verifyBillInfo(totalPrice));
   }
 }

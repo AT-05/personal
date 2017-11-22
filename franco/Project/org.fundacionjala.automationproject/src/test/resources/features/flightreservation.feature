@@ -13,8 +13,8 @@ Feature: FlightReservation
     And I select "<Return-flight>" as return flight
     And I fill the passengers' information with name "<FName>", last name "<LName>", and meal "<Meal>"
     And I fill the credit card info with type "<Card-type>", number "<Credit-Card>", first name "<COFName>", middle name "<COMName>" and last name "<COLName>"
-    And I fill billing address info with address "<Address>", city "<City>", state "<State>", postal code "<P-code>" and country "<Country>"
-    And I fill delivery address with same info as billing address
+    And I fill billing address info with address "Street1", city "San Diego", state "CA", postal code "22434" and country "UNITED STATES"
+    And I fill delivery address info
     Then I should have a flight confirmation document with total price "<Total-price>"
 
     Examples:

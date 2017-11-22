@@ -131,6 +131,7 @@ public class JsonReader {
    * @return the key value.
    */
   public String getKeyValue(String objectName, String idKey, String idValue, String key) {
+    System.out.println("*************Environment: " + idValue + " idKey: " + idKey);
     JSONObject jsonObject = getJsonObjectFromArrayById(objectName, idKey, idValue);
     return getKeyValueFromJsonObject(jsonObject, key);
   }

@@ -17,6 +17,9 @@ public class MainPage extends BasePage {
   @FindBy(name = "login")
   private WebElement logInButton;
 
+  @FindBy(linkText = "REGISTER")
+  private WebElement registerUserLink;
+
   private String usernameInput;
   private String passwordInput;
 
@@ -78,6 +81,11 @@ public class MainPage extends BasePage {
     fillPassword();
     logInButton.click();
     return new HomePage();
+  }
+
+  public UserRegistrationPage goToRegistrationPage() {
+    registerUserLink.click();
+    return new UserRegistrationPage();
   }
 
   /**
