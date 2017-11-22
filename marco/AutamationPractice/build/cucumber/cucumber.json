@@ -1,1 +1,209 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5461940600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "RunCukesTest.beforeExecution()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Add a new Address to your Address list.",
+        "description": "",
+        "id": "addnewaddress;add-a-new-address-to-your-address-list.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1918291100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AddNewAddressStep.logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8338469200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to login page",
+            "match": {
+              "location": "LoginUserStep.navigateToCreateAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2788957200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I logIn with email \"pedro.pablo17@gmail.com\" and password \"holamundo123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pedro.pablo17@gmail.com",
+                  "offset": 20
+                },
+                {
+                  "val": "holamundo123",
+                  "offset": 59
+                }
+              ],
+              "location": "EditPersonalInfo.iRegisterWithEmailAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4268308100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to Add new Address page",
+            "match": {
+              "location": "AddNewAddressStep.iGoToAddNewAddress()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3776758800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I add new Address with the following fields",
+            "match": {
+              "location": "AddNewAddressStep.iAddNewAddressWithTheFollowingFields(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "Marticus"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "lopez"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "company",
+                  "MonkeySoft"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "address",
+                  "B/tierras nuevas"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "city",
+                  "santa cruz"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "state",
+                  "3"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "postal",
+                  "00000"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "country",
+                  "21"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "phoneHome",
+                  "77884632"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "phoneMobile",
+                  "72282814"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "alias",
+                  "My office3"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8491400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "should be displayed My Address page",
+            "match": {
+              "location": "AddNewAddressStep.shouldBeDisplayedMyAddressPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@AddNewAddress"
+          }
+        ]
+      }
+    ],
+    "name": "AddNewAddress",
+    "description": "",
+    "id": "addnewaddress",
+    "keyword": "Feature",
+    "uri": "features/AddNewAddress.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AddNewAddress"
+      }
+    ]
+  }
+]

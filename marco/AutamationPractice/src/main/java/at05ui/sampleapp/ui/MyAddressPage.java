@@ -5,15 +5,17 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MyAddressPage extends BasedPageObject {
 
-  @FindBy(xpath = "//div[@id='center_column']/div[2]/a/span")
+  @FindBy(xpath = "//div[@id='center_column']/div/a/span")
   private WebElement btnAddNewAddress;
 
   @FindBy(xpath = "//div[@id='center_column']/div/div/div/ul/li[9]/a[2]/span")
   private WebElement delete;
+
+  @FindBy(className = "logout")
+  private WebElement logOut;
 
   private boolean deleteAddress = false;
 
@@ -44,8 +46,6 @@ public class MyAddressPage extends BasedPageObject {
 
   public void checkAlert() {
     try {
-      deleteAddress = false;
-      WebDriverWait wait = new WebDriverWait(webDriver, 2);
       wait.until(ExpectedConditions.alertIsPresent());
       Alert alert = webDriver.switchTo().alert();
       alert.accept();
@@ -57,5 +57,10 @@ public class MyAddressPage extends BasedPageObject {
 
   public boolean deleteAddress() {
     return deleteAddress;
+  }
+
+
+  public void clickLogOut() {
+    logOut.click();
   }
 }

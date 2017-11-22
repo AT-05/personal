@@ -1,3 +1,4 @@
+@DeleteAddress
 Feature: AddNewAddress
 
   Scenario Outline: Add a new Address to your Address list.

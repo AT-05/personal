@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import at05ui.sampleapp.ui.MyAccountPage;
 import at05ui.sampleapp.ui.MyAddressPage;
+import cucumber.api.java.After;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -28,4 +29,9 @@ public class DeleteAnAddress {
   public void shouldBeDisplayedActualizeMyAddressPage()  {
     assertTrue(myAddressPage.deleteAddress());
   }
+  @After(value = "@DeleteAddress", order = 999)
+  public void logout() {
+    myAddressPage.clickLogOut();
+  }
+
 }

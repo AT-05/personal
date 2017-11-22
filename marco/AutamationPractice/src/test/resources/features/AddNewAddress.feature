@@ -1,3 +1,4 @@
+@AddNewAddress
 Feature: AddNewAddress
 
   Scenario Outline: Add a new Address to your Address list.
@@ -15,7 +16,7 @@ Feature: AddNewAddress
       | country     | 21               |
       | phoneHome   | 77884632         |
       | phoneMobile | 72282814         |
-      | alias       | My office9       |
+      | alias       | My office3       |
 
     Then should be displayed My Address page
 
