@@ -1,4 +1,0 @@
-2017-11-22 19:17:59 INFO  WebDriverConfig:36 - Read the driver configuration settings
-2017-11-22 19:17:59 INFO  SampleAppEnvsConfig:39 - -----Read the credentials-----
-2017-11-22 19:18:00 INFO  WebDriverManager:36 - Initializing web driver
-2017-11-22 19:21:30 INFO  WebDriverManager:65 - Quit driver
