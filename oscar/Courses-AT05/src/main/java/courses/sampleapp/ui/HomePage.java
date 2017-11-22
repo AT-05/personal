@@ -1,5 +1,6 @@
 package courses.sampleapp.ui;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,6 +24,11 @@ public class HomePage extends BasePageObject {
 
   @FindBy(xpath = "(//a[contains(text(),'View Course')])[3]")
   WebElement btnSelenium;
+
+  @FindBy(linkText = "C# For QA Automation Engineers with Selenium Webdriver")
+  WebElement btnCourse;
+
+  WebElement webElement;
 
   /**
    * Constructor.
@@ -59,9 +65,13 @@ public class HomePage extends BasePageObject {
    * Select Selenium course.
    *
    * @return SeleniumPage.
+   * @param nameCourse
    */
-  public SeleniumPage clickSeleniumCourse() {
-    btnSelenium.click();
+  public SeleniumPage clickSeleniumCourse(String nameCourse) {
+    String cad = String.format("//h4[text()[contains(.,\"%s\")]]", nameCourse);
+    //webElement = driver.findElement(By.xpath("//h4[text()[contains(.,\"C# For QA Automation Engineers with Selenium Webdriver\")]]"));
+    webElement = driver.findElement(By.xpath(cad));
+    webElement.click();
     return new SeleniumPage();
   }
 

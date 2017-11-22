@@ -12,6 +12,9 @@ public class PrincipalPage extends BasePageObject {
   @FindBy(css = "a.my-account")
   WebElement btnSignIn;
 
+  @FindBy(xpath = "//a[contains(text(),'All Courses')]")
+  WebElement btnAllCourses;
+
   /**
    * Constructor
    */
@@ -41,5 +44,24 @@ public class PrincipalPage extends BasePageObject {
   @Override
   public void waitUntilPageObjectIsLoaded() throws WebDriverException {
 
+  }
+
+  /**
+   * This method go to All Courses page.
+   *
+   * @return AllCoursesPage.
+   */
+  public AllCoursesPage goToAllCoursesPage() {
+    return clickAllCoursesBtn();
+  }
+
+  /**
+   * Made a click over the button all courses.
+   *
+   * @return AllCouresPAge.
+   */
+  private AllCoursesPage clickAllCoursesBtn() {
+    btnAllCourses.click();
+    return new AllCoursesPage();
   }
 }

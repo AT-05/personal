@@ -1,4 +1,4 @@
-package courses.sampleapp.Classes;
+package courses.sampleapp.entities;
 
 /**
  * Created by Administrator on 11/20/2017.

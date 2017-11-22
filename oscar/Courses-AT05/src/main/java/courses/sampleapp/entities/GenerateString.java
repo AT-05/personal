@@ -1,4 +1,4 @@
-package courses.sampleapp.Classes;
+package courses.sampleapp.entities;
 
 import java.util.Random;
 
@@ -7,9 +7,9 @@ import java.util.Random;
  */
 public class GenerateString {
 
-  private static String NUMBERS = "0123456789";
+  private static final String NUMBERS = "0123456789";
   //  private static String LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  private static String LETTERS = "abcdefghijklmnopqrstuvwxyz";
+  private static final String LETTERS = "abcdefghijklmnopqrstuvwxyz";
 
   /**
    * This method generate a string of numbers and letters.
