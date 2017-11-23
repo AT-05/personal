@@ -6,7 +6,7 @@ import org.fundacionjala.automationproject.utils.JsonReader;
  * Created by Franco Aldunate on 11/16/2017.
  */
 public class WebDriverConfig {
-  private static final String BROWSER = "browser";
+  //private static final String BROWSER = "browser";
   private static final String DRIVER = "web driver";
   private static final String IMPLICIT_WAIT_TIME = "implicit wait time";
   private static final String EXPLICIT_WAIT_TIME = "explicit wait time";
@@ -14,7 +14,7 @@ public class WebDriverConfig {
 
   private JsonReader configReader;
 
-  private final String browser = System.getProperty("browserName");;
+  private String browser = System.getProperty("browserName");
   private int implicitWaitTime;
   private int explicitWaitTime;
   private int waitSleepTime;

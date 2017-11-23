@@ -1,26 +1,16 @@
 @RegisterUser
-Feature: RegisterUser
+Feature: Register User
   Test successfully registration of user
 
   Background:
     Given I navigate to Main Page
 
   @SmokeTest
-  Scenario: Register a user in the web page
-    Given I navigate to Registration Page
+  Scenario: Verify that is possible to register a user in the application
+    Given I select Registration option in Menu
     When I fill user info with
 
-      | FirstName | Roberto                |
-      | LastName  | Fuentes                |
-      | Phone     | 54332154               |
-      | Email     | robfuentes@hotmail.com |
-      | Address   | Street277              |
-      | City      | Cochabamba             |
-      | State     | Cercado                |
-      | Zip       | 65362                  |
-      | Country   | BOLIVIA                |
-      | Username  | rfuentes               |
-      | Password  | password3              |
+      | firstName | lastName | phone    | email                  | address   | city       | state   | zip   | country | userName | password  |
+      | Roberto   | Fuentes  | 54332154 | robfuentes@hotmail.com | Street277 | Cochabamba | Cercado | 65362 | BOLIVIA | rfuentes | password3 |
 
     Then I should see a user registered confirmation message
-

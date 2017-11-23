@@ -1,10 +1,7 @@
 package org.fundacionjala.automationproject.ui;
 
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_NAME;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_NICKNAME;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_LAST_NAME;
-
-import org.fundacionjala.automationproject.entities.UserInfo;
+import java.util.List;
+import org.fundacionjala.automationproject.entities.User;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,19 +22,24 @@ public class UserConfirmationPage extends BasePage {
    * <p>this method shows user info displayed
    * as part of user registration result message.</p>
    *
-   * @param userInfo is an entity class that holds user
+   * @param userList is a list of User entity object type that holds user
    *                 registration info.
    * @return the displayed user info message.
    */
-  private String userInfoDisplayed(UserInfo userInfo) {
-    final String userName = userInfo.getUserInfo().get(USER_NAME);
-    final String userLastName = userInfo.getUserInfo().get(USER_LAST_NAME);
-    StringBuilder result = new StringBuilder();
-    result.append("Dear ")
-      .append(userName)
-      .append(" ")
-      .append(userLastName)
-      .append(",");
+  private String userInfoDisplayed(List<User> userList) {
+    String firstName;
+    String lastName;
+    final StringBuilder result = new StringBuilder();
+
+    for (User userItem : userList) {
+      firstName = userItem.getFirstName();
+      lastName = userItem.getLastName();
+      result.append("Dear ")
+        .append(firstName)
+        .append(" ")
+        .append(lastName)
+        .append(",");
+    }
     return result.toString();
   }
 
@@ -45,31 +47,35 @@ public class UserConfirmationPage extends BasePage {
    * <p>this method shows user nick name displayed
    * as part of user registration result message.</p>
    *
-   * @param userInfo is an entity class that holds user
+   * @param userList is a list of User entity object type that holds user
    *                 registration info.
    * @return the displayed user nick name message.
    */
-  private String userNickNameDisplayed(UserInfo userInfo) {
-    final String nickName = userInfo.getUserInfo().get(USER_NICKNAME);
-    StringBuilder result = new StringBuilder();
-    result.append("Note: Your user name is ")
-      .append(nickName)
-      .append(".");
+  private String userNickNameDisplayed(List<User> userList) {
+    String userName;
+    final StringBuilder result = new StringBuilder();
+
+    for (User userItem : userList) {
+      userName = userItem.getUserName();
+      result.append("Note: Your user name is ")
+        .append(userName)
+        .append(".");
+    }
     return result.toString();
   }
 
   /**
    * <p>This method checks user registration result message compliance.</p>
    *
-   * @param userInfo is an entity class that holds user
+   * @param userList is a list of User entity object type that holds user
    *                 registration info.
    * @return whether the given user registration result message
    * is correct or not.
    */
-  public boolean confirmationMessageIsDisplayed(UserInfo userInfo) {
+  public boolean confirmationMessageIsDisplayed(List<User> userList) {
     boolean result = false;
-    final String userNameResult = userInfoDisplayed(userInfo);
-    final String userNickNameResult = userNickNameDisplayed(userInfo);
+    final String userNameResult = userInfoDisplayed(userList);
+    final String userNickNameResult = userNickNameDisplayed(userList);
 
     if (userCompleteName.getText().equals(userNameResult)
       && userNickName.getText().equals(userNickNameResult)) {

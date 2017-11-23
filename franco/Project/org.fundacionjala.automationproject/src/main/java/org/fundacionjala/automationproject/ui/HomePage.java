@@ -47,13 +47,15 @@ public class HomePage extends BasePage {
   private WebElement findFlight;
 
   /**
-   * <p>This method checks if the user was redirected to the home page.</p>
+   * <p>This method checks if the user was redirected to the home page
+   * after login.</p>
    *
    * @return whether the title is equal to the text given or not.
    */
-  public boolean isLogged() {
-    String title = driver.getTitle();
-    return title.equalsIgnoreCase("Find a Flight: Mercury Tours:");
+  public boolean userIsLoggedIn() {
+    final String title = driver.getTitle();
+    final String titleMessage = "Find a Flight: Mercury Tours:";
+    return title.equalsIgnoreCase(titleMessage);
   }
 
   /**
@@ -128,7 +130,7 @@ public class HomePage extends BasePage {
    * <p>This method sets returning date.</p>
    *
    * @param monthInput is the returning month.
-   * @param dayInput is the returning day.
+   * @param dayInput   is the returning day.
    */
   public void setReturningDate(String monthInput, String dayInput) {
     returningMonth.click();

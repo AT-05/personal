@@ -33,7 +33,7 @@ public class LoginSteps {
   }
 
   /**
-   * <p>This method navigates to main page.</p>
+   * <p>In this step is performed navigation to main page.</p>
    */
   @Given("^I navigate to Main Page$")
   public void iNavigateToMainPage() {
@@ -41,29 +41,26 @@ public class LoginSteps {
   }
 
   /**
-   * <p>This method logs in the user into the application.</p>
+   * <p>In this step the user is logged in to the application.</p>
    *
    * @param userName is the given user name.
    * @param password is the given user password.
    */
   @When("^I login as \"([^\"]*)\" with password \"([^\"]*)\"$")
   public void iLoginAsWithPassword(String userName, String password) {
-    mainPage = new MainPage();
-    mainPage.setUserName(userName);
-    mainPage.setPassword(password);
-    homePage = mainPage.login();
+    homePage = mainPage.loginUser(userName, password);
   }
 
   /**
-   * <p>This method checks for successful login.</p>
+   * <p>In this step is checked a successful login.</p>
    */
-  @Then("^I should login successfully$")
-  public void iShouldLoginSuccessfully() {
-    assertTrue(homePage.isLogged());
+  @Then("^I should be redirected to home page$")
+  public void iShouldBeRedirectedToHomePage() {
+    assertTrue(homePage.userIsLoggedIn());
   }
 
   /**
-   * <p>This method is executed after login scenario.</p>
+   * <p>This step is executed after loginUser scenario.</p>
    */
   @After(value = "@Login", order = 999)
   public void afterLoginScenario() {

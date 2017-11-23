@@ -1,21 +1,21 @@
 @SearchFlight
-Feature: SearchFlight
+Feature: Search Flight
   Test successfully searching of flight
 
   Background:
     Given I navigate to Main Page
-    And I log in to the application
+      And I log in to the application
 
   @SmokeTest
-  Scenario Outline: Search a flight
+  Scenario Outline: Verify that is possible to search a flight
     When I select the type of flight as "<Flight-type>"
-    And I choose flight for "<Passengers>" passengers
-    And I choose as origin location "<Origin>"
-    And I select as departure date "<Departure-Month>", "<Departure-Day>"
-    And I select destination as "<Destination>"
-    And I select as return date "<Return-Month>", "<Return-Day>"
-    And I choose "<Class>" as service class
-    And I select airline "<Airline>"
+      And I choose flight for "<Passengers>" passengers
+      And I choose as origin location "<Origin>"
+      And I select as departure date "<Departure-Month>", "<Departure-Day>"
+      And I select destination as "<Destination>"
+      And I select as return date "<Return-Month>", "<Return-Day>"
+      And I choose "<Class>" as service class
+      And I select airline "<Airline>"
     Then I should have a result list of "<Origin>" to "<Destination>" flights
 
     Examples:

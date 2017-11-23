@@ -5,9 +5,7 @@ import static org.fundacionjala.automationproject.entities.AddressInfo.CITY;
 import static org.fundacionjala.automationproject.entities.AddressInfo.COUNTRY;
 import static org.fundacionjala.automationproject.entities.AddressInfo.STATE;
 import static org.fundacionjala.automationproject.entities.AddressInfo.ZIP;
-import static org.junit.Assert.assertTrue;
 
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.fundacionjala.automationproject.entities.AddressInfo;
 import org.fundacionjala.automationproject.ui.PurchasePage;
@@ -49,19 +47,11 @@ public class BillingAddressSteps {
                                                                               String aZip,
                                                                               String aCountry) {
     purchasePage.clearBillingAddressFormFields();
-    purchasePage.setBillingAddressInfo(address, aCity, aState, aZip, aCountry);
     addressInfo.addField(ADDRESS, address);
     addressInfo.addField(CITY, aCity);
     addressInfo.addField(STATE, aState);
     addressInfo.addField(ZIP, aZip);
     addressInfo.addField(COUNTRY, aCountry);
-  }
-
-  /**
-   * <p>This method checks if the delivery address form is filled.</p>
-   */
-  @Then("^I should see the billing address form filled$")
-  public void iShouldSeeTheBillingAddressFormFilled() {
-    assertTrue(purchasePage.billingAddressFormIsFilled());
+    purchasePage.setBillingAddressInfo(address, aCity, aState, aZip, aCountry);
   }
 }

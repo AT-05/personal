@@ -142,22 +142,6 @@ public class PurchasePage extends BasePage {
   }
 
   /**
-   * <p>This method checks if billing address form is not empty.</p>
-   *
-   * @return whether the form is empty or not.
-   */
-  public boolean billingAddressFormIsFilled() {
-    boolean result = false;
-    if (!billingAddress.getText().equals("")
-      && !billingCity.getText().equals("")
-      && !billingState.getText().equals("")
-      && !billingPostalCode.getText().equals("")) {
-      result = true;
-    }
-    return result;
-  }
-
-  /**
    * <p>This method clears delivery address form fields.</p>
    */
   public void clearDeliveryAddressFormFields() {
@@ -188,22 +172,6 @@ public class PurchasePage extends BasePage {
     deliveryCountry.click();
     Select country = new Select(deliveryCountry);
     country.selectByVisibleText(dCountry);
-  }
-
-  /**
-   * <p>This method checks if delivery address form is not empty.</p>
-   *
-   * @return whether the form is empty or not.
-   */
-  public boolean deliveryAddressFormIsFilled() {
-    boolean result = false;
-    if (!deliveryAddress.getText().equals("")
-      && !deliveryCity.getText().equals("")
-      && !deliveryState.getText().equals("")
-      && !deliveryPostalCode.getText().equals("")) {
-      result = true;
-    }
-    return result;
   }
 
   /**

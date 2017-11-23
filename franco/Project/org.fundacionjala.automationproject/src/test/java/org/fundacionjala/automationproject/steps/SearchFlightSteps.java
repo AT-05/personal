@@ -34,11 +34,11 @@ public class SearchFlightSteps {
     mainPage = pageTransporter.navigateToMainPage();
 
     final String userName = EnvironmentConfig.getInstance().getUserName();
-    mainPage.setUserName(userName);
+    mainPage.fillUserName(userName);
 
     final String password = EnvironmentConfig.getInstance().getUserPassword();
-    mainPage.setPassword(password);
-    homePage = mainPage.login();
+    mainPage.fillPassword(password);
+    homePage = mainPage.loginUser(userName, password);
   }
 
   /**

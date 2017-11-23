@@ -1,18 +1,7 @@
 package org.fundacionjala.automationproject.ui;
 
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_ADDRESS;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_CITY;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_COUNTRY;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_EMAIL;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_LAST_NAME;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_NAME;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_NICKNAME;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_PASSWORD;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_PHONE;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_STATE;
-import static org.fundacionjala.automationproject.entities.UserInfo.USER_ZIP;
-
-import java.util.Map;
+import java.util.List;
+import org.fundacionjala.automationproject.entities.User;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -74,13 +63,15 @@ public class UserRegistrationPage extends BasePage {
   /**
    * <p>This method fills user contact info form.</p>
    *
-   * @param userInfoMap is a map containing the user info.
+   * @param user is an entity class.
    */
-  private void fillUserContactInfoForm(Map<String, String> userInfoMap) {
-    userName.sendKeys(userInfoMap.get(USER_NAME));
-    userLastName.sendKeys(userInfoMap.get(USER_LAST_NAME));
-    userPhone.sendKeys(userInfoMap.get(USER_PHONE));
-    userEmail.sendKeys(userInfoMap.get(USER_EMAIL));
+  private void fillUserContactInfoForm(List<User> user) {
+    for (User userItem : user) {
+      userName.sendKeys(userItem.getFirstName());
+      userLastName.sendKeys(userItem.getLastName());
+      userPhone.sendKeys(userItem.getPhone());
+      userEmail.sendKeys(userItem.getEmail());
+    }
   }
 
   /**
@@ -96,16 +87,18 @@ public class UserRegistrationPage extends BasePage {
   /**
    * <p>This method fills user mailing info form.</p>
    *
-   * @param userInfoMap is a map containing the user info.
+   * @param userList is a list of User entity object type.
    */
-  private void fillUserMailingInfoForm(Map<String, String> userInfoMap) {
-    userAddress.sendKeys(userInfoMap.get(USER_ADDRESS));
-    userCity.sendKeys(userInfoMap.get(USER_CITY));
-    userState.sendKeys(userInfoMap.get(USER_STATE));
-    userPostalCode.sendKeys(userInfoMap.get(USER_ZIP));
+  private void fillUserMailingInfoForm(List<User> userList) {
     userCountry.click();
     Select passenger = new Select(userCountry);
-    passenger.selectByVisibleText(userInfoMap.get(USER_COUNTRY));
+    for (User userItem : userList) {
+      userAddress.sendKeys(userItem.getAddress());
+      userCity.sendKeys(userItem.getCity());
+      userState.sendKeys(userItem.getState());
+      userPostalCode.sendKeys(userItem.getZip());
+      passenger.selectByVisibleText(userItem.getCountry());
+    }
   }
 
   /**
@@ -120,27 +113,29 @@ public class UserRegistrationPage extends BasePage {
   /**
    * <p>This method fills user info form.</p>
    *
-   * @param userInfoMap is a map containing the user info.
+   * @param userList is a list of User entity object type.
    */
-  private void fillUserInfoForm(Map<String, String> userInfoMap) {
-    userNickName.sendKeys(userInfoMap.get(USER_NICKNAME));
-    userPassword.sendKeys(userInfoMap.get(USER_PASSWORD));
-    userConfirmPassword.sendKeys(userInfoMap.get(USER_PASSWORD));
+  private void fillUserInfoForm(List<User> userList) {
+    for (User userItem : userList) {
+      userNickName.sendKeys(userItem.getUserName());
+      userPassword.sendKeys(userItem.getPassword());
+      userConfirmPassword.sendKeys(userItem.getPassword());
+    }
   }
 
   /**
    * <p>This method performs user registration.</p>
    *
-   * @param userInfoMap is a map containing the user info.
+   * @param userList is a list of User entity object type.
    * @return a UserConfirmationPage object type.
    */
-  public UserConfirmationPage registerUser(Map<String, String> userInfoMap) {
+  public UserConfirmationPage registerUser(List<User> userList) {
     clearUserContactInfoForm();
     clearUserMailingInfoForm();
     clearUserInfoForm();
-    fillUserContactInfoForm(userInfoMap);
-    fillUserMailingInfoForm(userInfoMap);
-    fillUserInfoForm(userInfoMap);
+    fillUserContactInfoForm(userList);
+    fillUserMailingInfoForm(userList);
+    fillUserInfoForm(userList);
     registerUser.click();
     return new UserConfirmationPage();
   }

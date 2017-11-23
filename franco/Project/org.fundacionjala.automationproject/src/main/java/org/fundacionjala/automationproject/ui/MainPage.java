@@ -20,65 +20,50 @@ public class MainPage extends BasePage {
   @FindBy(linkText = "REGISTER")
   private WebElement registerUserLink;
 
-  private String usernameInput;
-  private String passwordInput;
-
   /**
-   * <p>This constructor receives login field values.</p>
+   * <p>This constructor inherits from BasePage class..</p>
    */
   public MainPage() {
     super();
   }
 
   /**
-   * <p>This method sets user name value.</p>
+   * <p>This method fills user name field.</p>
    *
-   * @param userNameInput is the value of the user name.
+   * @param userNameInput is the user name value given.
    */
-  public void setUserName(String userNameInput) {
-    this.usernameInput = userNameInput;
-  }
-
-  /**
-   * <p>This method sets password value.</p>
-   *
-   * @param passwordInput is the value of the user password.
-   */
-  public void setPassword(String passwordInput) {
-    this.passwordInput = passwordInput;
+  public void fillUserName(String userNameInput) {
+    userName.sendKeys(userNameInput);
   }
 
   /**
    * <p>This method fills user name field.</p>
+   *
+   * @param passwordInput is the user password value given.
    */
-  public void fillUserName() {
-    userName.sendKeys(usernameInput);
-  }
-
-  /**
-   * <p>This method fills user name field.</p>
-   */
-  public void fillPassword() {
+  public void fillPassword(String passwordInput) {
     password.sendKeys(passwordInput);
   }
 
   /**
    * <p>This method clears form fields.</p>
    */
-  private void clearFields() {
+  private void clearLoginFormFields() {
     userName.clear();
     password.clear();
   }
 
   /**
-   * <p>This method runs the automated test for login.</p>
+   * <p>This method performs the login of user.</p>
    *
+   * @param userNameInput is the user name value given.
+   * @param passwordInput is the user password value given.
    * @return a HomePage object.
    */
-  public HomePage login() {
-    clearFields();
-    fillUserName();
-    fillPassword();
+  public HomePage loginUser(String userNameInput, String passwordInput) {
+    clearLoginFormFields();
+    fillUserName(userNameInput);
+    fillPassword(passwordInput);
     logInButton.click();
     return new HomePage();
   }
