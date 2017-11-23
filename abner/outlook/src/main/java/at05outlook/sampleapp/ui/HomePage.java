@@ -13,6 +13,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Is to maping the home page
+ */
 public class HomePage extends BasedPageObject {
 
     List<EmailElement> listEmailElement;
@@ -41,7 +44,11 @@ public class HomePage extends BasedPageObject {
     @FindBy(xpath = "//div[5]/div/div[2]/div/button")
     private WebElement sendBtb;
 
-
+    /**
+     * Check if the page is loaded.
+     *
+     * @return (true or false)
+     */
     public boolean isLoadPage() {
         try {
             webDriver.findElement(By.className("o365cs-topnavText"));
@@ -51,11 +58,18 @@ public class HomePage extends BasedPageObject {
         }
     }
 
+    /**
+     * Click on the button to load the email form.
+     */
     public void goToSedEmail() {
-        //waitPageIsLoaded();
         newBtn.click();
     }
 
+    /**
+     * Send to the email with a entities object email
+     *
+     * @param email is a entities object email.
+     */
     public void sendEmailTo(EmailEntities email) {
         emailTxt.clear();
         emailTxt.sendKeys(email.getSendTo());
@@ -66,20 +80,25 @@ public class HomePage extends BasedPageObject {
         bodyText.clear();
         bodyText.sendKeys(email.getBody());
 
-        sendBtb.findElement(By.xpath("(//button[@type='button'])[171]"));
         sendBtb.click();
 
-        webDriver.navigate().refresh();
-
+        waitPageIsLoaded();
     }
 
 
-
+    /**
+     * Wait to page is loaded.
+     *
+     * @throws WebDriverException catch the Web Driver exceptions
+     */
     @Override
     public void waitPageIsLoaded() throws WebDriverException {
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.id("O365_Lync_ButtonID")));
     }
 
+    /**
+     * Performs the exit of the page.
+     */
     public void logOut() {
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.id("O365_Lync_ButtonID")));
         idUserBtn.click();
@@ -87,36 +106,40 @@ public class HomePage extends BasedPageObject {
         webDriver.manage().deleteAllCookies();
     }
 
+    /**
+     * Verify That The Mail Has Arrived with email subject.
+     *
+     * @param subject Email subject.
+     * @return (true/false).
+     */
     public boolean verifyThatTheMailHasArrived(String subject) {
-        waitPageIsLoaded();
+
         try {
-            webDriver.findElement(By.xpath("//span[contains(text(),\""+subject+"\")]"));
+            webDriver.findElement(By.xpath("//span[contains(text()," + subject + ")]"));
             return true;
         } catch (NoSuchElementException e) {
             return false;
         }
     }
 
+    /**
+     * Search an email with the subject.
+     *
+     * @param subject email subject.
+     */
     public void searchAnEmail(String subject) {
         waitPageIsLoaded();
 
         //Todo  in prossee.
         List<WebElement> list = webDriver.findElements(By.xpath("//div[starts-with(@class, \"_lvv_w\")  and starts-with(@role, \"option\" ) ]"));
-
-        System.out.println("---------------------: "+list.size()+" :-------------------------------");
-
-        listEmailElement=new ArrayList<>();
-
-        for(WebElement we: list){
+        System.out.println("-------------: " + list.size() + " :-------------------------------");
+        listEmailElement = new ArrayList<>();
+        for (WebElement we : list) {
             listEmailElement.add(new EmailElement(we));
         }
-
-        System.out.println("---: "+listEmailElement.get(1).getSubject()+" :-----");
-
+        System.out.println("---: " + listEmailElement.get(1).getSubject() + " :-----");
 //        for(EmailElement emailElement: listEmailElement){
 //            System.out.println("---: "+emailElement.getSubject()+" :-----");
 //        }
-
-
     }
 }

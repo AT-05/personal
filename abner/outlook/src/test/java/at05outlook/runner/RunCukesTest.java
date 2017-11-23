@@ -1,8 +1,6 @@
 package at05outlook.runner;
 
-
 import at05outlook.sampleapp.SampleAppAutomation;
-import cucumber.api.java.Before;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterTest;
@@ -39,6 +37,4 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
             log.error("Exception in after execution", ex);
         }
     }
-
-
 }

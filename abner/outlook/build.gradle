@@ -2,12 +2,18 @@ group 'Selenium'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'checkstyle'
 
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
     jcenter()
+}
+
+// Checkstyle configuration
+Checkstyle {
+    toolVersion = '8.2'
 }
 
 dependencies {
