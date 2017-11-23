@@ -4,7 +4,7 @@ public class EmailEntities {
     //| User Name                       | Subject       | Body    |
     private String sendTo;
     private String subject;
-    private String  body;
+    private String body;
 
     public EmailEntities(String sendTo, String subject, String body) {
         this.sendTo = sendTo;

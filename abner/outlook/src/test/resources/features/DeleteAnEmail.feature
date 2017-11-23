@@ -4,6 +4,7 @@
 
 
 Feature: Test
+
   @LogOut
   Scenario Outline: Delete an email
     Given I navigate to Login page
@@ -12,5 +13,5 @@ Feature: Test
     Then verify that the mail has delete
 
     Examples:
-      | Subject       |
-      | Automation2   |
+      | Subject     |
+      | Automation2 |

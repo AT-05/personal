@@ -6,13 +6,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 class Chrome implements IDriver {
-
-    private static Chrome instance=null;
+    private static Chrome instance = null;
     private WebDriver driver;
     private WebDriverWait wait;
 
     public static Chrome getInstance() {
-        if (instance == null || instance.driver == null ) {
+        if (instance == null || instance.driver == null) {
             instance = new Chrome();
         }
         return instance;
@@ -21,8 +20,6 @@ class Chrome implements IDriver {
     @Override
     public WebDriver initDriver() {
         ChromeDriverManager.getInstance().setup();
-
-        //Todo Add more code here
         return new ChromeDriver();
     }
 }

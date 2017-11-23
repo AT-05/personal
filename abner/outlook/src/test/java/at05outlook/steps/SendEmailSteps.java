@@ -6,6 +6,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+
 import static org.testng.Assert.assertTrue;
 
 /**
@@ -17,10 +18,11 @@ public class SendEmailSteps {
 
     /**
      * The constructor of object with dependency injection.
+     *
      * @param homePage is Page element.
      */
-    public SendEmailSteps(HomePage homePage){
-        this.homePage=homePage;
+    public SendEmailSteps(HomePage homePage) {
+        this.homePage = homePage;
     }
 
     @When("^I go to send the new email$")
@@ -30,17 +32,17 @@ public class SendEmailSteps {
 
     @When("^I send an email to \"(.*?)\" whit the subject of \"(.*?)\" and body \"(.*?)\"$")
     public void sendTheEmailTo(String emailToSen, String subject, String body) throws InterruptedException {
-        email=new EmailEntities(emailToSen, subject, body);
+        email = new EmailEntities(emailToSen, subject, body);
         homePage.sendEmailTo(email);
     }
 
     @Then("^verify that the mail has arrived$")
-    public void verifyThatTheMailHasArrived()  {
+    public void verifyThatTheMailHasArrived() {
         assertTrue(homePage.verifyThatTheMailHasArrived(email.getSubject()), "The mail arrived correctly");
     }
 
     @And("^I delete an email whit the subject of \"(.*?)\"$")
-    public void deleteAnEmailWhitTheSubjectOf(String subject)  {
+    public void deleteAnEmailWhitTheSubjectOf(String subject) {
         homePage.searchAnEmail(subject);
     }
 

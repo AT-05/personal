@@ -9,8 +9,6 @@ class FireFox implements IDriver {
     @Override
     public WebDriver initDriver() {
         FirefoxDriverManager.getInstance().setup();
-
-        //Todo Add more code here
         return new FirefoxDriver();
     }
 }

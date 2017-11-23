@@ -29,7 +29,6 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
 
     /**
      * Closes the execution
-     *
      */
     @AfterTest
     public void afterExecution() {

@@ -21,17 +21,18 @@ public class LoginSteps {
 
     /**
      * The constructor of objects with dependency injection.
+     *
      * @param homePage is Page element.
      */
     public LoginSteps(HomePage homePage) throws Exception {
         transporter = Transporter.getInstance();
-        this.homePage=homePage;
+        this.homePage = homePage;
     }
 
 
     @Given("^I navigate to Login page$")
     public void navigateToLoginPage() {
-            loginPage = transporter.navigateToLoginPage();
+        loginPage = transporter.navigateToLoginPage();
     }
 
     @When("^I enter correct credentials, as user \"(.*?)\" and password \"(.*?)\"$")

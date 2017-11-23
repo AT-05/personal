@@ -26,7 +26,7 @@ public class WebDriverManager {
     }
 
     public static WebDriverManager getInstance() {
-        if(instance == null || instance.webDriver == null) {
+        if (instance == null || instance.webDriver == null) {
             instance = new WebDriverManager();
         }
         return instance;
@@ -43,6 +43,7 @@ public class WebDriverManager {
 
     /**
      * Gets the WebDriver
+     *
      * @return
      */
     public WebDriver getWebDriver() {
@@ -51,6 +52,7 @@ public class WebDriverManager {
 
     /**
      * Gets the WebDriver Wait
+     *
      * @return
      */
     public WebDriverWait getWait() {

@@ -15,7 +15,7 @@ import java.util.Iterator;
 /**
  * Util used to read the configurations from the json file
  * Created by Silvia Valencia on 3/23/2015.
-*/
+ */
 public class JsonReader {
 
     private Logger log = Logger.getLogger(getClass());
@@ -101,7 +101,7 @@ public class JsonReader {
      * given the key
      */
     public String getKeyValue(String objectName, String idKey, String idValue, String objectKey,
-        String key) {
+                              String key) {
         JSONObject jsonObject = getJSONObjectFromArrayById(objectName, idKey, idValue);
         JSONObject jsonObjectInternal = getJSONObject(jsonObject, objectKey);
         return getKeyValueFromJSONObject(jsonObjectInternal, key);
@@ -112,7 +112,7 @@ public class JsonReader {
      * Name, Password
      */
     public HashMap<String, Object> getArrayKeyValues(String objectName, String idKey, String idValue,
-        String key) {
+                                                     String key) {
         JSONObject jsonObject = getJSONObjectFromArrayById(objectName, idKey, idValue);
         JSONArray arr = (JSONArray) jsonObject.get(key);
 

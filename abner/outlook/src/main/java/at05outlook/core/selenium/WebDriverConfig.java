@@ -26,7 +26,7 @@ public class WebDriverConfig {
     }
 
     public static WebDriverConfig getInstance() {
-        if(instance == null) {
+        if (instance == null) {
             instance = new WebDriverConfig();
         }
         return instance;
@@ -46,14 +46,14 @@ public class WebDriverConfig {
     }
 
     public int getImplicitWaitTime() {
-        return  implicitWaitTime;
+        return implicitWaitTime;
     }
 
     public int getExplicitWaitTime() {
-        return  explicitWaitTime;
+        return explicitWaitTime;
     }
 
     public int getWaitSleepTime() {
-        return  waitSleepTime;
+        return waitSleepTime;
     }
 }

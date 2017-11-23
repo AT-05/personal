@@ -45,14 +45,14 @@ public class SampleAppEnvsConfig {
     }
 
     public String getUrl() {
-        return  url;
+        return url;
     }
 
     public String getUserName() {
-        return  userName;
+        return userName;
     }
 
     public String getUserPassword() {
-        return  userPassword;
+        return userPassword;
     }
 }

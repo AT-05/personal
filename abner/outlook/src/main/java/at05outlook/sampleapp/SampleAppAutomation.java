@@ -17,7 +17,7 @@ public class SampleAppAutomation {
     private WebDriverConfig webDriverConfig;
     private SampleAppEnvsConfig sampleAppEnvsConfig;
 
-    private static final String webDriverConfigFilename = System.getProperty("user.dir") + File.separator  + "driverConfig.json";
+    private static final String webDriverConfigFilename = System.getProperty("user.dir") + File.separator + "driverConfig.json";
     private static final String sampleAppEnvsConfigFileName = System.getProperty("user.dir") + File.separator + "environments.json";
 
     private static SampleAppAutomation instance;
@@ -37,7 +37,7 @@ public class SampleAppAutomation {
 
     public void startUp() throws Exception {
         //WebDriverManager.getInstance().initialize(webDriverConfig);
-       // PageTransporter.getInstance().navigateToLoginPage();
+        // PageTransporter.getInstance().navigateToLoginPage();
     }
 
     public void shutDown() throws Exception {

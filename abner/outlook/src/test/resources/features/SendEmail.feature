@@ -1,4 +1,5 @@
 Feature: Test send an email
+
   @LogOut
   Scenario Outline: Send an email with the registered user account
     Given I navigate to Login page
@@ -8,5 +9,5 @@ Feature: Test send an email
     Then verify that the mail has arrived
 
     Examples:
-      | User Name                       | Subject       | Body    |
-      | abner.mamani@fundacion-jala.org | Automation2    | Hello   |
+      | User Name                       | Subject     | Body  |
+      | abner.mamani@fundacion-jala.org | Automation2 | Hello |

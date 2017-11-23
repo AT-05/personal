@@ -12,6 +12,7 @@ public class Hook {
 
     /**
      * The constructor of object with dependency injection.
+     *
      * @param homePage is Page element.
      */
     public Hook(HomePage homePage) {
@@ -22,7 +23,7 @@ public class Hook {
      * Log off from the page
      */
     @After(value = "@LogOut", order = 999)
-    public void afterLoginScenario()  {
+    public void afterLoginScenario() {
         try {
             homePage.logOut();
         } catch (Exception e) {
