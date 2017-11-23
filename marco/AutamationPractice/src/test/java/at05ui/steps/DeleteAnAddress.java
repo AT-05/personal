@@ -43,7 +43,7 @@ public class DeleteAnAddress {
 
   @Then("^should be displayed Actualize My Address page$")
   public void shouldBeDisplayedActualizeMyAddressPage() {
-    assertTrue(myAddressPage.deleteAddress());
+    assertTrue(myAddressPage.IsRemovedAddress());
   }
 
 

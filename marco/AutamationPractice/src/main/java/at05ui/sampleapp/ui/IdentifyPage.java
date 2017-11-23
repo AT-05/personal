@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
  */
 public class IdentifyPage extends BasedPageObject {
 
+  public static final String TITLE_PAGE = "Identity - My Store";
   @FindBy(className = "logout")
   private WebElement logOut;
 
@@ -18,7 +19,7 @@ public class IdentifyPage extends BasedPageObject {
    * @return boolean.
    */
   public boolean IAmInIdentifyPage() {
-    return webDriver.getTitle().trim().equalsIgnoreCase("Identity - My Store");
+    return webDriver.getTitle().trim().equalsIgnoreCase(TITLE_PAGE);
   }
 
   @Override

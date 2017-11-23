@@ -63,7 +63,5 @@ public class MyAccountPage extends BasedPageObject {
     return new MyAddressPage();
   }
 
-  public MyOrderPage goToMyOrderPage() {
-    return new MyOrderPage();
-  }
+
 }

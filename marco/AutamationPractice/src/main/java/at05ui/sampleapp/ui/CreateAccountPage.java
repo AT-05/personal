@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 public class CreateAccountPage extends BasedPageObject {
 
 
+  public static final String TITLE_PAGE = "Login - My Store";
   @FindBy(id = "id_gender1")
   private WebElement radioButtonTitle;
 
@@ -301,7 +302,7 @@ public class CreateAccountPage extends BasedPageObject {
    */
   public boolean IAmCreateAccountPage() {
     //this a small trap
-    return webDriver.getTitle().equalsIgnoreCase("Login - My Store");
+    return webDriver.getTitle().equalsIgnoreCase(TITLE_PAGE);
   }
 
   /**

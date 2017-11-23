@@ -1,6 +1,6 @@
 Feature: createNewAccount
   @CreateAccount
-  Scenario Outline: A scenario
+  Scenario Outline: Verify the creation of new accounts
     Given I go to login page
       And I authenticate new email"<email>"
     When I create a new Account with the following personal information "<firstName>","<lastName>","<email>","<password>" and also "<day>","<month>","<mark>"

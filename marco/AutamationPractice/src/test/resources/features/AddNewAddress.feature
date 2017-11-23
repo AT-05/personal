@@ -1,4 +1,4 @@
-Feature: AddNewAddress
+Feature: Add NewAddress
   Given I go to login page
     And  I logIn with email  and password
   @address

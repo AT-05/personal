@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
  */
 public class LoginPage extends BasedPageObject {
 
+  public static final String TITLE_PAGE = "Login - My Store";
   @FindBy(id = "email")
   private  WebElement email;
 
@@ -76,7 +77,7 @@ public class LoginPage extends BasedPageObject {
    * Check if I am in LoginPage.
    */
   public boolean IsAmInLoginPage() {
-    return webDriver.getTitle().equalsIgnoreCase("Login - My Store");
+    return webDriver.getTitle().equalsIgnoreCase(TITLE_PAGE);
   }
 
 

@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
  */
 public class MyAddressPage extends BasedPageObject {
 
+  public static final String TITLE_PAGE = "Addresses - My Store";
   @FindBy(xpath = "//div[@id='center_column']/div/a/span")
   private WebElement btnAddNewAddress;
 
@@ -43,7 +44,7 @@ public class MyAddressPage extends BasedPageObject {
    * @return boolean.
    */
   public boolean IAmMyAccountPage() {
-    return webDriver.getTitle().trim().equalsIgnoreCase("Addresses - My Store");
+    return webDriver.getTitle().trim().equalsIgnoreCase(TITLE_PAGE);
   }
 
   /**
@@ -72,7 +73,7 @@ public class MyAddressPage extends BasedPageObject {
   /**
    * Check if an deleted.
    */
-  public boolean deleteAddress() {
+  public boolean IsRemovedAddress() {
     return deleteAddress;
   }
 

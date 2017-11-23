@@ -1,6 +1,6 @@
 Feature: Log In User
   @Login
-  Scenario Outline: This scenario verify  user's login
+  Scenario Outline: Verify user's login
     Given I go to login page
     When I log In filling the field email "<Email_user>" and password "<Password>"
     Then should be displayed My Account page

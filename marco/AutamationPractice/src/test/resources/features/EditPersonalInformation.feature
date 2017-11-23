@@ -1,6 +1,6 @@
 Feature: Edit Personal Information
   @EditInfo
-  Scenario Outline: this scenario update the information personal of an account
+  Scenario Outline: This scenario update the information personal of an account logIn
     Given I go to login page
        And I logIn with email "<Email_user>" and password "<oldPass>"
     When I select Edit Personal Info option
