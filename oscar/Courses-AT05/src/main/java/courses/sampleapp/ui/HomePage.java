@@ -1,5 +1,6 @@
 package courses.sampleapp.ui;
 
+import courses.sampleapp.entities.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
@@ -10,25 +11,16 @@ import org.openqa.selenium.support.FindBy;
  */
 public class HomePage extends BasePageObject {
 
-  @FindBy(css = "p.message-text")
-  WebElement welcomeMessage;
+  @FindBy(id = "my_account")
+  private WebElement nameProfile;
 
-  @FindBy(css = "span.user-name")
-  WebElement nameProfile;
+  @FindBy(linkText = "Sign Out")
+  private WebElement signout;
 
   @FindBy(linkText = "My Dashboard")
   WebElement title;
 
-  @FindBy(linkText = "Sign Out")
-  WebElement signout;
-
-  @FindBy(xpath = "(//a[contains(text(),'View Course')])[3]")
-  WebElement btnSelenium;
-
-  @FindBy(linkText = "C# For QA Automation Engineers with Selenium Webdriver")
-  WebElement btnCourse;
-
-  WebElement webElement;
+  private WebElement webElement;
 
   /**
    * Constructor.
@@ -37,16 +29,20 @@ public class HomePage extends BasePageObject {
     super();
   }
 
-  public String getWelcomeMessage() {
-    return welcomeMessage.getText();
-  }
-
   /**
-   * Check is in the main page.
-   *
-   * @return a boolean.
+   * Verify is in the home page.
+   * @param user as a object.
+   * @return boolean.
    */
-  public boolean isInTheMainPage() {
+  /*public boolean isInTheHomePage(User user) {
+    String name = String.format("%s %s", user.getFirstName(), user.getLastName().substring(0,1));
+    if(nameProfile.getText().equalsIgnoreCase(name)){
+      return true;
+    }
+    return false;
+  }*/
+
+  public boolean isInTheHomePage() {
     if (title.getText().equalsIgnoreCase("My Dashboard")) {
       return true;
     }
@@ -65,11 +61,10 @@ public class HomePage extends BasePageObject {
    * Select Selenium course.
    *
    * @return SeleniumPage.
-   * @param nameCourse
+   * @param nameCourse as a string.
    */
   public SeleniumPage clickSeleniumCourse(String nameCourse) {
     String cad = String.format("//h4[text()[contains(.,\"%s\")]]", nameCourse);
-    //webElement = driver.findElement(By.xpath("//h4[text()[contains(.,\"C# For QA Automation Engineers with Selenium Webdriver\")]]"));
     webElement = driver.findElement(By.xpath(cad));
     webElement.click();
     return new SeleniumPage();

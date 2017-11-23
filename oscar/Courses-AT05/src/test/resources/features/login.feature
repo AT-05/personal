@@ -1,14 +1,13 @@
 @Login
-Feature: Login
+Feature: As a user registered is be able to login into application
 
   @Logout
-  Scenario Outline: User should be able to login using valid credentials
+  Scenario Outline: Verify that a user should be able to login using valid credentials
     Given I navigate to Login page
-    When I login with email "<Email_user>" and password "<Password>"
+    When I login with name "<First_Name>", last name "<Last_Name>", email "<Email_user>" and password "<Password>"
     Then the Home page should be displayed
 
     Examples:
-      | Email_user        | Password     |
-      | oscar@oscar.com   | password123  |
-#      | oscar2@oscar.com  | password123  |
+      | First_Name   | Last_Name     | Email_user        | Password     |
+      | Oscar        | Delgadillo    | oscar@test.com    | password123  |
 

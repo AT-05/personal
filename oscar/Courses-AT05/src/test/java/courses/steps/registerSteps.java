@@ -34,8 +34,8 @@ public class registerSteps {
     this.course = course;
   }
 
-  @And("^I navigate to Register page$")
-  public void iNavigateToRegisterPage() {
+  @And("^I select Create new Account to go to Register page$")
+  public void iSelectCreateNewAccountToGoToRegisterPage() {
     registerPage = loginPage.goToRegisterPage();
   }
 

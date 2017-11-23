@@ -2,6 +2,7 @@ package courses.steps;
 
 import static org.testng.Assert.assertTrue;
 
+import courses.sampleapp.entities.User;
 import courses.sampleapp.ui.HomePage;
 import courses.sampleapp.ui.LoginPage;
 import courses.sampleapp.ui.PageTransporter;
@@ -19,27 +20,28 @@ public class loginSteps {
   private LoginPage loginPage;
   private HomePage homePage;
 
+  private User user;
+
   public loginSteps(HomePage homePage) {
     this.homePage = homePage;
   }
 
   @Given("^I navigate to Login page$")
   public void navigateToLoginPage() {
-    System.out.println("Navigate to login page BEFORE ------------------");
     principalPage = PageTransporter.getInstance().navigateToPrincipalPage();
     loginPage = principalPage.goToLoginPage();
-    System.out.println("Navigate to login page AFTER ------------------");
   }
 
-  @When("^I login with email \"([^\"]*)\" and password \"([^\"]*)\"$")
-  public void iLoginWithEmailAndPassword(String email, String password) {
-    System.out.println("Login page BEFORE ------------------");
-    homePage = loginPage.enterCredentials(email, password);
-    System.out.println("Login page AFTER ------------------");
+  @When("^I login with name \"([^\"]*)\", last name \"([^\"]*)\", email \"([^\"]*)\" and password \"([^\"]*)\"$")
+  public void iLoginWithNameLastNameEmailAndPassword(String firstName, String lastName,
+      String email,
+      String password) {
+    user = new User(firstName, lastName, email, password);
+    homePage = loginPage.enterCredentials(user);
   }
 
   @Then("^the Home page should be displayed$")
-  public void theHomePageShouldBeDisplayed() throws Throwable {
-    assertTrue(homePage.isInTheMainPage(), "Home page is displayed.");
+  public void theHomePageShouldBeDisplayed() {
+    assertTrue(homePage.isInTheHomePage(), "Home page is displayed.");
   }
 }

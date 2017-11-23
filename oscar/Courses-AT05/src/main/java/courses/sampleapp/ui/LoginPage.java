@@ -1,5 +1,6 @@
 package courses.sampleapp.ui;
 
+import courses.sampleapp.entities.User;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,14 +31,12 @@ public class LoginPage extends BasePageObject {
 
   /**
    * This method set the values for login user.
-   *
-   * @param email as a string.
-   * @param password as a string.
+   * @param user as a object.
    * @return HomePage.
    */
-  public HomePage enterCredentials(String email, String password) {
-    setEmailUser(email);
-    setPasswordUser(password);
+  public HomePage enterCredentials(User user) {
+    setEmailUser(user.getEmail());
+    setPasswordUser(user.getPassword());
     return clickSingInButton();
   }
 

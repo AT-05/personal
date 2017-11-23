@@ -10,7 +10,7 @@ import org.openqa.selenium.support.FindBy;
 public class DashboardPage extends BasePageObject {
 
   @FindBy(css = "h4.course-card__title")
-  WebElement nameCourse;
+  private WebElement nameCourse;
 
   /**
    * This method get the name of the course.
