@@ -30,18 +30,17 @@ public class EditPersonalInfo {
     myAccountPage = loginPage.setLogin(email, pass);
   }
 
-  @When("^I go to  Edit Personal Info$")
+  @When("^I select Edit Personal Info option$")
   public void iDoClickInEditPersonalInfo() {
     editPersonalInfoPage = myAccountPage.clickEditPersonalInfo();
   }
 
 
-  @And("^I edit my information with\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
+  @And("^I edit the fields with the following data\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")
   public void iEditMyInformationWith(String firstName, String lastName, String oldPass, String pass,
       String confirmation, int dia, int month, String year) {
-    editPersonalInfoPage
-        .setNewInfo(firstName, lastName, oldPass, pass, confirmation, dia, month, year);
-    identifyPage = editPersonalInfoPage.clickSave();
+    editPersonalInfoPage.setNewInfo(firstName, lastName, oldPass, pass, confirmation, dia, month, year);
+    identifyPage = editPersonalInfoPage.clickSaveDataEditPersonal();
   }
 
   @Then("^should be displayed Identify page$")

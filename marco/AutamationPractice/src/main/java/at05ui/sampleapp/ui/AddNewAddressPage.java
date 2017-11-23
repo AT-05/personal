@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 /**
- * Class AddNewAddressPage.
+ * Created by Marco Mendez November 2017.
  */
 public class AddNewAddressPage extends BasedPageObject {
 

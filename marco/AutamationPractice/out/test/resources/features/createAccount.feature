@@ -2,9 +2,9 @@ Feature: createNewAccount
   @CreateAccount
   Scenario Outline: A scenario
     Given I go to login page
-      And I authenticate new email"<email>"
+    And I authenticate new email"<email>"
     When I create a new Account with the following personal information "<firstName>","<lastName>","<email>","<password>" and also "<day>","<month>","<mark>"
-      And also with the following address information "<nameAddress>","<lastAddress>","<company>","<address>" and also "<city>","<state>","<postalCode>","<country>","<phone>"
+    And also with the following address information "<nameAddress>","<lastAddress>","<company>","<address>" and also "<city>","<state>","<postalCode>","<country>","<phone>"
     Then should be displayed Home page
     Examples:
       | firstName   | lastName       | email                     | password     | day | month | mark | nameAddress | lastAddress   | company    | address  | city       | state | postalCode | country | phone    |

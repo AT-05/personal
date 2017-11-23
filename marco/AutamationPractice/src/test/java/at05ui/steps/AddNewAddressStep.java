@@ -6,6 +6,7 @@ import at05ui.sampleapp.ui.AddNewAddressPage;
 import at05ui.sampleapp.ui.MyAccountPage;
 import at05ui.sampleapp.ui.MyAddressPage;
 import cucumber.api.DataTable;
+import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -30,7 +31,7 @@ public class AddNewAddressStep {
     myAccountPage = myAccountPage1;
   }
 
-  @When("^I go to Add new Address page$")
+  @When("^I go to Add new Address page option$")
   public void iGoToAddNewAddress() {
     myAddressPage = myAccountPage.goToMyAddress();
     addNewAddressPage = myAddressPage.goToAddNewAddress();
@@ -67,4 +68,6 @@ public class AddNewAddressStep {
   public void loOutFromMyAddressPage() {
     myAddressPage.clickLogOut();
   }
+
+
 }

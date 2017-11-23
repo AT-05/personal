@@ -2,6 +2,7 @@ package at05ui.steps;
 
 import static org.testng.Assert.assertTrue;
 
+import at05ui.sampleapp.config.SampleAppEnvsConfig;
 import at05ui.sampleapp.ui.AuthenticationPage;
 import at05ui.sampleapp.ui.CreateAccountPage;
 import at05ui.sampleapp.ui.PageTransporter;
@@ -32,7 +33,8 @@ public class AuthenticationStep {
   @When("^I put the new email$")
   public void iPutTheNewEmail(DataTable table) {
     List<List<String>> data = table.raw();
-    createAccountPage = authenticationPage.setNewAccount(data.get(0).get(1).toString());
+   // createAccountPage = authenticationPage.setNewAccount(data.get(0).get(1).toString());
+    createAccountPage = authenticationPage.setNewAccount(SampleAppEnvsConfig.getInstance().getUserName());
   }
 
   @Then("^should be displayed create page$")

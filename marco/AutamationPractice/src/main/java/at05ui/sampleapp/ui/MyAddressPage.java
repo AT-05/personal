@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
- * Class My Address Page.
+ * Created by Marco Mendez November 2017.
  */
 public class MyAddressPage extends BasedPageObject {
 

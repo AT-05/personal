@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 /**
- * Class AuthenticationPage.
+ * Created by Marco Mendez November 2017.
  */
 public class AuthenticationPage extends BasedPageObject {
 
@@ -41,6 +41,7 @@ public class AuthenticationPage extends BasedPageObject {
   public CreateAccountPage setNewAccount(String email) {
     setEmail(email);
     clickBtnSubmit();
+
     return new CreateAccountPage();
   }
 

@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+/**
+ * Created by Marco Mendez November 2017.
+ */
 public class CreateAccountPage extends BasedPageObject {
 
 

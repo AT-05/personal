@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
- * Class Abstract BasedPageObject.
+ * Created by Marco Mendez November 2017.
  */
 public abstract class BasedPageObject {
 

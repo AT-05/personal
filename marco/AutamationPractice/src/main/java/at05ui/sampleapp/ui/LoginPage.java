@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 /**
- * Class LoginPage.
+ * Created by Marco Mendez November 2017.
  */
 public class LoginPage extends BasedPageObject {
 

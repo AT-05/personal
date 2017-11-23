@@ -22,7 +22,7 @@ public class IndexPageStep {
     indexPage = PageTransporter.getInstance().navigateToIndexPage();
   }
 
-  @When("^I press the option Sign In$")
+  @When("^I select SignIn option$")
   public void iPressTheOptionSignIn() {
     loginPag = indexPage.clickSingIn();
   }

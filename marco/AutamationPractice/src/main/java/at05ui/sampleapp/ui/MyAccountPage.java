@@ -5,10 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 /**
- * Class MyAccountPage.
+ * Created by Marco Mendez November 2017.
  */
 public class MyAccountPage extends BasedPageObject {
 
+  public static final String TITLE_PAGE = "My account - My Store";
   @FindBy(className = "logout")
   private WebElement logOut;
 
@@ -32,7 +33,7 @@ public class MyAccountPage extends BasedPageObject {
    */
   public boolean IAmMyAccount() {
     //this a small trap
-    return webDriver.getTitle().equalsIgnoreCase("My account - My Store");
+    return webDriver.getTitle().equalsIgnoreCase(TITLE_PAGE);
 
 
   }

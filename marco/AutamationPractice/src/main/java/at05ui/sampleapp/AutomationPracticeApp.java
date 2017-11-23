@@ -8,7 +8,9 @@ import java.io.File;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-
+/**
+ * Created by Marco Mendez November 2017.
+ */
 public class AutomationPracticeApp {
 
   private Logger log = Logger.getLogger(getClass());

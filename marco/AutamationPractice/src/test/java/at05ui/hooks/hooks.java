@@ -18,7 +18,7 @@ public class hooks {
   }
 
 
-  @After(value = "@DeleteAddress", order = 998)
+  @After(value = "@DeleteAddress,@address", order = 998)
   public void loOutFromMyAddressPage() {
     myAddressPage.clickLogOut();
   }

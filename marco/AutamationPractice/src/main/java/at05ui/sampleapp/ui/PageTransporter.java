@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 /**
- * Class PageTransporter.
+ * Created by Marco Mendez November 2017.
  */
 public class PageTransporter {
 

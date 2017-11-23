@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 /**
- * Class EditPersonalInfoPage.
+ * Created by Marco Mendez November 2017.
  */
 public class EditPersonalInfoPage extends BasedPageObject {
 
@@ -151,7 +151,7 @@ public class EditPersonalInfoPage extends BasedPageObject {
    *
    * @return IdentifyPage.
    */
-  public IdentifyPage clickSave() {
+  public IdentifyPage clickSaveDataEditPersonal() {
     submitIdentity.click();
     return new IdentifyPage();
   }

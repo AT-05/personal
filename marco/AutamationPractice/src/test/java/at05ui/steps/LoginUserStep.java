@@ -20,14 +20,14 @@ public class LoginUserStep {
   private MyAccountPage myAccountPage;
 
 
-  @Given("^I navigate to login page$")
+  @Given("^I go to login page$")
   public void navigateToCreateAccount() {
     loginPage = PageTransporter.getInstance().navigateToLoginPage();
 
 
   }
 
-  @When("^I fill the field email \"([^\"]*)\" and password \"([^\"]*)\"$")
+  @When("^I log In filling the field email \"([^\"]*)\" and password \"([^\"]*)\"$")
   public void fillFieldPersonalInformation(String email, String password) {
     myAccountPage = loginPage.setLogin(email, password);
   }
