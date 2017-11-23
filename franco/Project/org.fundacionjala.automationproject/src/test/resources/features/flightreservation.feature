@@ -8,7 +8,7 @@ Feature: Flight Reservation
     And I search a flight as "oneway", "1" passenger, from "London", on "December" "14", to "New York" on "February", "10" in "Business" class and "Blue Skies Airlines"
 
   @SmokeTest
-  Scenario Outline: Vrify that is possible to purchase a flight ticket
+  Scenario Outline: Verify that is possible to purchase a flight ticket
     When I select "<Departure-flight>" as departure flight
       And I select "<Return-flight>" as return flight
       And I fill the passengers' information with name "<FName>", last name "<LName>", and meal "<Meal>"
