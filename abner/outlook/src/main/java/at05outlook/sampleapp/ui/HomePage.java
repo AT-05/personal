@@ -44,7 +44,19 @@ public class HomePage extends BasedPageObject {
     @FindBy(xpath = "//div[5]/div/div[2]/div/button")
     private WebElement sendBtb;
 
-    /**
+
+
+
+    @FindBy(xpath = "//button[contains(@aria-label, 'Delete (Del)')]")
+    private WebElement deleteBtb;
+
+
+    @FindBy(id = "_ariaId_117.folder")
+    private WebElement deletedItemsBtb;
+
+
+
+     /**
      * Check if the page is loaded.
      *
      * @return (true or false)
@@ -127,19 +139,40 @@ public class HomePage extends BasedPageObject {
      *
      * @param subject email subject.
      */
-    public void searchAnEmail(String subject) {
-        waitPageIsLoaded();
+    public void deleteAnEmail(String subject) {
 
-        //Todo  in prossee.
         List<WebElement> list = webDriver.findElements(By.xpath("//div[starts-with(@class, \"_lvv_w\")  and starts-with(@role, \"option\" ) ]"));
-        System.out.println("-------------: " + list.size() + " :-------------------------------");
         listEmailElement = new ArrayList<>();
         for (WebElement we : list) {
             listEmailElement.add(new EmailElement(we));
         }
-        System.out.println("---: " + listEmailElement.get(1).getSubject() + " :-----");
-//        for(EmailElement emailElement: listEmailElement){
-//            System.out.println("---: "+emailElement.getSubject()+" :-----");
-//        }
+        for(EmailElement emailElement: listEmailElement){
+            if(emailElement.getSubject().contains(subject)) {
+                System.out.println("Encontro");
+                System.out.println("---: " + emailElement.getSubject() + " :-----");
+                emailElement.select();
+                deleteBtb.click();
+                break;
+            }
+
+        }
+    }
+
+    /**
+     * Verify if the email was deleted.
+     * @param subject the subject of the email to be deleted.
+     * @return State was deleted.
+     */
+    public boolean verifyThatTheEmailWasDeleted(String subject) {
+        deletedItemsBtb.click();
+        WebElement label=webDriver.findElement(By.xpath("//div[contains(@class, '_lvv_S1 _lvv_W1 _lvv_T1')]"));
+        label.click();
+        if(label.getText().equalsIgnoreCase(subject)){
+            System.out.println("Removed correctly ");
+            return true;
+        }
+          System.out.println("Eliminated incorrectly ");
+        return false;
+
     }
 }

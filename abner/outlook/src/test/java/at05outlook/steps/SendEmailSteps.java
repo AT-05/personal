@@ -43,12 +43,13 @@ public class SendEmailSteps {
 
     @And("^I delete an email whit the subject of \"(.*?)\"$")
     public void deleteAnEmailWhitTheSubjectOf(String subject) {
-        homePage.searchAnEmail(subject);
+        email=new EmailEntities("", subject, "");
+        homePage.deleteAnEmail(email.getSubject());
     }
 
-    @Then("^verify that the mail has delete$")
+    @Then("^verify that the mail was deleted$")
     public void verifyThatTheMailHasDelete() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
+        assertTrue(homePage.verifyThatTheEmailWasDeleted(email.getSubject()), "The email was deleted");
         throw new PendingException();
     }
 }

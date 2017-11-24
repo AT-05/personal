@@ -1,6 +1,7 @@
 package at05outlook.sampleapp.ui;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 
@@ -17,30 +18,34 @@ public class EmailElement extends BasedPageObject {
 
     /**
      * Construct the object.
+     *
      * @param emailBody is the main web element of the email list.
      */
-    public EmailElement(WebElement emailBody){
-        this.emailBody=emailBody;
+    public EmailElement(WebElement emailBody) {
+        this.emailBody = emailBody;
         obtainSubject();
+        obtainCheck();
     }
 
     /**
      * Obtain the check elemte of the email.
      */
-    private void obtainCheck(){
-       check= emailBody.findElement(By.xpath(""));
+    private void obtainCheck() {
+//        check = emailBody.findElement(By.xpath("//button[contains(@class, \"_lvv_D\")]"));
+        check = emailBody.findElement(By.xpath("//div[2]/button"));
     }
 
     /**
      * Obtain the subject.
      */
-    private void obtainSubject(){
-        emailBody.findElement(By.xpath("//span[contains(@class, \"lvHighlightSubjectClass\")]"));
-        subject= emailBody.getText();
+    private void obtainSubject() {
+        //subject=emailBody.findElement(By.xpath("//span[contains(@class, \"lvHighlightSubjectClass\")]")).getText();
+        subject = emailBody.getText();
     }
 
     /**
      * Return the subject as a String.
+     *
      * @return subject as a String.
      */
     public String getSubject() {
@@ -55,5 +60,12 @@ public class EmailElement extends BasedPageObject {
     @Override
     public void waitPageIsLoaded() throws WebDriverException {
 
+    }
+
+    /**
+     * Selection to email.
+     */
+    public void select() {
+        emailBody.click();
     }
 }
