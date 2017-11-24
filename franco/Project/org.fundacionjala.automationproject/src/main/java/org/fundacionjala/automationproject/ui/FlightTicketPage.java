@@ -19,17 +19,7 @@ public class FlightTicketPage extends BasePage {
   private WebElement totalPrice;
 
   /**
-   * <p>This method checks for correct loading of pages.</p>
-   *
-   * @throws WebDriverException when pages doesn't load correctly.
-   */
-  @Override
-  public void waitUntilPageObjectIsLoaded() throws WebDriverException {
-
-  }
-
-  /**
-   * <p>This method checks of purchased flight billing information is correct.</p>
+   * <p>This method checks if purchased flight billing information is correct.</p>
    *
    * @param totalPriceInput is the billing total price.
    * @return whether the total price is equal to the value given or not.
@@ -37,5 +27,15 @@ public class FlightTicketPage extends BasePage {
   public boolean verifyBillInfo(String totalPriceInput) {
     final String totalPriceValue = totalPrice.getText();
     return totalPriceValue.equals(totalPriceInput);
+  }
+
+  /**
+   * <p>This method checks for correct loading of pages.</p>
+   *
+   * @throws WebDriverException when pages doesn't load correctly.
+   */
+  @Override
+  public void waitUntilPageObjectIsLoaded() throws WebDriverException {
+
   }
 }

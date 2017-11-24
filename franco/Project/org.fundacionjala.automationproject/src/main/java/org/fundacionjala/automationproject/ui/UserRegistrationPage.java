@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 /**
- * Created by Administrator on 11/22/2017.
+ * Created by Franco Aldunate on 11/22/2017.
  */
 public class UserRegistrationPage extends BasePage {
   @FindBy(name = "firstName")

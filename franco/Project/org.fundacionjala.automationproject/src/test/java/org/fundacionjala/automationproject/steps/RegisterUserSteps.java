@@ -30,8 +30,7 @@ public class RegisterUserSteps {
   }
 
   /**
-   * <p>This method navigates to main page
-   * and sends to registration page.</p>
+   * <p>This step performs navigation to registration page.</p>
    */
   @Given("^I select Registration option in Menu")
   public void iNavigateToRegistrationPage() {
@@ -40,18 +39,18 @@ public class RegisterUserSteps {
   }
 
   /**
-   * <p>This method navigates to main page.</p>
+   * <p>This step performs registering of user.</p>
    *
-   * @param user is a list of User entity object type.
+   * @param userList is a list of User entity object type.
    */
-  @When("^I fill user info with$")
-  public void iFillUserInfoWith(List<User> user) {
-    this.user = user;
+  @When("^I register a user with the following information$")
+  public void iFillUserInfoWith(List<User> userList) {
+    this.user = userList;
     userConfirmationPage = userRegistrationPage.registerUser(user);
   }
 
   /**
-   * <p>This method checks for user confirmation message compliance.</p>
+   * <p>This step performs checking of user confirmation message compliance.</p>
    */
   @Then("^I should see a user registered confirmation message$")
   public void iShouldSeeAUserRegisteredConfirmationMessage() {

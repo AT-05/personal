@@ -38,13 +38,13 @@ public class ReservationPage extends BasePage {
    * <p>This method checks if the result of flight
    * search is correct.</p>
    *
-   * @param origin is the flight origin.
+   * @param origin      is the flight origin.
    * @param destination is the flight destination.
    * @return whether the result matches its origin and destination.
    */
   public boolean isResultDisplayed(String origin, String destination) {
-    boolean result = searchResult.getText().equalsIgnoreCase(origin + " to " + destination);
-    return result;
+    final String sentenceToCompare = searchResult.getText();
+    return sentenceToCompare.equalsIgnoreCase(origin + " to " + destination);
   }
 
   /**
@@ -52,7 +52,7 @@ public class ReservationPage extends BasePage {
    *
    * @param index is the position of the element.
    */
-  public void setDepartureFlight(int index) {
+  private void setDepartureFlight(int index) {
     selectElementInList(departureFlightList, index);
   }
 
@@ -61,16 +61,20 @@ public class ReservationPage extends BasePage {
    *
    * @param index is the position of the element.
    */
-  public void setReturnFlight(int index) {
+  private void setReturnFlight(int index) {
     selectElementInList(returnFlightList, index);
   }
 
   /**
-   * <p>This method sends to Purchase Page.</p>
+   * <p>This method performs reservation of flight.</p>
    *
+   * @param departureFlight is the departure flight selection given.
+   * @param returnFlight    is the return flight selection given.
    * @return a PurchasePage object type.
    */
-  public PurchasePage reserveFlight() {
+  public PurchasePage reserveFlight(int departureFlight, int returnFlight) {
+    setDepartureFlight(departureFlight);
+    setReturnFlight(returnFlight);
     reserveFlight.click();
     return new PurchasePage();
   }

@@ -32,7 +32,7 @@ public class MainPage extends BasePage {
    *
    * @param userNameInput is the user name value given.
    */
-  public void fillUserName(String userNameInput) {
+  private void fillUserName(String userNameInput) {
     userName.sendKeys(userNameInput);
   }
 
@@ -41,7 +41,7 @@ public class MainPage extends BasePage {
    *
    * @param passwordInput is the user password value given.
    */
-  public void fillPassword(String passwordInput) {
+  private void fillPassword(String passwordInput) {
     password.sendKeys(passwordInput);
   }
 

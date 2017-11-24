@@ -33,7 +33,7 @@ public class LoginSteps {
   }
 
   /**
-   * <p>In this step is performed navigation to main page.</p>
+   * <p>This step performs navigation to main page.</p>
    */
   @Given("^I navigate to Main Page$")
   public void iNavigateToMainPage() {
@@ -41,7 +41,7 @@ public class LoginSteps {
   }
 
   /**
-   * <p>In this step the user is logged in to the application.</p>
+   * <p>This step performs login of user into the application.</p>
    *
    * @param userName is the given user name.
    * @param password is the given user password.
@@ -52,7 +52,7 @@ public class LoginSteps {
   }
 
   /**
-   * <p>In this step is checked a successful login.</p>
+   * <p>This step performs checked of successful user login.</p>
    */
   @Then("^I should be redirected to home page$")
   public void iShouldBeRedirectedToHomePage() {

@@ -1,5 +1,6 @@
 package org.fundacionjala.automationproject.ui;
 
+import org.fundacionjala.automationproject.entities.Address;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -72,10 +73,6 @@ public class PurchasePage extends BasePage {
   public void clearPassengersFormFields() {
     passengerName.clear();
     passengerLastName.clear();
-    creditCardNumber.clear();
-    ccFirstName.clear();
-    ccMiddletName.clear();
-    ccLastName.clear();
   }
 
   /**
@@ -91,6 +88,16 @@ public class PurchasePage extends BasePage {
     passengerMeal.click();
     Select meal = new Select(passengerMeal);
     meal.selectByVisibleText(mealInput);
+  }
+
+  /**
+   * <p>This method clears credit card form fields.</p>
+   */
+  public void clearCreditCardFormFields() {
+    creditCardNumber.clear();
+    ccFirstName.clear();
+    ccMiddletName.clear();
+    ccLastName.clear();
   }
 
   /**
@@ -125,20 +132,16 @@ public class PurchasePage extends BasePage {
   /**
    * <p>This method fills the billing address information.</p>
    *
-   * @param bAddress    is the billing address.
-   * @param bCity       is the billing address city.
-   * @param bState      is the billing address state.
-   * @param bPostalCode is the billing address zip.
-   * @param bCountry    is the billing address country.
+   * @param address is an Address entity object type.
    */
-  public void setBillingAddressInfo(String bAddress, String bCity, String bState, String bPostalCode, String bCountry) {
-    billingAddress.sendKeys(bAddress);
-    billingCity.sendKeys(bCity);
-    billingState.sendKeys(bState);
-    billingPostalCode.sendKeys(bPostalCode);
+  public void setBillingAddressInfo(Address address) {
+    billingAddress.sendKeys(address.getAddress());
+    billingCity.sendKeys(address.getCity());
+    billingState.sendKeys(address.getState());
+    billingPostalCode.sendKeys(address.getZip());
     billingCountry.click();
     Select country = new Select(billingCountry);
-    country.selectByVisibleText(bCountry);
+    country.selectByVisibleText(address.getCountry());
   }
 
   /**
@@ -154,24 +157,16 @@ public class PurchasePage extends BasePage {
   /**
    * <p>This method sets the delivery address information.</p>
    *
-   * @param dAddress    is the delivery address.
-   * @param dCity       is the delivery address city.
-   * @param dState      is the delivery address state.
-   * @param dPostalCode is the delivery address zip.
-   * @param dCountry    is the delivery address country.
+   * @param address is an Address entity object type.
    */
-  public void setDeliveryAddressInfo(String dAddress,
-                                     String dCity,
-                                     String dState,
-                                     String dPostalCode,
-                                     String dCountry) {
-    deliveryAddress.sendKeys(dAddress);
-    deliveryCity.sendKeys(dCity);
-    deliveryState.sendKeys(dState);
-    deliveryPostalCode.sendKeys(dPostalCode);
+  public void setDeliveryAddressInfo(Address address) {
+    deliveryAddress.sendKeys(address.getAddress());
+    deliveryCity.sendKeys(address.getCity());
+    deliveryState.sendKeys(address.getState());
+    deliveryPostalCode.sendKeys(address.getZip());
     deliveryCountry.click();
     Select country = new Select(deliveryCountry);
-    country.selectByVisibleText(dCountry);
+    country.selectByVisibleText(address.getCountry());
   }
 
   /**

@@ -8,7 +8,7 @@ Feature: Register User
   @SmokeTest
   Scenario: Verify that is possible to register a user in the application
     Given I select Registration option in Menu
-    When I fill user info with
+    When I register a user with the following information
 
       | firstName | lastName | phone    | email                  | address   | city       | state   | zip   | country | userName | password  |
       | Roberto   | Fuentes  | 54332154 | robfuentes@hotmail.com | Street277 | Cochabamba | Cercado | 65362 | BOLIVIA | rfuentes | password3 |

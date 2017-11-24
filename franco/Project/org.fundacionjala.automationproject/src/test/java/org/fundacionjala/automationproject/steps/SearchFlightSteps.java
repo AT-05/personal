@@ -1,6 +1,8 @@
 package org.fundacionjala.automationproject.steps;
 
-import cucumber.api.java.en.And;
+import static org.junit.Assert.assertTrue;
+
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.fundacionjala.automationproject.config.EnvironmentConfig;
@@ -8,7 +10,6 @@ import org.fundacionjala.automationproject.ui.HomePage;
 import org.fundacionjala.automationproject.ui.MainPage;
 import org.fundacionjala.automationproject.ui.PageTransporter;
 import org.fundacionjala.automationproject.ui.ReservationPage;
-import static org.junit.Assert.assertTrue;
 
 /**
  * Created by Franco Aldunate on 11/15/2017.
@@ -27,105 +28,44 @@ public class SearchFlightSteps {
   }
 
   /**
-   * <p>This method logs in to a setup user account.</p>
+   * <p>This step performs a setup user account login.</p>
    */
-  @And("^I log in to the application$")
+  @Given("^I am logged in the application$")
   public void iLogInToTheApplication() {
     mainPage = pageTransporter.navigateToMainPage();
-
     final String userName = EnvironmentConfig.getInstance().getUserName();
-    mainPage.fillUserName(userName);
-
     final String password = EnvironmentConfig.getInstance().getUserPassword();
-    mainPage.fillPassword(password);
     homePage = mainPage.loginUser(userName, password);
   }
 
   /**
-   * <p>This method selects type of flight.</p>
+   * <p>This step performs searching of flight.</p>
    *
-   * @param flight is the given type of flight.
-   */
-  @When("^I select the type of flight as \"([^\"]*)\"$")
-  public void iSelectTheTypeOfFlightAs(String flight) {
-    homePage.setFlightType(flight);
-  }
-
-  /**
-   * <p>This method selects number of passengers.</p>
-   *
-   * @param pNumber is the given number of passengers.
-   */
-  @And("^I choose flight for \"([^\"]*)\" passengers$")
-  public void iChooseFlightForPassengers(String pNumber) {
-    homePage.setPassengers(pNumber);
-  }
-
-  /**
-   * <p>This method selects origin location.</p>
-   *
+   * @param flight    is the given type of flight.
+   * @param pNumber   is the given number of passengers.
    * @param oLocation is the given origin location.
-   */
-  @And("^I choose as origin location \"([^\"]*)\"$")
-  public void iChooseAsOriginLocation(String oLocation) {
-    homePage.setOriginLocation(oLocation);
-  }
-
-  /**
-   * <p>This method selects departure date.</p>
-   *
-   * @param dMonth is the given departure month.
-   * @param dDay   is the given departure day.
-   */
-  @And("^I select as departure date \"([^\"]*)\", \"([^\"]*)\"$")
-  public void iSelectAsDepartureDate(String dMonth, String dDay) {
-    homePage.setDepartureDate(dMonth, dDay);
-  }
-
-  /**
-   * <p>This method selects destination location.</p>
-   *
+   * @param dMonth    is the given departure Month.
+   * @param dDay      is the given departure Day.
    * @param dLocation is the given destination location.
+   * @param rMonth    is the given return Month.
+   * @param rDay      is the given return Day.
+   * @param sClass    is the given flight service class.
+   * @param airline   is the given airline.
    */
-  @And("^I select destination as \"([^\"]*)\"$")
-  public void iSelectDestinationAs(String dLocation) {
-    homePage.setDestinationLocation(dLocation);
+  @When("^I search a flight with \"([^\"]*)\", \"([^\"]*)\" passenger, from \"([^\"]*)\", "
+    + "on \"([^\"]*)\" \"([^\"]*)\", to \"([^\"]*)\" on \"([^\"]*)\", \"([^\"]*)\" in \"([^\"]*)\" "
+    + "class and \"([^\"]*)\"$")
+  public void iSearchAFlightWithPassengerFromOnToOnInClassAnd(String flight, String pNumber,
+                                                              String oLocation, String dMonth,
+                                                              String dDay, String dLocation,
+                                                              String rMonth, String rDay,
+                                                              String sClass, String airline) {
+    reservationPage = homePage.searchFlight(flight, pNumber, oLocation,
+      dMonth, dDay, dLocation, rMonth, rDay, sClass, airline);
   }
 
   /**
-   * <p>This method selects return date.</p>
-   *
-   * @param rMonth is the given return month.
-   * @param rDay   is the given return day.
-   */
-  @And("^I select as return date \"([^\"]*)\", \"([^\"]*)\"$")
-  public void iSelectAsReturnDate(String rMonth, String rDay) {
-    homePage.setReturningDate(rMonth, rDay);
-  }
-
-  /**
-   * <p>This method selects flight service class.</p>
-   *
-   * @param sClass is the given flight service class.
-   */
-  @And("^I choose \"([^\"]*)\" as service class$")
-  public void iChooseAsServiceClass(String sClass) {
-    homePage.setServiceClass(sClass);
-  }
-
-  /**
-   * <p>This method selects airline.</p>
-   *
-   * @param airline is the given airline.
-   */
-  @And("^I select airline \"([^\"]*)\"$")
-  public void iSelectAirline(String airline) {
-    homePage.setAirline(airline);
-    reservationPage = homePage.searchFlight();
-  }
-
-  /**
-   * <p>This method checks flight search results correctness.</p>
+   * <p>This step performs checking of flight search result correctness.</p>
    *
    * @param origin      is the given flight origin searched.
    * @param destination is the given flight destination searched.

@@ -1,13 +1,7 @@
 package org.fundacionjala.automationproject.steps;
 
-import static org.fundacionjala.automationproject.entities.AddressInfo.ADDRESS;
-import static org.fundacionjala.automationproject.entities.AddressInfo.CITY;
-import static org.fundacionjala.automationproject.entities.AddressInfo.COUNTRY;
-import static org.fundacionjala.automationproject.entities.AddressInfo.STATE;
-import static org.fundacionjala.automationproject.entities.AddressInfo.ZIP;
-
 import cucumber.api.java.en.When;
-import org.fundacionjala.automationproject.entities.AddressInfo;
+import org.fundacionjala.automationproject.entities.Address;
 import org.fundacionjala.automationproject.ui.PurchasePage;
 
 /**
@@ -15,31 +9,26 @@ import org.fundacionjala.automationproject.ui.PurchasePage;
  */
 public class DeliveryAddressSteps {
   private final PurchasePage purchasePage;
-  private final AddressInfo addressInfo;
+  private final Address address;
 
   /**
    * <p>This constructor gets page transporter instance
    * and receives an entity and page type classes.</p>
    *
-   * @param addressInfo is an entity class.
+   * @param address      is an Address entity object type.
    * @param purchasePage is a page type class.
    */
-  public DeliveryAddressSteps(AddressInfo addressInfo, PurchasePage purchasePage) {
-    this.addressInfo = addressInfo;
+  public DeliveryAddressSteps(Address address, PurchasePage purchasePage) {
+    this.address = address;
     this.purchasePage = purchasePage;
   }
 
   /**
-   * <p>This method fills the delivery address information.</p>
+   * <p>This step performs filling of the delivery address information.</p>
    */
   @When("^I fill delivery address info$")
   public void iFillDeliveryAddressInfo() {
     purchasePage.clearDeliveryAddressFormFields();
-    purchasePage.setDeliveryAddressInfo(
-      addressInfo.getAddressInfo().get(ADDRESS),
-      addressInfo.getAddressInfo().get(CITY),
-      addressInfo.getAddressInfo().get(STATE),
-      addressInfo.getAddressInfo().get(ZIP),
-      addressInfo.getAddressInfo().get(COUNTRY));
+    purchasePage.setDeliveryAddressInfo(address);
   }
 }

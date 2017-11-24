@@ -73,7 +73,7 @@ public class HomePage extends BasePage {
    *
    * @param keyWord is the value to set as flight type.
    */
-  public void setFlightType(String keyWord) {
+  private void setFlightType(String keyWord) {
     selectElementInList(tripTypeList, keyWord);
   }
 
@@ -82,7 +82,7 @@ public class HomePage extends BasePage {
    *
    * @param value is the number of passengers to set.
    */
-  public void setPassengers(String value) {
+  private void setPassengers(String value) {
     passCount.click();
     Select passenger = new Select(passCount);
     passenger.selectByValue(value);
@@ -93,7 +93,7 @@ public class HomePage extends BasePage {
    *
    * @param location is the origin location.
    */
-  public void setOriginLocation(String location) {
+  private void setOriginLocation(String location) {
     origin.click();
     Select originLocation = new Select(origin);
     originLocation.selectByValue(location);
@@ -105,7 +105,7 @@ public class HomePage extends BasePage {
    * @param monthInput is the departure month.
    * @param dayInput   is the departure day.
    */
-  public void setDepartureDate(String monthInput, String dayInput) {
+  private void setDepartureDate(String monthInput, String dayInput) {
     departureMonth.click();
     Select month = new Select(departureMonth);
     month.selectByVisibleText(monthInput);
@@ -120,7 +120,7 @@ public class HomePage extends BasePage {
    *
    * @param location is the destination location.
    */
-  public void setDestinationLocation(String location) {
+  private void setDestinationLocation(String location) {
     destination.click();
     Select destinationLocation = new Select(destination);
     destinationLocation.selectByValue(location);
@@ -132,7 +132,7 @@ public class HomePage extends BasePage {
    * @param monthInput is the returning month.
    * @param dayInput   is the returning day.
    */
-  public void setReturningDate(String monthInput, String dayInput) {
+  private void setReturningDate(String monthInput, String dayInput) {
     returningMonth.click();
     Select month = new Select(returningMonth);
     month.selectByVisibleText(monthInput);
@@ -147,7 +147,7 @@ public class HomePage extends BasePage {
    *
    * @param keyWord is the value to set as service class.
    */
-  public void setServiceClass(String keyWord) {
+  private void setServiceClass(String keyWord) {
     selectElementInList(serviceClassList, keyWord);
   }
 
@@ -156,18 +156,40 @@ public class HomePage extends BasePage {
    *
    * @param airlineInput is the airline.
    */
-  public void setAirline(String airlineInput) {
+  private void setAirline(String airlineInput) {
     airline.click();
     Select airlineValue = new Select(airline);
     airlineValue.selectByVisibleText(airlineInput);
   }
 
   /**
-   * <p>This method sends to the Reservation Page.</p>
+   * <p>This method performs the searching of flight.</p>
    *
+   * @param flight    is the given type of flight.
+   * @param pNumber   is the given number of passengers.
+   * @param oLocation is the given origin location.
+   * @param dMonth    is the given departure Month.
+   * @param dDay      is the given departure Day.
+   * @param dLocation is the given destination location.
+   * @param rMonth    is the given return Month.
+   * @param rDay      is the given return Day.
+   * @param sClass    is the given flight service class.
+   * @param airline   is the given airline.
    * @return a ReservationPage object type.
    */
-  public ReservationPage searchFlight() {
+  public ReservationPage searchFlight(String flight, String pNumber,
+                                      String oLocation, String dMonth,
+                                      String dDay, String dLocation,
+                                      String rMonth, String rDay,
+                                      String sClass, String airline) {
+    setFlightType(flight);
+    setPassengers(pNumber);
+    setOriginLocation(oLocation);
+    setDepartureDate(dMonth, dDay);
+    setDestinationLocation(dLocation);
+    setReturningDate(rMonth, rDay);
+    setServiceClass(sClass);
+    setAirline(airline);
     findFlight.click();
     return new ReservationPage();
   }
