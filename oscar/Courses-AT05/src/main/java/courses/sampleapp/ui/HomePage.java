@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
  * Created by Administrator on 11/15/2017.
@@ -17,7 +19,7 @@ public class HomePage extends BasePageObject {
   @FindBy(linkText = "Sign Out")
   private WebElement signout;
 
-  @FindBy(linkText = "My Dashboard")
+  @FindBy(partialLinkText = "My Dashboard")
   WebElement title;
 
   private WebElement webElement;
@@ -36,6 +38,7 @@ public class HomePage extends BasePageObject {
    */
   /*public boolean isInTheHomePage(User user) {
     String name = String.format("%s %s", user.getFirstName(), user.getLastName().substring(0,1));
+    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("notifications")));
     if(nameProfile.getText().equalsIgnoreCase(name)){
       return true;
     }
@@ -53,6 +56,7 @@ public class HomePage extends BasePageObject {
    * Logout of the account.
    */
   public void logout() {
+    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("notifications")));
     nameProfile.click();
     signout.click();
   }

@@ -40,8 +40,9 @@ public class registerSteps {
   }
 
   @When("^I register with first name, last name, email and password$")
-  public void iRegisterWithFirstNameLastNameEmailAndPassword() throws Throwable {
+  public void iRegisterWithFirstNameLastNameEmailAndPassword() {
     user = new User();
+    user.generateUser();
     homePage = registerPage
         .registerUser(user.getFirstName(), user.getLastName(), user.getEmail(), user.getPassword());
   }
