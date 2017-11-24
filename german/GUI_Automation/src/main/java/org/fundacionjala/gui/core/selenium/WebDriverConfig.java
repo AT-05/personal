@@ -52,8 +52,9 @@ public class WebDriverConfig {
   public void initialize(String webDriverConfigFilename) {
     log.info("Read the driver configuration settings");
     configReader = new JsonReader(webDriverConfigFilename);
-//        browser = configReader.getKeyValue(DRIVER, BROWSER);
-    browser = System.getProperty("browserName");
+    browser = (BROWSER.isEmpty()) ?
+      configReader.getKeyValue(DRIVER, BROWSER) :
+      BROWSER_NAME;
     implicitWaitTime = Integer.valueOf(configReader.getKeyValue(DRIVER, IMPLICIT_WAIT_TIME));
     explicitWaitTime = Integer.valueOf(configReader.getKeyValue(DRIVER, EXPLICIT_WAIT_TIME));
     waitSleepTime = Integer.valueOf(configReader.getKeyValue(DRIVER, WAIT_SLEEP_TIME));

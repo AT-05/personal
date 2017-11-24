@@ -33,6 +33,9 @@ public class InboxPage extends BasedPageObject {
   @FindBy(xpath = "//*[@id=\":8n\"]")
   private WebElement sendBtn;
 
+  @FindBy(id = "link_vsm")
+  private WebElement linkSent;
+
 
   @FindBy(name = "to") //name= to
   private WebElement addressBox;
@@ -81,6 +84,7 @@ public class InboxPage extends BasedPageObject {
     bobyTex.sendKeys(body);
     //Send keys
     bobyTex.sendKeys(CONTROL, ENTER);
+    wait.until(ExpectedConditions.visibilityOf(linkSent));
   }
 
   /**
@@ -103,8 +107,7 @@ public class InboxPage extends BasedPageObject {
 
     for (int i = 0; i < b.size(); i++) {
       System.out.println(b.get(i).getText());
-      if (b.get(i).getText().equals(subject)){
-
+      if (b.get(i).getText().equals(subject)) {
         result = b.get(i);
       }
     }

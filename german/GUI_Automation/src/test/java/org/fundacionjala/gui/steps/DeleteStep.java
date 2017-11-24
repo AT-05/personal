@@ -5,8 +5,11 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.fundacionjala.gui.mailapp.Entities.Mail;
+import org.fundacionjala.gui.mailapp.config.SampleAppEnvsConfig;
 import org.fundacionjala.gui.mailapp.ui.InboxPage;
 import org.fundacionjala.gui.mailapp.ui.PageTransporter;
+
+import static org.testng.Assert.assertFalse;
 
 /**
  * Created by German on 11/21/2017.
@@ -23,30 +26,47 @@ public class DeleteStep {
    */
   public DeleteStep(Mail mail) {
     this.mail = mail;
-  }
-
-
-
-  @Given("^I have a email received$")
-  public void inboxAccount() {
     inboxPage = PageTransporter.getInstance().navigateToInboxPage();
   }
 
-  @When("^I go to the Inbox received page")
-  public void selectMail() {
+  /**
+   * <p>This method sends an email .</p>
+   *
+   * @param subject of the mail
+   * @param body    of the mail
+   */
+  @Given("I send an email to myself under subject \"([^\"]*)\"and body \"([^\"]*)\"$")
+  public void sendEmailToMyself(String subject, String body) {
+    this.mail.setSubject(subject);
+    this.mail.setBody(body);
+    this.mail.setTo(SampleAppEnvsConfig.getInstance().getUserName());
+    inboxPage.sendMail(this.mail.getTo(), this.mail.getSubject(), this.mail.getBody());
+  }
+
+  /**
+   * <p>This method step navigates to Inbox page.</p>
+   */
+  @When("^I go to the Inbox  page")
+  public void goToInbox() {
     inboxPage = PageTransporter.getInstance().navigateToInboxPage();
   }
 
-  @And("^I delete the email with subject \"AT05GUI\"$")
+  /**
+   * <p>This method deletes an email.</p>
+   */
+  @And("^I delete this email$")
   public void deleteMail() {
-    inboxPage.deleteMailBySubject("AT05GUI");
+    inboxPage.deleteMailBySubject(this.mail.getSubject());
   }
 
-  @Then("^the email be removed from the Inbox email list$")
+  /**
+   * <p>This method checks an email was removed.</p>
+   */
+  @Then("^the email should be removed from my Inbox email list$")
   public void deleteShow() {
     inboxPage.waitPageIsLoaded();
-    inboxPage.containMailWithSubject("AT05GUI");
-
+    assertFalse(inboxPage.containMailWithSubject(
+      this.mail.getSubject()), "No found email");
   }
 
 

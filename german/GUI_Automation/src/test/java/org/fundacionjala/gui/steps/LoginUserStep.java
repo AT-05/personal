@@ -18,10 +18,10 @@ import static org.testng.Assert.assertTrue;
  */
 
 public class LoginUserStep {
-
-  LoginPage loginPage;
-  InboxPage inboxPage;
-  NextPage nextPage;
+  private static final int ORDER = 990;
+  private LoginPage loginPage;
+  private InboxPage inboxPage;
+  private NextPage nextPage;
 
   /**
    * <p>This method step navigates to login page.</p>
@@ -39,7 +39,7 @@ public class LoginUserStep {
    * @param password is the given user password.
    */
   @When("^I fill the field email \"([^\"]*)\" and password \"([^\"]*)\"$")
-  public void loginWithIdentifier(String email, String password) throws InterruptedException {
+  public void loginWithIdentifier(String email, String password) {
     nextPage = loginPage.loginIdentifier(email);
     inboxPage = nextPage.nextPassword(SampleAppEnvsConfig.getInstance().getUserPassword());
 
@@ -49,26 +49,30 @@ public class LoginUserStep {
    * <p>This method check if My Inbox page displayed  .</p>
    */
   @Then("^should be displayed My Inbox page$")
-  public void inboxAccount() throws Throwable {
+  public void inboxAccount() {
     assertTrue(inboxPage.isInboxPage());
   }
 
   /**
    * <p>This method check if  the user is logged .</p>
+   *
+   * @throws Throwable instance.
    */
   @Given("^I am logged to google mail$")
   public void iAmLoggedToGoogleMail() throws Throwable {
     if (!PageTransporter.getInstance().isOnInbox()) {      //if the user is logged
       navigateToLoginAccount();
-      loginWithIdentifier(SampleAppEnvsConfig.getInstance().getUserName(), SampleAppEnvsConfig.getInstance().getUserPassword());
+      loginWithIdentifier(
+        SampleAppEnvsConfig.getInstance().getUserName(),
+        SampleAppEnvsConfig.getInstance().getUserPassword());
     }
   }
 
   /**
    * <p>This method is executed after login  .</p>
    */
-  @After(value = "@Logout", order = 999)
-  public void afterLoginScenario() throws InterruptedException {
+  @After(value = "@Logout", order = ORDER)
+  public void afterLoginScenario() {
     //log.info("After hook @Logout");
     logOut();
   }
@@ -76,9 +80,7 @@ public class LoginUserStep {
   /**
    * <p>This method logout the user .</p>
    */
-  public void logOut() throws InterruptedException {
+  public void logOut() {
     inboxPage.logout();
-    Thread.sleep(3000);
-
   }
 }

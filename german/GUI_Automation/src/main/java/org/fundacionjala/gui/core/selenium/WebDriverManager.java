@@ -13,8 +13,6 @@ import java.util.concurrent.TimeUnit;
  */
 public class WebDriverManager {
 
-  private static final String FIREFOX = "firefox";
-  private static final String CHROME = "chrome";
   private static WebDriverManager instance = null;
   private Logger log = Logger.getLogger(getClass());
   private WebDriverConfig webDriverConfig = WebDriverConfig.getInstance();
