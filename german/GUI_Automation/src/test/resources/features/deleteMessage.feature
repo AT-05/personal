@@ -7,5 +7,5 @@ Feature: Delete
   Scenario: Delete mail
     Given I have a email received
     When I go to the Inbox received page
-    And I delete the email with subject "AT05GUI"
+      And I delete the email with subject "AT05GUI"
     Then the email be removed from the Inbox email list

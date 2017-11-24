@@ -2,6 +2,7 @@ group 'Selenium'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'checkstyle'
 
 sourceCompatibility = 1.8
 
@@ -53,11 +54,15 @@ task executeFeatures(type: Test) {
     options {
         useDefaultListeners = false
         jvmArgs = ['-Dcucumber.options= ' +
-                           '--glue at05ui ' +
+                           '--glue org.fundacionjala.gui ' +
                            '--plugin pretty ' +
                            '--plugin json:build/cucumber/cucumber.json ' +
                            '--plugin rerun:build/cucumber/rerun.txt ' +
                            'classpath:' + featureFolders + ' ' +
                            cucumberOptions]
     }
+}
+// Checkstyle configuration
+checkstyle {
+    toolVersion = '8.2'
 }
