@@ -44,7 +44,8 @@ public class ReservationPage extends BasePage {
    */
   public boolean isResultDisplayed(String origin, String destination) {
     final String sentenceToCompare = searchResult.getText();
-    return sentenceToCompare.equalsIgnoreCase(origin + " to " + destination);
+    final String expectedResult = String.format("%s to %s", origin, destination);
+    return sentenceToCompare.equalsIgnoreCase(expectedResult);
   }
 
   /**
