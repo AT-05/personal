@@ -18,9 +18,11 @@ public class PurchasePage extends BasePage {
 
   @FindBy(name = "pass.0.meal")
   private WebElement passengerMeal;
+  private Select meal;
 
   @FindBy(name = "creditCard")
   private WebElement creditCardType;
+  private Select ccType;
 
   @FindBy(name = "creditnumber")
   private WebElement creditCardNumber;
@@ -48,6 +50,7 @@ public class PurchasePage extends BasePage {
 
   @FindBy(name = "billCountry")
   private WebElement billingCountry;
+  private Select bCountry;
 
   @FindBy(name = "delAddress1")
   private WebElement deliveryAddress;
@@ -63,6 +66,7 @@ public class PurchasePage extends BasePage {
 
   @FindBy(name = "delCountry")
   private WebElement deliveryCountry;
+  private Select dCountry;
 
   @FindBy(name = "buyFlights")
   private WebElement buyFlightOption;
@@ -85,8 +89,7 @@ public class PurchasePage extends BasePage {
   public void setPassengerInfo(String name, String lastName, String mealInput) {
     passengerName.sendKeys(name);
     passengerLastName.sendKeys(lastName);
-    passengerMeal.click();
-    Select meal = new Select(passengerMeal);
+    meal = new Select(passengerMeal);
     meal.selectByVisibleText(mealInput);
   }
 
@@ -110,9 +113,8 @@ public class PurchasePage extends BasePage {
    * @param lName      is the credit card owner last name.
    */
   public void setCreditCardInfo(String cardType, String cardNumber, String fName, String mName, String lName) {
-    creditCardType.click();
-    Select day = new Select(creditCardType);
-    day.selectByVisibleText(cardType);
+    ccType = new Select(creditCardType);
+    ccType.selectByVisibleText(cardType);
     creditCardNumber.sendKeys(cardNumber);
     ccFirstName.sendKeys(fName);
     ccMiddletName.sendKeys(mName);
@@ -139,9 +141,8 @@ public class PurchasePage extends BasePage {
     billingCity.sendKeys(address.getCity());
     billingState.sendKeys(address.getState());
     billingPostalCode.sendKeys(address.getZip());
-    billingCountry.click();
-    Select country = new Select(billingCountry);
-    country.selectByVisibleText(address.getCountry());
+    bCountry = new Select(billingCountry);
+    bCountry.selectByVisibleText(address.getCountry());
   }
 
   /**
@@ -164,9 +165,8 @@ public class PurchasePage extends BasePage {
     deliveryCity.sendKeys(address.getCity());
     deliveryState.sendKeys(address.getState());
     deliveryPostalCode.sendKeys(address.getZip());
-    deliveryCountry.click();
-    Select country = new Select(deliveryCountry);
-    country.selectByVisibleText(address.getCountry());
+    dCountry = new Select(deliveryCountry);
+    dCountry.selectByVisibleText(address.getCountry());
   }
 
   /**
