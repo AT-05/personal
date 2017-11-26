@@ -18,30 +18,38 @@ public class HomePage extends BasePage {
 
   @FindBy(name = "passCount")
   private WebElement passCount;
+  private Select passenger;
 
   @FindBy(name = "fromPort")
   private WebElement origin;
+  private Select originLocation;
 
   @FindBy(name = "fromMonth")
   private WebElement departureMonth;
+  private Select depMonth;
 
   @FindBy(name = "fromDay")
   private WebElement departureDay;
+  private Select depDay;
 
   @FindBy(name = "toPort")
   private WebElement destination;
+  private Select destinationLocation;
 
   @FindBy(name = "toMonth")
   private WebElement returningMonth;
+  private Select retMonth;
 
   @FindBy(name = "toDay")
   private WebElement returningDay;
+  private Select retDay;
 
   @FindBy(name = "servClass")
   private List<WebElement> serviceClassList;
 
   @FindBy(name = "airline")
   private WebElement airline;
+  private Select airlineValue;
 
   @FindBy(name = "findFlights")
   private WebElement findFlight;
@@ -83,8 +91,7 @@ public class HomePage extends BasePage {
    * @param value is the number of passengers to set.
    */
   private void setPassengers(String value) {
-    passCount.click();
-    Select passenger = new Select(passCount);
+    passenger = new Select(passCount);
     passenger.selectByValue(value);
   }
 
@@ -94,8 +101,7 @@ public class HomePage extends BasePage {
    * @param location is the origin location.
    */
   private void setOriginLocation(String location) {
-    origin.click();
-    Select originLocation = new Select(origin);
+    originLocation = new Select(origin);
     originLocation.selectByValue(location);
   }
 
@@ -106,13 +112,10 @@ public class HomePage extends BasePage {
    * @param dayInput   is the departure day.
    */
   private void setDepartureDate(String monthInput, String dayInput) {
-    departureMonth.click();
-    Select month = new Select(departureMonth);
-    month.selectByVisibleText(monthInput);
-
-    departureDay.click();
-    Select day = new Select(departureDay);
-    day.selectByVisibleText(dayInput);
+    depMonth = new Select(departureMonth);
+    depMonth.selectByVisibleText(monthInput);
+    depDay = new Select(departureDay);
+    depDay.selectByVisibleText(dayInput);
   }
 
   /**
@@ -121,8 +124,7 @@ public class HomePage extends BasePage {
    * @param location is the destination location.
    */
   private void setDestinationLocation(String location) {
-    destination.click();
-    Select destinationLocation = new Select(destination);
+    destinationLocation = new Select(destination);
     destinationLocation.selectByValue(location);
   }
 
@@ -133,13 +135,10 @@ public class HomePage extends BasePage {
    * @param dayInput   is the returning day.
    */
   private void setReturningDate(String monthInput, String dayInput) {
-    returningMonth.click();
-    Select month = new Select(returningMonth);
-    month.selectByVisibleText(monthInput);
-
-    returningDay.click();
-    Select day = new Select(returningDay);
-    day.selectByVisibleText(dayInput);
+    retMonth = new Select(returningMonth);
+    retMonth.selectByVisibleText(monthInput);
+    retDay = new Select(returningDay);
+    retDay.selectByVisibleText(dayInput);
   }
 
   /**
@@ -157,8 +156,7 @@ public class HomePage extends BasePage {
    * @param airlineInput is the airline.
    */
   private void setAirline(String airlineInput) {
-    airline.click();
-    Select airlineValue = new Select(airline);
+    airlineValue = new Select(airline);
     airlineValue.selectByVisibleText(airlineInput);
   }
 
