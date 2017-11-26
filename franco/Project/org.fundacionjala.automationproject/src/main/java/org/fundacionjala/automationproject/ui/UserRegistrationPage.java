@@ -37,6 +37,7 @@ public class UserRegistrationPage extends BasePage {
 
   @FindBy(name = "country")
   private WebElement userCountry;
+  private Select country;
 
   @FindBy(name = "email")
   private WebElement userNickName;
@@ -90,14 +91,13 @@ public class UserRegistrationPage extends BasePage {
    * @param userList is a list of User entity object type.
    */
   private void fillUserMailingInfoForm(List<User> userList) {
-    userCountry.click();
-    Select passenger = new Select(userCountry);
+    country = new Select(userCountry);
     for (User userItem : userList) {
       userAddress.sendKeys(userItem.getAddress());
       userCity.sendKeys(userItem.getCity());
       userState.sendKeys(userItem.getState());
       userPostalCode.sendKeys(userItem.getZip());
-      passenger.selectByVisibleText(userItem.getCountry());
+      country.selectByVisibleText(userItem.getCountry());
     }
   }
 
