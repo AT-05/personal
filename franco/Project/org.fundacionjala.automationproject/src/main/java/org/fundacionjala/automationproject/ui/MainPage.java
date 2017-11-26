@@ -21,13 +21,6 @@ public class MainPage extends BasePage {
   private WebElement registerUserLink;
 
   /**
-   * <p>This constructor inherits from BasePage class..</p>
-   */
-  public MainPage() {
-    super();
-  }
-
-  /**
    * <p>This method fills user name field.</p>
    *
    * @param userNameInput is the user name value given.
