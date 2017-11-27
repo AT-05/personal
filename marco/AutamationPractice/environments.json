@@ -1,0 +1,16 @@
+{
+  "Environments": [
+    {
+      "id": "Test1",
+      "url": "http://automationpractice.com/index.php?controller=authentication&back=my-account",
+      "user name": "pedro.pablo@gmail.com",
+      "user password": "holamundo123"
+    },
+    {
+      "id": "Test2",
+      "url": "https://www.google.com",
+      "user name": "pedro.pablo@gmail.com ",
+      "user password": "holamundo123"
+    }
+  ]
+}
