@@ -16,10 +16,10 @@ public class HomePage extends BasePageObject {
   @FindBy(id = "my_account")
   private WebElement nameProfile;
 
-  @FindBy(linkText = "Sign Out")
+  @FindBy(xpath = "//*[contains(@href, '/users/sign_out')]")
   private WebElement signout;
 
-  @FindBy(partialLinkText = "My Dashboard")
+  @FindBy(xpath = "//*[contains(@class, 'header-nav__link') and contains(@href, '/enrollments')]")
   WebElement title;
 
   private WebElement webElement;
