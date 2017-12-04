@@ -1,0 +1,16 @@
+{
+  	"web driver":
+	{
+	  "browser":"firefox",
+	  "implicit wait time":"30",
+	  "explicit wait time":"40",
+	  "wait sleep time":"500"
+	},
+  "web driver":
+  {
+    "browser":"chrome",
+    "implicit wait time":"30",
+    "explicit wait time":"40",
+    "wait sleep time":"500"
+  }
+}

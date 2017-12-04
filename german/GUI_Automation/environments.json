@@ -1,0 +1,18 @@
+{
+  	"Environments": [
+		{
+			"id": "Test1",
+			"url":"http://www.gmail.com",
+			"user name":"german.eduardo.qm@gmail.com",
+			"user password":"G3rm3n3du4rd0"
+		},
+		{
+			"id": "Test2",
+			"url":"http://www.google.com",
+			"user name":"german.eduardo.qm",
+			"user password":"G3rm3n3du4rd0"
+		}
+
+
+	]
+}
