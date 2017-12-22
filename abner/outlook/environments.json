@@ -1,0 +1,25 @@
+{
+  	"Environments": [
+
+		{
+			"id": "ev1",
+			"url":"https://www.google.com/",
+			"user name":"abner.mamani@fundacion-jala.org",
+			"user password":""
+		},
+
+		{
+			"id": "ev2",
+			"url":"https://translate.google.com",
+			"user name":"abner.mamani@fundacion-jala.org",
+			"user password":""
+		},
+
+		{
+			"id": "ev",
+			"url":"https://outlook.office.com/",
+			"user name":"abner.mamani@fundacion-jala.org",
+			"user password":"Cream.com"
+		}
+	]
+}
